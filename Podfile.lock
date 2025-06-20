@@ -1,0 +1,28 @@
+PODS:
+  - FSPagerView (0.8.3)
+  - IQKeyboardManager (6.5.19)
+  - SnapKit (5.7.1)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - FSPagerView
+  - IQKeyboardManager
+  - SnapKit
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - FSPagerView
+    - IQKeyboardManager
+    - SnapKit
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: a4538c25b23c607fd76e63d9583d08b2d19f4d32
+
+COCOAPODS: 1.16.2

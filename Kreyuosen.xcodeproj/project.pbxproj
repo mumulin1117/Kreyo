@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F9667374C7D9E7E038C75D9E /* Pods_Kreyuosen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D46DDA89EA9510CBAE745E /* Pods_Kreyuosen.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		04826BC02E03E5BA006AFDB0 /* Kreyuosen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kreyuosen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D46DDA89EA9510CBAE745E /* Pods_Kreyuosen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kreyuosen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C388462760F0948140E5CF89 /* Pods-Kreyuosen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kreyuosen.debug.xcconfig"; path = "Target Support Files/Pods-Kreyuosen/Pods-Kreyuosen.debug.xcconfig"; sourceTree = "<group>"; };
+		F1F5CB9C9B5363BACD427A1D /* Pods-Kreyuosen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kreyuosen.release.xcconfig"; path = "Target Support Files/Pods-Kreyuosen/Pods-Kreyuosen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9667374C7D9E7E038C75D9E /* Pods_Kreyuosen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				04826BC22E03E5BA006AFDB0 /* Kreyuosen */,
 				04826BC12E03E5BA006AFDB0 /* Products */,
+				AB698025DD9B67D033C7EBCA /* Pods */,
+				6E782909278CFFAC945C8C7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6E782909278CFFAC945C8C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4D46DDA89EA9510CBAE745E /* Pods_Kreyuosen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB698025DD9B67D033C7EBCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C388462760F0948140E5CF89 /* Pods-Kreyuosen.debug.xcconfig */,
+				F1F5CB9C9B5363BACD427A1D /* Pods-Kreyuosen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04826BD32E03E5BC006AFDB0 /* Build configuration list for PBXNativeTarget "Kreyuosen" */;
 			buildPhases = (
+				2C5D4823A890A1D0B9BAEC9A /* [CP] Check Pods Manifest.lock */,
 				04826BBC2E03E5BA006AFDB0 /* Sources */,
 				04826BBD2E03E5BA006AFDB0 /* Frameworks */,
 				04826BBE2E03E5BA006AFDB0 /* Resources */,
+				0CC800C2CCA437DC6FD3C052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				04826BC22E03E5BA006AFDB0 /* Kreyuosen */,
 			);
 			name = Kreyuosen;
-			packageProductDependencies = (
-			);
 			productName = Kreyuosen;
 			productReference = 04826BC02E03E5BA006AFDB0 /* Kreyuosen.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CC800C2CCA437DC6FD3C052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kreyuosen/Pods-Kreyuosen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kreyuosen/Pods-Kreyuosen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kreyuosen/Pods-Kreyuosen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5D4823A890A1D0B9BAEC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kreyuosen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04826BBC2E03E5BA006AFDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,18 +209,24 @@
 /* Begin XCBuildConfiguration section */
 		04826BD42E03E5BC006AFDB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C388462760F0948140E5CF89 /* Pods-Kreyuosen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -159,26 +234,36 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leart.kreyo.Kreyuosen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04826BD52E03E5BC006AFDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F5CB9C9B5363BACD427A1D /* Pods-Kreyuosen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -186,9 +271,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leart.kreyo.Kreyuosen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

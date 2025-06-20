@@ -1,0 +1,28 @@
+//
+//  PortfolioVaultCell.swift
+//  Kreyuosen
+//
+//  Created by Kreyuosen on 2025/6/20.
+//
+
+import UIKit
+
+class PortfolioVaultCell: UICollectionViewCell {
+    
+    @IBOutlet weak var honbwer: UIImageView!
+    
+    
+    @IBOutlet weak var digitalAdaptation: UIImageView!
+    
+    @IBOutlet weak var artisticRoutine: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        digitalAdaptation.layer.cornerRadius = 20
+        digitalAdaptation.layer.masksToBounds = true
+        
+        artisticRoutine.layer.cornerRadius = 20.5
+        artisticRoutine.layer.masksToBounds = true
+ 
+    }
+
+}
