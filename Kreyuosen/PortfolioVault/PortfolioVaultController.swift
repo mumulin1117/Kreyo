@@ -49,7 +49,7 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
 
         artTutorial()
         
-        self.blendingTool()
+        self.blendingTool(r: 34, g: 56, b: 67)
     }
     
     func artTutorial()  {
@@ -78,11 +78,12 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
     @IBAction func globalCreators(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
        
-        self.blendingTool()
+        self.blendingTool(r: 15, g: 15, b: 15)
     }
-    func blendingTool()  {
+    func blendingTool(r: Float, g: Float, b: Float)  {
         
         scumblingEffect()
+        let sdk = INspiredFeeController.calculateHue(r: r, g: g, b: b)
         Refinements.techniqueMastery(
             artTutorial: "/uekphganoz/notwofscy",
             recycledMaterial: [
@@ -98,12 +99,15 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
                     self.dryBrush()
                     if let allaPrima = response as? [String: Any],
                        
-                        let chiaroscuro = allaPrima["data"] as? Array<[String: Any]>  {
+                        let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
                         
                         self.artselection = chiaroscuro.filter({ njsid in
                             njsid["glazingMethod"] as? String != nil
                         })
-                        self.annotationlayer?.reloadData()
+                        if sdk > 1 {
+                            self.annotationlayer?.reloadData()
+                        }
+                        
                         
                     } else {
                         self.stipplingArt(stiping: "Unexpected response format.")

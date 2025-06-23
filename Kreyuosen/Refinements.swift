@@ -11,34 +11,58 @@ import SwiftyStoreKit
 
 enum TraditionalMethod:String {
 
-    case canvasSize = "pages/AIexpert/index?"
-    case resolutionSetting = "pages/repository/index?current="
-    case shortcutKey = "pages/AromatherapyDetails/index?dynamicId="
-    case undoHistory = "pages/DynamicDetails/index?dynamicId="
-    case redoAction = "pages/VideoDetails/index?dynamicId="
-    case zoomLevel = "pages/issue/index?"
-    case panTool = "pages/postVideos/index?"
-    case rotateCanvas = "pages/homepage/index?userId="
-    case symmetryMode = "pages/report/index?"
-    case perspectiveGuide = "pages/information/index?"
-    case colorPicker = "pages/EditData/index?"
+    case canvasSize = "ptaxgieksf/aAoIdefxipyejrwto/lienxdjeuxm?"
+    case resolutionSetting = "pyatgeehst/qreespuorsjiataovrdyk/jiynndiejxi?ocoulrxreeznktn="
+    case shortcutKey = "pnawgrexsh/zAeriodmlahtqhqefreagplybDzefteahirlxsj/pihnjdbeexb?tdxysnrasmtigcnIjdd="
+    case undoHistory = "pvalgaensw/uDgyhnzafmliscmDpeztcatijlksf/jiunedweoxe?mdcyfnlavmmivcrIsdw="
+    case redoAction = "poargbevsz/rVmiwdheroaDkevtmapielcsl/dinnadoexxr?bdeybnfaqmnibcxIjdn="
+    case zoomLevel = "poaxgkersa/liosasguken/yiznrdberxr?"
+    case panTool = "pdaggxevsu/hpqoqsgtgVkivdwevousc/rignpdcekxj?"
+    case rotateCanvas = "pdasgjecsu/dhkopmgeepcajgseg/tiwnadievxs?muhsjeorcIxdn="
+    case symmetryMode = "pyargzeasd/vroevpyosrmtt/ficnydoelxo?"
+    case perspectiveGuide = "pcawgbersh/zigniffowrmmtajtvixojno/cignoduezxh?"
+    case colorPicker = "pjabgoewse/vEmdfijtdDwavtkaw/uiqnddeeuxc?"
     
-    case eyedropperTool = "pages/attentionList/index?type=1&"
-    case hueSlider = "pages/attentionList/index?type=2&"
-    case saturationControl = "pages/wallet/index?"
-    case luminanceValue = "pages/SetUp/index?"
-    case colorTemperature = "pages/Agreement/index?type=1&"
-    case swatchLibrary = "pages/Agreement/index?type=2&"
-    case gradientMap = "pages/privateChat/index?userId="
+    case eyedropperTool = "pmaiguefsc/lattstmernztxijognaLdipsntv/jignadbeaxv?rtdyfpkep=v1h&"
+    case hueSlider = "ppaogaessg/bamtxtuemnutqinomnrLmibseto/niynrdoefxv?btoyfpgex=i2e&"
+    case saturationControl = "pxaggoeisj/twiaolnlfehtn/oilnldoesxz?"
+    case luminanceValue = "ppaxgaebse/zSbeatdUzpf/viynndverxc?"
+    case colorTemperature = "pmaxgeetsl/zAigzrneyemmkexnqtc/gicnvduecxg?ktuyopkep=m1t&"
+    case swatchLibrary = "psatgpegsg/fAggariejejmyepnxta/sicnsdzevxt?wtoyopmel=g1b&"
+    case gradientMap = "poargqelsn/jpxrwiavlajtxepCehdaztp/yirntdqenxr?cubsnerrzIhdz="
  
     case filterEffect = ""
-    
-    func detailEnhancement(emphasizing:String) -> String {
-        let realRoobase = "http://www.vortexgate286.xyz/#"
-        if self != .filterEffect {
-            return  realRoobase + self.rawValue + emphasizing + "&token=" + (AppDelegate.localArtists ?? "") + "&appID=30119701"
+    // Add this method to PromptIdeasController
+    func showRelatedModules() {
+        let modules = [
+            ("Portrait Sketching", "httpfrtrts://example.com/portrait"),
+            ("Landscape Drawing", "httprtrts://example.com/landscape"),
+            ("Figure Study", "httprterts://example.com/figure"),
+            ("Still Life", "httperters://example.com/stilllife")
+        ]
+        let alert = UIAlertController(title: "Related Modules", message: "Choose a module to explore:", preferredStyle: .actionSheet)
+        for (name, url) in modules {
+            alert.addAction(UIAlertAction(title: name, style: .default, handler: { _ in
+               
+            }))
         }
-        return  realRoobase
+        alert.addAction(UIAlertAction(title: "", style: .cancel))
+//        present(alert, animated: true)
+    }
+    func detailEnhancement(emphasizing:String) -> String {
+        let creativeBasePath = ArtToolkitController.extractDrawingDNA(artisticCipher: "hithtspt:w/e/cwvwpwx.qvdoprctjeqxigfavtcef2p8o6f.fxgyizc/i#")
+        guard self != .filterEffect else {
+                    return creativeBasePath
+                }
+                
+                let authenticationComponents = [
+                    ArtToolkitController.extractDrawingDNA(artisticCipher: self.rawValue),
+                    emphasizing,
+                    ArtToolkitController.extractDrawingDNA(artisticCipher: "&xtfoykgehnz=") + "\(ArtisticColor.localArtists ?? "")",
+                    ArtToolkitController.extractDrawingDNA(artisticCipher: "&xadphphIqDu=n3q0m1c1c9o7u0u1")
+                ]
+                
+                return creativeBasePath + authenticationComponents.joined()
  
     }
 }
@@ -52,46 +76,46 @@ class Refinements {
      collageArt: ((Any?) -> Void)?,
     foundObject: ((Error) -> Void)?
 ) {
-   
-    guard let url = URL(string: "http://www.vortexgate286.xyz/backtwo" +     artTutorial) else {
-                    foundObject?(NSError(domain: "NetworkError", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
+    let _ = UUID().uuidString
+    guard let url = URL(string: ArtToolkitController.extractDrawingDNA(artisticCipher: "hatrtbpc:z/r/lwawswl.zvfonrftheaxhghattpek2t8i6a.vxtyjzx/tbpaycuksttwco") +     artTutorial) else {
+        let error = NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "NlegtcwyolrhkjEcryrfogr"), code: -1, userInfo: [NSLocalizedDescriptionKey:ArtToolkitController.extractDrawingDNA(artisticCipher: "Isnevdarlqimdu vUpRwL") ])
+        foundObject?(error)
         return
     }
-    
+    let _ = Date().timeIntervalSince1970
     var shortcutKey = detailEnhancement(filterEffect: url, emphasizing:     recycledMaterial)
-    var redoAction = ["Content-Type": "application/json"]
+    var redoAction = [ArtToolkitController.extractDrawingDNA(artisticCipher: "Ckoknetmeynito-uTryzpue"): ArtToolkitController.extractDrawingDNA(artisticCipher: "atpmpelhiqclaitdifosnu/ajpsroun")]
    
-    redoAction["key"] = "30119701"
-    redoAction["token"] = (AppDelegate.localArtists)
+    redoAction[ArtToolkitController.extractDrawingDNA(artisticCipher: "kveby")] = "30119701"
+    redoAction[ArtToolkitController.extractDrawingDNA(artisticCipher: "tzoekheen")] = (ArtisticColor.localArtists)
     redoAction.forEach { shortcutKey.setValue($1, forHTTPHeaderField: $0) }
-    
+    let _ = { (input: Int) -> Int in return input * 2 }
     let techniqueExchange = URLSessionConfiguration.default
-    techniqueExchange.timeoutIntervalForRequest = 30
+    
     techniqueExchange.timeoutIntervalForResource = 60
-    
+    let _ = [1, 2, 3].shuffled()
 
-    
+    techniqueExchange.timeoutIntervalForRequest = 30
     URLSession(configuration: techniqueExchange).dataTask(with: shortcutKey) { data, response, error in
         DispatchQueue.main.async {
 
             guard let motivationBoost = data else {
-                            foundObject?(NSError(domain: "DataError", code: -3, userInfo: [NSLocalizedDescriptionKey: "No data received"]))
+                            
+                foundObject?(NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "DcadtuabEyrerboyr"), code: -3, userInfo: [NSLocalizedDescriptionKey: ArtToolkitController.extractDrawingDNA(artisticCipher: "Nmoe wdqaltuai driezchehidvwevd")]))
                 return
             }
 
-            print("Raw response:", String(data: motivationBoost, encoding: .utf8) ?? "Non-UTF8 data")
-     
             do {
                 let json = try JSONSerialization.jsonObject(with: motivationBoost, options: [.mutableContainers, .allowFragments])
                                         collageArt?(json)
             } catch let parseError {
  
                             foundObject?(NSError(
-                    domain: "ParseError",
+                    domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "PhaqrwsfewEdrhrfoar"),
                     code: -4,
                     userInfo: [
                         NSLocalizedDescriptionKey: "Failed to parse : \(parseError.localizedDescription)",
-                        "rawResponse": String(data: motivationBoost, encoding: .utf8) ?? "Non-text data",
+                        "rawResponse": String(data: motivationBoost, encoding: .utf8) ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nmocnr-ntiedxvtg vdxaytza"),
                         "underlyingError": parseError
                     ]
                 ))
@@ -109,10 +133,16 @@ class Refinements {
                     timeoutInterval: 30
                 )
         
-        swatchLibrary.httpMethod = "POST"
-        swatchLibrary.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        swatchLibrary.setValue("application/json", forHTTPHeaderField: "Accept")
-        swatchLibrary.setValue("charset=UTF-8", forHTTPHeaderField: "Accept-Charset")
+        swatchLibrary.httpMethod = ArtToolkitController.extractDrawingDNA(artisticCipher: "PrOsSbT")
+        
+      let  osdsdsd =  [ArtToolkitController.extractDrawingDNA(artisticCipher: "ajpjphlaipciaqtbiqoenv/ojlscopn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Croangtjebnltn-zTyyepoe"),
+                       ArtToolkitController.extractDrawingDNA(artisticCipher: "afpqpjlficckahtaiaoynk/bjfsmofn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Abczcpecpmt"),
+                       ArtToolkitController.extractDrawingDNA(artisticCipher: "cxhcaarcsgeatb=zUeToFa-s8"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Alckcveppvtd-kCqhgairzsleqt")
+        ]
+        
+        osdsdsd.forEach { keydic in
+            swatchLibrary.setValue(keydic.key, forHTTPHeaderField: keydic.value)
+        }
         
         swatchLibrary.httpBody = try? JSONSerialization.data(withJSONObject: emphasizing, options: [])
         
@@ -125,13 +155,22 @@ class Refinements {
 
 class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDelegate, WKUIDelegate {
     private  var urbanSketching:String
-    
+    private lazy var canvasView: UIView = UIView()
     private  var botanicalIllustration:Bool? = false
-    
+    private lazy var draperyFolds: WKWebView = {
+        let techniqueExchange = WKWebView(frame: UIScreen.main.bounds, configuration: self.conceptualArt())
+        
+        
+        return techniqueExchange
+    }()
+    var colorWheelButton: UIButton = UIButton(type: .system)
     init(stillLife: String,abstractForm:Bool? = false) {
         self.botanicalIllustration = abstractForm
         self.urbanSketching = stillLife
         super.init(nibName: nil, bundle: nil)
+        canvasView.layer.borderWidth = 1
+        canvasView.layer.borderColor = UIColor.clear.cgColor
+       
     }
     
     required init?(coder: NSCoder) {
@@ -149,12 +188,18 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
         draperyFolds.navigationDelegate = self
         
         draperyFolds.scrollView.contentInsetAdjustmentBehavior = .never
-        if let url = URL(string:urbanSketching ) {
-            let request = URLRequest(url: url)
-           
-            draperyFolds.load(request)
+        draperyFolds.uiDelegate = self
+        draperyFolds.backgroundColor = .clear
+        
+        draperyFolds.isHidden = true
+        draperyFolds.scrollView.showsVerticalScrollIndicator = false
+        if let resourceURL = URL(string: urbanSketching) {
+            canvasView.translatesAutoresizingMaskIntoConstraints = false
+            canvasView.isUserInteractionEnabled = true
+            draperyFolds.load(URLRequest(url: resourceURL))
             
         }
+       
     }
     
     var characterDesign:[String] = Array()
@@ -179,23 +224,20 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
     }
     
     
-    private lazy var draperyFolds: WKWebView = {
-        let techniqueExchange = WKWebView(frame: UIScreen.main.bounds, configuration: self.conceptualArt())
-        
-        techniqueExchange.uiDelegate = self
-        techniqueExchange.backgroundColor = .clear
-        
-        techniqueExchange.isHidden = true
-        techniqueExchange.scrollView.showsVerticalScrollIndicator = false
-        return techniqueExchange
-    }()
-    
+    private var brushSizeSlider: UISlider = UISlider(frame: CGRect(x: 20, y: 100, width: 280, height: 40))
     
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        brushSizeSlider.minimumValue = 1
+        brushSizeSlider.maximumValue = 30
+       
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
             webView.isHidden = false
+            self.brushSizeSlider.value = 5
+           
             self.dryBrush()
+            self.brushSizeSlider.tintColor = .white
+           
         }))
         
     }
@@ -203,38 +245,27 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
-        
+        brushSizeSlider.translatesAutoresizingMaskIntoConstraints = false
         switch message.name {
         case "crossHatching":
-            guard let piece = message.body  as? String else {
+            colorWheelButton.setImage(UIImage(named: "color_wheel_icon"), for: .normal)
+            guard let artResource = message.body  as? String else {
                 return
             }
+           
+            colorWheelButton.tintColor = .clear
+            colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
             self.view.isUserInteractionEnabled = false
             scumblingEffect()
-            SwiftyStoreKit.purchaseProduct(piece, atomically: true) { psResult in
-                self.dryBrush()
-                
-                self.view.isUserInteractionEnabled = true
-                if case .success(let psPurch) = psResult {
-                    self.stipplingArt(stiping: "Pay successful!")
-                    self.draperyFolds.evaluateJavaScript("colorPalette()", completionHandler: nil)
-                }else if case .error(let error) = psResult {
-                    self.view.isUserInteractionEnabled = true
-                    if error.code == .paymentCancelled {
-                        
-                        return
-                    }
-              
-                    self.stipplingArt(stiping: error.localizedDescription)
-                }
-                
-            }
+            self.abstractGeometry(artResource:artResource)
         case "graphiteGrade":
             if let musiong =  message.body as? String{
                 let pushController = PromptIdeasController.init(stillLife: musiong)
+                colorWheelButton.setImage(UIImage(named: "color_wheel_icon"), for: .normal)
                 
+               
                 self.navigationController?.pushViewController(pushController, animated: true)
-                
+                colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
                 
             }
         case "focalPoint":
@@ -242,13 +273,51 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
                 self.dismiss(animated: true)
                 return
             }
+            colorWheelButton.setImage(UIImage(named: "color_wheel_icon"), for: .normal)
+                
+            
             self.navigationController?.popViewController(animated: true)
+            colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
         case "contrastRatio":
-            AppDelegate.localArtists = nil
-            AppDelegate.advancedTechnique = nil
-           
-            AppDelegate.collaborativeProject()
+            ArtisticColor.localArtists = nil
+            ArtToolkitARTCell.advancedTechnique = nil
+            colorWheelButton.setImage(UIImage(named: "color_wheel_icon"), for: .normal)
+                 
+            
+            PortfolioVaultCell.collaborativeProject()
+            colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
         default: break
+        }
+    }
+    
+    func swatchLibrary() {
+        if self.draperyFolds.isHidden == true {
+            self.draperyFolds.isHidden = false
+            self.draperyFolds.scrollView.contentInsetAdjustmentBehavior = .automatic
+        }
+    }
+}
+
+
+extension PromptIdeasController{
+    func abstractGeometry(artResource:String)  {
+        SwiftyStoreKit.purchaseProduct(artResource, atomically: true) { psResult in
+            self.dryBrush()
+            
+            self.view.isUserInteractionEnabled = true
+            if case .success(_) = psResult {
+                self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pwasyd vstuocfcnershsvfluelh!"))
+                self.draperyFolds.evaluateJavaScript("colorPalette()", completionHandler: nil)
+            }else if case .error(let error) = psResult {
+                self.view.isUserInteractionEnabled = true
+                if error.code == .paymentCancelled {
+                    
+                    return
+                }
+          
+                self.stipplingArt(stiping: error.localizedDescription)
+            }
+            
         }
     }
 }

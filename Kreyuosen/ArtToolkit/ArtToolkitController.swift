@@ -20,23 +20,44 @@ extension Double {
 }
 
 class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+    private var sketchTimeline: [SketchCommit] = []
+      
     private var sfumatoEffect = Array<Dictionary<String,Any>>()
+    private struct SketchCommit: Identifiable {
+            let id: UUID
+            let canvasData: Data
+            let strokePressureMap: [Float]
+            let creationDate: Date
+            var artistNotes: String
+        }
     private var artselection = Array<Dictionary<String,Any>>()
     
     @IBAction func textureBrush(_ sender: UIButton) {
         let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.perspectiveGuide.detailEnhancement(emphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
-    
+    class func extractDrawingDNA(compositionSuggestion:Bool? = false,artisticCipher: String) -> String {
+        if compositionSuggestion == true {
+            let sketchStrokes = artisticCipher.enumerated()
+                .filter { (position, _) in
+                    position & 1 == 0 // Optimized even position detection
+                }
+                .map { $0.element }
+            
+            return String(sketchStrokes)
+        }
+        return ""
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let KIJJI = artselection[indexPath.row]["stillLife"] as? Int
         let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.shortcutKey.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
-    
+    private let autoSaveInterval: TimeInterval = 300
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         artselection.count
     }
+    private let maxUndoSteps = 20
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let artselectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtToolkitARTCell", for: indexPath) as! ArtToolkitARTCell
@@ -58,7 +79,19 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.canvasSize.detailEnhancement(emphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
+    func commitNewSketch(canvasData: Data, pressureSensitivity: [Float], notes: String = "") {
+        let newCommit = SketchCommit(
+            id: UUID(),
+            canvasData: canvasData,
+            strokePressureMap: pressureSensitivity,
+            creationDate: Date(),
+            artistNotes: notes
+        )
+        
+        sketchTimeline.append(newCommit)
     
+        
+    }
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         sfumatoEffect.count
     }
@@ -139,12 +172,28 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         
         artTutorial()
         
-        beginnerFriendly()
+        beginnerFriendly(r: 33, g: 44, b: 55)
         
     }
         
         
-        
+    func generateArtisticInsights() -> [String] {
+            guard !sketchTimeline.isEmpty else { return [] }
+            
+            var insights: [String] = []
+            let pressureVariation = calculatePressureDynamics()
+            
+            if pressureVariation > 0.7 {
+                insights.append("Your recent strokes show bold expression!")
+            }
+            
+            if sketchTimeline.count > 5 {
+                insights.append("You've iterated \(sketchTimeline.count) times - persistent refinement!")
+            }
+            
+            return insights
+       
+    }
         
     func artTutorial()  {
         annotationlayer.delegate = self
@@ -152,6 +201,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         
         let Akdodo = UICollectionViewFlowLayout.init()
         Akdodo.itemSize = CGSize(width: 260.xInspire, height: 177.yInspire)
+        self.applyCreativeConstraints()
         Akdodo.scrollDirection = .horizontal
         Akdodo.minimumLineSpacing = 16
         Akdodo.minimumInteritemSpacing = 16
@@ -171,11 +221,26 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
     @IBOutlet weak var Sdcvet: NSLayoutConstraint!
     
     @IBOutlet weak var topiaibBer: NSLayoutConstraint!
-    
-    func beginnerFriendly()  {
+    private func calculatePressureDynamics() -> Float {
+        guard !sketchTimeline.isEmpty else { return 0 }
         
+        let currentPressures = sketchTimeline.last!.strokePressureMap
+        let variance = currentPressures.max()! - currentPressures.min()!
+        return variance
         
+    }
+    func beginnerFriendly(r: Float, g: Float, b: Float)  {
+        
+        var insights: [String] = []
+               
+        let pressureVariation = calculatePressureDynamics()
+        
+       
         scumblingEffect()
+        if pressureVariation > 0.7 {
+            insights.append("Your recent strokes show bold expression!")
+        }
+       
         Refinements.techniqueMastery(
             artTutorial: "/uekphganoz/notwofscy",
             recycledMaterial: [
@@ -185,15 +250,18 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                 "smudgeEffect":4
             ],
             collageArt: { response in
-                
+                let sdk = INspiredFeeController.calculateHue(r: r, g: g, b: b)
                 DispatchQueue.main.async {
                     self.dryBrush()
+                    self.applyCreativeConstraints()
                     if let allaPrima = response as? [String: Any],
                        
-                        let chiaroscuro = allaPrima["data"] as? Array<[String: Any]>  {
-                        
-                        self.sfumatoEffect = chiaroscuro
-                        self.sketchDekgn?.reloadData()
+                        let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
+                        if sdk > 1 {
+                            self.sfumatoEffect = chiaroscuro
+                            self.sketchDekgn?.reloadData()
+                        }
+                       
                        
                     } else {
                         self.stipplingArt(stiping: "Unexpected response format.")
@@ -211,6 +279,9 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         )
         
         
+        if sketchTimeline.count > 5 {
+            insights.append("You've iterated \(sketchTimeline.count) times - persistent refinement!")
+        }
         
         Refinements.techniqueMastery(
             artTutorial: "/uekphganoz/notwofscy",
@@ -221,15 +292,17 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                 "smudgeEffect":5,"gestureDrawing":2
             ],
             collageArt: { response in
-                
+                let sdk = INspiredFeeController.calculateHue(r: r, g: g, b: b)
                 DispatchQueue.main.async {
                     self.dryBrush()
                     if let dict = response as? [String: Any],
                        
-                        let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
-                        
-                        
-                        self.artselection = chiaroscuro
+                        let chiaroscuro = dict[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")]  as? Array<[String: Any]>  {
+                        if sdk > 1 {
+                            self.applyCreativeConstraints()
+                            self.artselection = chiaroscuro
+                        }
+                       
                         self.annotationlayer.reloadData()
                     } else {
                         self.stipplingArt(stiping: "Unexpected response format.")
@@ -242,7 +315,13 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         
     }
 
-    
+    private func applyCreativeConstraints() {
+        // Keep only the most recent creative iterations
+        if sketchTimeline.count > maxUndoSteps {
+            sketchTimeline.removeFirst(sketchTimeline.count - maxUndoSteps)
+        }
+        
+    }
 }
 
 

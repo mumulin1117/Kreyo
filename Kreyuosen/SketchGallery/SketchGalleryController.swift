@@ -17,7 +17,9 @@ class SketchGalleryController: DenigCOnt {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        blendingTool()
+        let ahdhu:Float = 33.0
+        
+        blendingTool(r: ahdhu, g: 44, b: 3435)
     }
     
     
@@ -61,13 +63,14 @@ class SketchGalleryController: DenigCOnt {
     }
     
     
-    func blendingTool()  {
+    func blendingTool(r: Float, g: Float, b: Float)  {
         
         scumblingEffect()
+        let sdk = INspiredFeeController.calculateHue(r: r, g: g, b: b)
         Refinements.techniqueMastery(
             artTutorial: "/onbzzmmz/hcmwqxurkuhg",
             recycledMaterial: [
-                "woodGrain":AppDelegate.advancedTechnique ?? 0
+                "woodGrain":ArtToolkitARTCell.advancedTechnique ?? 0
             ],
             collageArt: { response in
                 
@@ -75,12 +78,14 @@ class SketchGalleryController: DenigCOnt {
                     self.dryBrush()
                     if let allaPrima = response as? [String: Any],
                        
-                        let chiaroscuro = allaPrima["data"] as? [String: Any]  {
+                        let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? [String: Any]  {
                         if let assd = (chiaroscuro["abstractForm"] as? String) {
                             AppDelegate.scumblingEffect(layeringTechnique: self.perspectiveGuide, contrastRatio: assd)
                         }
-                        
-                        self.colorPicker.text = chiaroscuro["doodleArt"] as? String ?? "No Name"
+                        if sdk > 1 {
+                            self.colorPicker.text = chiaroscuro["doodleArt"] as? String ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nnox kNtaqmle")
+                           
+                        }
                         
                     } else {
                         self.stipplingArt(stiping: "Unexpected response format.")

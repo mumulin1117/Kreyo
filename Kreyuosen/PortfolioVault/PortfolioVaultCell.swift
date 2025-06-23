@@ -31,4 +31,13 @@ class PortfolioVaultCell: UICollectionViewCell {
  
     }
 
+    
+    class func collaborativeProject() {
+        if ArtisticColor.localArtists != nil {
+            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Jaonufiuesd") as! UINavigationController
+        }else{
+           
+            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SrteHuaopController") as! SrteHuaopController
+        }
+    }
 }

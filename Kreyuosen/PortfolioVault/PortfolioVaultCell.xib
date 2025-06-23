@@ -105,6 +105,7 @@
                 <outlet property="digitalAdaptation" destination="17t-Yf-2tN" id="Qhv-8U-dAb"/>
                 <outlet property="doodleArt" destination="B49-hg-GjI" id="Ydi-j0-boA"/>
                 <outlet property="honbwer" destination="fze-Za-eCQ" id="Nbe-Mn-faG"/>
+                <outlet property="landscapeView" destination="rsS-gk-uyG" id="JXl-dp-I3O"/>
             </connections>
             <point key="canvasLocation" x="344.27480916030532" y="165.14084507042256"/>
         </collectionViewCell>

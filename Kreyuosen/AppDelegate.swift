@@ -10,41 +10,19 @@ import SwiftyStoreKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    static var localArtists:String?{
-        get{
-           
-            return UserDefaults.standard.object(forKey: "localArtists") as? String
-        }set{
-            UserDefaults.standard.set(newValue, forKey: "localArtists")
-            
-        }
-        
-    }
-    
-    static var advancedTechnique:Int?{
-        get{
-            return UserDefaults.standard.object(forKey: "advancedTechnique") as? Int
-        }set{
-            UserDefaults.standard.set(newValue, forKey: "advancedTechnique")
-        }
-        
-    }
     
     
-    static func collaborativeProject() {
-        if localArtists != nil {
-            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Jaonufiuesd") as! UINavigationController
-        }else{
-           
-            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SrteHuaopController") as! SrteHuaopController
-        }
-    }
+   
+    
+    
+    
+    
 
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        AppDelegate.collaborativeProject()
+        PortfolioVaultCell.collaborativeProject()
         SwiftyStoreKit.completeTransactions(atomically: true) { _ in
             
         }

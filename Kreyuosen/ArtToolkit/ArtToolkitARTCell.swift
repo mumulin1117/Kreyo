@@ -21,7 +21,14 @@ class ArtToolkitARTCell: UICollectionViewCell {
     
     @IBOutlet weak var creativityBoost: UILabel!
     
-    
+    class var advancedTechnique:Int?{
+        get{
+            return UserDefaults.standard.object(forKey: "advancedTechnique") as? Int
+        }set{
+            UserDefaults.standard.set(newValue, forKey: "advancedTechnique")
+        }
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

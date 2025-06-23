@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="463" height="353"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32T-nH-7AX">
-                        <rect key="frame" x="12" y="13" width="40" height="18"/>
+                        <rect key="frame" x="12" y="13" width="407" height="18"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                         <rect key="frame" x="0.0" y="308" width="463" height="45"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-ae-0k6">
-                        <rect key="frame" x="12.000000000000002" y="322.66666666666669" width="31.666666666666671" height="14.333333333333314"/>
+                        <rect key="frame" x="12" y="323" width="411" height="14"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                         <color key="textColor" white="1" alpha="0.78127657309999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -65,10 +65,12 @@
                 <constraint firstAttribute="bottom" secondItem="Pqj-22-FPr" secondAttribute="bottom" constant="12" id="6mu-yK-T9L"/>
                 <constraint firstAttribute="trailing" secondItem="Ked-BE-vjG" secondAttribute="trailing" id="7RM-Cg-TMO"/>
                 <constraint firstAttribute="trailing" secondItem="aqg-UF-ygH" secondAttribute="trailing" id="9X1-z7-tx6"/>
+                <constraint firstItem="Pqj-22-FPr" firstAttribute="leading" secondItem="cEO-ae-0k6" secondAttribute="trailing" constant="12" id="9ne-Sk-Q5e"/>
                 <constraint firstAttribute="trailing" secondItem="Pqj-22-FPr" secondAttribute="trailing" constant="12" id="A3i-Yg-hQn"/>
                 <constraint firstAttribute="trailing" secondItem="9uv-Mg-WhE" secondAttribute="trailing" constant="12" id="Dny-KQ-pzP"/>
                 <constraint firstItem="Ked-BE-vjG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JqB-MJ-RUQ"/>
                 <constraint firstItem="Ked-BE-vjG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O6k-N4-X67"/>
+                <constraint firstItem="9uv-Mg-WhE" firstAttribute="leading" secondItem="32T-nH-7AX" secondAttribute="trailing" constant="10" id="Okv-JR-i7e"/>
                 <constraint firstItem="32T-nH-7AX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="X6j-ab-5CD"/>
                 <constraint firstItem="aqg-UF-ygH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Z9n-Sl-13N"/>
                 <constraint firstAttribute="bottom" secondItem="aqg-UF-ygH" secondAttribute="bottom" id="feS-Yd-j0e"/>
