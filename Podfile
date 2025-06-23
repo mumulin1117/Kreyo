@@ -8,7 +8,6 @@ target 'Kreyuosen' do
   # Pods for Kreyuosen
 pod 'SwiftyStoreKit'
 
-pod 'SwiftyStoreKit'
 pod 'FSPagerView'
 pod 'IQKeyboardManager'
 end

@@ -218,6 +218,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = kreyo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";
@@ -255,6 +256,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = kreyo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";

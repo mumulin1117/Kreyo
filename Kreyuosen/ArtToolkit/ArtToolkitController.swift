@@ -19,35 +19,61 @@ extension Double {
     }
 }
 
-class ArtToolkitController: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
-    
+class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+    private var sfumatoEffect = Array<Dictionary<String,Any>>()
     private var artselection = Array<Dictionary<String,Any>>()
     
+    @IBAction func textureBrush(_ sender: UIButton) {
+        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.perspectiveGuide.detailEnhancement(emphasizing: ""))
+        self.navigationController?.pushViewController(localArtists, animated: true)
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let KIJJI = artselection[indexPath.row]["stillLife"] as? Int
+        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.shortcutKey.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
+        self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3//artselection.count
+        artselection.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let artselectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtToolkitARTCell", for: indexPath) as! ArtToolkitARTCell
+        let KIJJI = artselection[indexPath.row]
+        if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
+            AppDelegate.scumblingEffect(layeringTechnique: artselectionCell.stepByStepGuide!, contrastRatio: assd)
+        }
+       
+        artselectionCell.creativityBoost?.text = KIJJI["landscapeView"] as? String
+        artselectionCell.promptIdeas?.text = KIJJI["portraitMode"] as? String
+        
+        artselectionCell.artChallenge.addTarget(self, action: #selector(portraitMode), for: .touchUpInside)
+        artselectionCell.beginnerFriendly.setTitle("\(KIJJI["realismTechnique"] as? Int ?? 0)", for: .normal)
         return artselectionCell
         
     }
     
+    @IBAction func realismTechnique(_ sender: UIButton) {
+        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.canvasSize.detailEnhancement(emphasizing: ""))
+        self.navigationController?.pushViewController(localArtists, animated: true)
+    }
     
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        3
+        sfumatoEffect.count
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let mainge = pagerView.dequeueReusableCell(withReuseIdentifier: "mainge", at: index)
         mainge.imageView?.contentMode = .scaleAspectFill
-        mainge.imageView?.image = UIImage(named: "RectangSjiu")
-        mainge.textLabel?.text = "sdfsdfsd"
+        
+        let KIJJI = sfumatoEffect[index]
+        if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
+            AppDelegate.scumblingEffect(layeringTechnique: mainge.imageView!, contrastRatio: assd)
+        }
+       
+       
+        mainge.textLabel?.text = KIJJI["portraitMode"] as? String
         mainge.textLabel?.textColor = .white
         mainge.textLabel?.textAlignment = .center
         mainge.textLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
@@ -57,6 +83,11 @@ class ArtToolkitController: UIViewController, FSPagerViewDelegate, FSPagerViewDa
         return mainge
     }
     
+    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
+        
+        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.resolutionSetting.detailEnhancement(emphasizing: "\(index)"))
+        self.navigationController?.pushViewController(localArtists, animated: true)
+    }
 
     @IBOutlet weak var heightBrush: NSLayoutConstraint!
     
@@ -108,6 +139,8 @@ class ArtToolkitController: UIViewController, FSPagerViewDelegate, FSPagerViewDa
         
         artTutorial()
         
+        beginnerFriendly()
+        
     }
         
         
@@ -139,4 +172,77 @@ class ArtToolkitController: UIViewController, FSPagerViewDelegate, FSPagerViewDa
     
     @IBOutlet weak var topiaibBer: NSLayoutConstraint!
     
+    func beginnerFriendly()  {
+        
+        
+        scumblingEffect()
+        Refinements.techniqueMastery(
+            artTutorial: "/uekphganoz/notwofscy",
+            recycledMaterial: [
+                "eraserTool":"30119701",
+                "negativeSpace": 10,
+                "compositionBalance": 1,
+                "smudgeEffect":4
+            ],
+            collageArt: { response in
+                
+                DispatchQueue.main.async {
+                    self.dryBrush()
+                    if let allaPrima = response as? [String: Any],
+                       
+                        let chiaroscuro = allaPrima["data"] as? Array<[String: Any]>  {
+                        
+                        self.sfumatoEffect = chiaroscuro
+                        self.sketchDekgn?.reloadData()
+                       
+                    } else {
+                        self.stipplingArt(stiping: "Unexpected response format.")
+                        
+                    }
+                    
+                }
+            },
+            foundObject: { error in
+                self.dryBrush()
+                DispatchQueue.main.async {
+                    self.stipplingArt(stiping: error.localizedDescription)
+                }
+            }
+        )
+        
+        
+        
+        Refinements.techniqueMastery(
+            artTutorial: "/uekphganoz/notwofscy",
+            recycledMaterial: [
+                "eraserTool":"30119701",
+                "negativeSpace": 10,
+                "compositionBalance": 1,
+                "smudgeEffect":5,"gestureDrawing":2
+            ],
+            collageArt: { response in
+                
+                DispatchQueue.main.async {
+                    self.dryBrush()
+                    if let dict = response as? [String: Any],
+                       
+                        let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
+                        
+                        
+                        self.artselection = chiaroscuro
+                        self.annotationlayer.reloadData()
+                    } else {
+                        self.stipplingArt(stiping: "Unexpected response format.")
+                        
+                    }
+                    
+                }
+            }, foundObject: nil
+        )
+        
+    }
+
+    
 }
+
+

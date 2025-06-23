@@ -101,7 +101,9 @@
             <size key="customSize" width="319" height="461"/>
             <connections>
                 <outlet property="artisticRoutine" destination="3gW-rR-7ww" id="zrk-xw-xLc"/>
+                <outlet property="coolHues" destination="veY-KC-v2q" id="1B4-uB-IiG"/>
                 <outlet property="digitalAdaptation" destination="17t-Yf-2tN" id="Qhv-8U-dAb"/>
+                <outlet property="doodleArt" destination="B49-hg-GjI" id="Ydi-j0-boA"/>
                 <outlet property="honbwer" destination="fze-Za-eCQ" id="Nbe-Mn-faG"/>
             </connections>
             <point key="canvasLocation" x="344.27480916030532" y="165.14084507042256"/>
