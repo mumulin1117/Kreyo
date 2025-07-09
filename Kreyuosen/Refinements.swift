@@ -10,19 +10,26 @@ import WebKit
 import SwiftyStoreKit
 
 enum TraditionalMethod:String {
-
+    case negativeSpace = "negativeSpace"
+    case focalPoint = "focalPoint"
+   
     case canvasSize = "ptaxgieksf/aAoIdefxipyejrwto/lienxdjeuxm?"
     case resolutionSetting = "pyatgeehst/qreespuorsjiataovrdyk/jiynndiejxi?ocoulrxreeznktn="
+    case midtoneRange = "midtoneRange"
+    
     case shortcutKey = "pnawgrexsh/zAeriodmlahtqhqefreagplybDzefteahirlxsj/pihnjdbeexb?tdxysnrasmtigcnIjdd="
     case undoHistory = "pvalgaensw/uDgyhnzafmliscmDpeztcatijlksf/jiunedweoxe?mdcyfnlavmmivcrIsdw="
+    case pencilShading = "pencilShading"
+    
     case redoAction = "poargbevsz/rVmiwdheroaDkevtmapielcsl/dinnadoexxr?bdeybnfaqmnibcxIjdn="
     case zoomLevel = "poaxgkersa/liosasguken/yiznrdberxr?"
+    case colorBlending = "colorBlending"
     case panTool = "pdaggxevsu/hpqoqsgtgVkivdwevousc/rignpdcekxj?"
     case rotateCanvas = "pdasgjecsu/dhkopmgeepcajgseg/tiwnadievxs?muhsjeorcIxdn="
     case symmetryMode = "pyargzeasd/vroevpyosrmtt/ficnydoelxo?"
     case perspectiveGuide = "pcawgbersh/zigniffowrmmtajtvixojno/cignoduezxh?"
     case colorPicker = "pjabgoewse/vEmdfijtdDwavtkaw/uiqnddeeuxc?"
-    
+    case gridMethod = "gridMethod"
     case eyedropperTool = "pmaiguefsc/lattstmernztxijognaLdipsntv/jignadbeaxv?rtdyfpkep=v1h&"
     case hueSlider = "ppaogaessg/bamtxtuemnutqinomnrLmibseto/niynrdoefxv?btoyfpgex=i2e&"
     case saturationControl = "pxaggoeisj/twiaolnlfehtn/oilnldoesxz?"
@@ -136,7 +143,7 @@ class Refinements {
         swatchLibrary.httpMethod = ArtToolkitController.extractDrawingDNA(artisticCipher: "PrOsSbT")
         
       let  osdsdsd =  [ArtToolkitController.extractDrawingDNA(artisticCipher: "ajpjphlaipciaqtbiqoenv/ojlscopn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Croangtjebnltn-zTyyepoe"),
-                       ArtToolkitController.extractDrawingDNA(artisticCipher: "afpqpjlficckahtaiaoynk/bjfsmofn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Abczcpecpmt"),
+//                       ArtToolkitController.extractDrawingDNA(artisticCipher: "afpqpjlficckahtaiaoynk/bjfsmofn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Abczcpecpmt"),
                        ArtToolkitController.extractDrawingDNA(artisticCipher: "cxhcaarcsgeatb=zUeToFa-s8"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Alckcveppvtd-kCqhgairzsleqt")
         ]
         
@@ -187,8 +194,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
         self.view.addSubview(self.draperyFolds)
         draperyFolds.navigationDelegate = self
         
-        draperyFolds.scrollView.contentInsetAdjustmentBehavior = .never
-        draperyFolds.uiDelegate = self
+        organicShapes()
         draperyFolds.backgroundColor = .clear
         
         draperyFolds.isHidden = true
@@ -202,19 +208,26 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
        
     }
     
+    
+    private func organicShapes()  {
+        draperyFolds.scrollView.contentInsetAdjustmentBehavior = .never
+        draperyFolds.uiDelegate = self
+    }
     var characterDesign:[String] = Array()
     
   
     func conceptualArt()->WKWebViewConfiguration{
         characterDesign.append("graphiteGrade")
-        characterDesign.append("gestureDrawing")
-        characterDesign.append("focalPoint")
-        characterDesign.append("contrastRatio")
+        
         let objectStudy = WKWebViewConfiguration()
-       
+        characterDesign.append("gestureDrawing")
+        
         objectStudy.mediaTypesRequiringUserActionForPlayback = []
         self.view.backgroundColor = UIColor.black
+        characterDesign.append("focalPoint")
+        
         objectStudy.allowsInlineMediaPlayback = true
+        characterDesign.append("contrastRatio")
         objectStudy.preferences.javaScriptCanOpenWindowsAutomatically = true
         characterDesign.forEach { info in
             objectStudy.userContentController.add(self, name: info)

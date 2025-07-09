@@ -23,21 +23,32 @@ class PortfolioVaultCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        digitalAdaptation.layer.cornerRadius = 20
-        digitalAdaptation.layer.masksToBounds = true
-        
-        artisticRoutine.layer.cornerRadius = 20.5
+        vibrantColors()
+        midtoneRange()
         artisticRoutine.layer.masksToBounds = true
  
     }
 
+    private func vibrantColors()  {
+        digitalAdaptation.layer.cornerRadius = 20
+    }
+    private func midtoneRange()  {
+        digitalAdaptation.layer.masksToBounds = true
+        artisticRoutine.layer.borderWidth = 0
+        artisticRoutine.layer.cornerRadius = 20.5
+    }
+    
     
     class func collaborativeProject() {
         if ArtisticColor.localArtists != nil {
             (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Jaonufiuesd") as! UINavigationController
-        }else{
-           
-            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SrteHuaopController") as! SrteHuaopController
+            return
         }
+        PortfolioVaultCell.contrastRatio()
+        
+    }
+    
+    private  class func contrastRatio()  {
+        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SrteHuaopController") as! SrteHuaopController
     }
 }

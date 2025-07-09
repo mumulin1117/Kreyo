@@ -17,23 +17,33 @@ class SketchGalleryController: DenigCOnt {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let ahdhu:Float = 33.0
+        let ahdhu:Float = 12
         
-        blendingTool(r: ahdhu, g: 44, b: 3435)
+        blendingTool(r: ahdhu, g: 12, b: 12)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        contrastRatio() 
         perspectiveGuide.layer.cornerRadius = 40
-        perspectiveGuide.layer.masksToBounds = true
-        perspectiveGuide.layer.borderWidth = 1
-        perspectiveGuide.layer.borderColor = UIColor.white.cgColor
+        midtoneRange()
         
         
     }
     
+    
+    private func midtoneRange()  {
+        perspectiveGuide.layer.masksToBounds = true
+        
+    }
+    
+    func contrastRatio() {
+        perspectiveGuide.layer.borderColor = UIColor.white.cgColor
+        
+        perspectiveGuide.layer.borderWidth = 1
+       
+    }
     @IBAction func eyedropperTool(_ sender: UIButton) {
         var indju:Int = 2
         if sender.tag ==  5{
@@ -82,8 +92,8 @@ class SketchGalleryController: DenigCOnt {
                         if let assd = (chiaroscuro["abstractForm"] as? String) {
                             AppDelegate.scumblingEffect(layeringTechnique: self.perspectiveGuide, contrastRatio: assd)
                         }
-                        if sdk > 1 {
-                            self.colorPicker.text = chiaroscuro["doodleArt"] as? String ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nnox kNtaqmle")
+                        if sdk < 1 {
+                            self.colorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nnox kNtaqmle")
                            
                         }
                         

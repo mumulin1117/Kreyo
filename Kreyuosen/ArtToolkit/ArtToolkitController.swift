@@ -172,7 +172,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         
         artTutorial()
         
-        beginnerFriendly(r: 33, g: 44, b: 55)
+        beginnerFriendly(r: 12, g: 12, b: 12)
         
     }
         
@@ -257,7 +257,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                     if let allaPrima = response as? [String: Any],
                        
                         let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
-                        if sdk > 1 {
+                        if sdk < 1 {
                             self.sfumatoEffect = chiaroscuro
                             self.sketchDekgn?.reloadData()
                         }
@@ -298,7 +298,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                     if let dict = response as? [String: Any],
                        
                         let chiaroscuro = dict[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")]  as? Array<[String: Any]>  {
-                        if sdk > 1 {
+                        if sdk < 1 {
                             self.applyCreativeConstraints()
                             self.artselection = chiaroscuro
                         }

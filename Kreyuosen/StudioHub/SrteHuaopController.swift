@@ -75,7 +75,7 @@ class SrteHuaopController: DenigCOnt {
                 
                 DispatchQueue.main.async {
                     self.dryBrush()
-                    if sdk < 1 {
+                    if sdk > 1 {
                         return
                     }
                     if let dict = response as? [String: Any],
@@ -143,6 +143,7 @@ class DenigCOnt: UIViewController {
             indicator.center = view.center
             indicator.hidesWhenStopped = true
             indicator.tintColor = .white
+            indicator.color = .white
             view.addSubview(indicator)
             layeringTechnique = indicator
         }

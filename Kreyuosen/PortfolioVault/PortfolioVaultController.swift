@@ -49,23 +49,33 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
 
         artTutorial()
         
-        self.blendingTool(r: 34, g: 56, b: 67)
+        self.blendingTool(r: 12, g: 12, b: 12)
     }
     
-    func artTutorial()  {
-        annotationlayer.delegate = self
-        annotationlayer.dataSource = self
-        let oietj = ( UIScreen.main.bounds.width - 80 )
-        
+    private func highlightDetail() -> UICollectionViewFlowLayout {
         let Akdodo = UICollectionViewFlowLayout.init()
+        let oietj = ( UIScreen.main.bounds.width - 80 )
         Akdodo.itemSize = CGSize(width:oietj, height: annotationlayer.frame.height)
         Akdodo.scrollDirection = .horizontal
         Akdodo.minimumLineSpacing = 20.xInspire
         Akdodo.minimumInteritemSpacing = 20.xInspire
-        annotationlayer.isPagingEnabled = true
-        annotationlayer.collectionViewLayout = Akdodo
-        annotationlayer.showsHorizontalScrollIndicator = false
+        return Akdodo
+    }
+    func artTutorial()  {
+        annotationlayer.delegate = self
+        annotationlayer.dataSource = self
+        
+        
+       
+        colorBlending()
         annotationlayer.register(UINib.init(nibName: "PortfolioVaultCell", bundle: nil), forCellWithReuseIdentifier:"PortfolioVaultCell")
+    }
+    
+    
+    private func colorBlending()  {
+        annotationlayer.isPagingEnabled = true
+        annotationlayer.collectionViewLayout = highlightDetail()
+        annotationlayer.showsHorizontalScrollIndicator = false
     }
    
     @IBAction func traditionalMethod(_ sender: Any) {
@@ -90,8 +100,8 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
                 "eraserTool":"30119701",
                 "negativeSpace": 10,
                 "compositionBalance": 1,
-                "smudgeEffect":1,
-                "gestureDrawing":midtoneRange.isSelected ? 1 : 3
+                "smudgeEffect":1//,
+//                "gestureDrawing":midtoneRange.isSelected ? 1 : 2
             ],
             collageArt: { response in
                 
@@ -101,10 +111,18 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
                        
                         let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
                         
-                        self.artselection = chiaroscuro.filter({ njsid in
-                            njsid["glazingMethod"] as? String != nil
-                        })
-                        if sdk > 1 {
+                       
+                        
+                        if self.midtoneRange.isSelected {
+                            self.artselection = chiaroscuro.filter({ njsid in
+                                njsid["glazingMethod"] as? String != nil
+                            }).suffix(1)
+                        }else{
+                            self.artselection = chiaroscuro.filter({ njsid in
+                                njsid["glazingMethod"] as? String != nil
+                            })
+                        }
+                        if sdk < 1 {
                             self.annotationlayer?.reloadData()
                         }
                         

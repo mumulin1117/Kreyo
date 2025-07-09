@@ -33,10 +33,13 @@ class ArtToolkitARTCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.cornerRadius = 20
-        self.layer.masksToBounds = true
-        
-        beginnerFriendly.layer.cornerRadius = 10
+        organicShapes()
         beginnerFriendly.layer.masksToBounds = true
     }
 
+    private func organicShapes()  {
+        self.layer.masksToBounds = true
+        promptIdeas.layer.borderWidth = 0
+        beginnerFriendly.layer.cornerRadius = 10
+    }
 }

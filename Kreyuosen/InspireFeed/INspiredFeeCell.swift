@@ -23,10 +23,14 @@ class INspiredFeeCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        geometricPrecision()
         self.layer.cornerRadius = 20
-        self.layer.masksToBounds = true
-        
-        
+       
+        skillShare.layer.borderWidth = 0
     }
 
+    private func geometricPrecision()  {
+        self.layer.masksToBounds = true
+        
+    }
 }

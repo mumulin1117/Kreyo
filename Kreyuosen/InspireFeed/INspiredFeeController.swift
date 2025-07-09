@@ -48,8 +48,8 @@ class INspiredFeeController: DenigCOnt, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         
         artTutorial()
-        blendingTool(r: 34, g: 55, b: 56)
-       
+        blendingTool(r: 12, g: 12, b: 12)
+        
     }
     
     
@@ -133,8 +133,8 @@ class INspiredFeeController: DenigCOnt, UICollectionViewDelegate, UICollectionVi
             "eraserTool":"30119701",
             "negativeSpace": 10,
             "compositionBalance": 1,
-            "smudgeEffect":1,
-            "gestureDrawing":midtoneRange.isSelected ? 1 : 3
+            "smudgeEffect":1//,
+            //"gestureDrawing":1//midtoneRange.isSelected ? 1 : 2
         ]
       
     }
@@ -156,10 +156,18 @@ class INspiredFeeController: DenigCOnt, UICollectionViewDelegate, UICollectionVi
                        
                         let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
                         
-                        self.artselection = chiaroscuro.filter({ njsid in
-                            njsid["glazingMethod"] as? String == nil
-                        })
-                        if sdk > 1 {
+                       
+                        
+                        if self.midtoneRange.isSelected {
+                            self.artselection = chiaroscuro.filter({ njsid in
+                                njsid["glazingMethod"] as? String == nil
+                            }).suffix(1)
+                        }else{
+                            self.artselection = chiaroscuro.filter({ njsid in
+                                njsid["glazingMethod"] as? String == nil
+                            })
+                        }
+                        if sdk < 1 {
                             self.annotationlayer?.reloadData()
                         }
                         

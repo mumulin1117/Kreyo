@@ -12,25 +12,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     
-   
-    
-    
-    
-    
 
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
+        let creativeFlow =  UIScreen.main.bounds
+        
+        window = UIWindow(frame:creativeFlow)
         PortfolioVaultCell.collaborativeProject()
-        SwiftyStoreKit.completeTransactions(atomically: true) { _ in
-            
-        }
-        window?.makeKeyAndVisible()
+        pencilShading()
+        landscapeView()
+        
         return true
     }
 
-   
+    private func landscapeView()  {
+        window?.makeKeyAndVisible()
+    }
     
    class func scumblingEffect(layeringTechnique:UIImageView,contrastRatio:String)  {
         guard let glassRecommender = URL(string: contrastRatio) else{
@@ -62,3 +60,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate {
+    
+    private  func pencilShading()  {
+        SwiftyStoreKit.completeTransactions(atomically: true) { _ in
+            
+        }
+    }
+    
+}
