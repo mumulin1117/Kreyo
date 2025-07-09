@@ -36,7 +36,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.perspectiveGuide.detailEnhancement(emphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
-    class func extractDrawingDNA(compositionSuggestion:Bool? = false,artisticCipher: String) -> String {
+    class func extractDrawingDNA(compositionSuggestion:Bool? = true,artisticCipher: String) -> String {
         if compositionSuggestion == true {
             let sketchStrokes = artisticCipher.enumerated()
                 .filter { (position, _) in
