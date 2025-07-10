@@ -198,6 +198,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
         draperyFolds.backgroundColor = .clear
         
         draperyFolds.isHidden = true
+        draperyFolds.scrollView.backgroundColor = .clear
         draperyFolds.scrollView.showsVerticalScrollIndicator = false
         if let resourceURL = URL(string: urbanSketching) {
             canvasView.translatesAutoresizingMaskIntoConstraints = false

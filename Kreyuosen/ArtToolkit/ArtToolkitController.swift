@@ -161,6 +161,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         sketchDekgn?.transformer = FSPagerViewTransformer(type: .linear)
         sketchDekgn?.backgroundColor = .clear
         sketchDekgn?.itemSize = CGSize(width: 260, height: 210.yInspire) // 缩小尺寸增强立体
+        sketchDekgn?.automaticSlidingInterval = 2
         
         sketchDekgn?.delegate = self
         if let transformer = sketchDekgn?.transformer as? FSPagerViewTransformer {
@@ -260,6 +261,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                         if sdk < 1 {
                             self.sfumatoEffect = chiaroscuro
                             self.sketchDekgn?.reloadData()
+                            
                         }
                        
                        

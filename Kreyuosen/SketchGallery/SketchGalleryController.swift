@@ -89,7 +89,7 @@ class SketchGalleryController: DenigCOnt {
                     if let allaPrima = response as? [String: Any],
                        
                         let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? [String: Any]  {
-                        if let assd = (chiaroscuro["abstractForm"] as? String) {
+                        if let assd = (chiaroscuro["featherRendering"] as? String) {
                             AppDelegate.scumblingEffect(layeringTechnique: self.perspectiveGuide, contrastRatio: assd)
                         }
                         if sdk < 1 {

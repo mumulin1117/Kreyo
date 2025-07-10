@@ -116,7 +116,7 @@ class PortfolioVaultController: DenigCOnt , UICollectionViewDelegate, UICollecti
                         if self.midtoneRange.isSelected {
                             self.artselection = chiaroscuro.filter({ njsid in
                                 njsid["glazingMethod"] as? String != nil
-                            }).suffix(1)
+                            }).suffix(2)
                         }else{
                             self.artselection = chiaroscuro.filter({ njsid in
                                 njsid["glazingMethod"] as? String != nil

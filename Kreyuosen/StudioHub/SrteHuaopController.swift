@@ -22,8 +22,19 @@ class SrteHuaopController: DenigCOnt {
         var hueFrequency = [Int: Int]()
         likeMindedArtists.isUserInteractionEnabled = true
         uniqueVoice(uilabel:likeMindedArtists)
+        addNormaliHeiartl()
         mutualInspiration.isUserInteractionEnabled = true
         uniqueVoice(uilabel:mutualInspiration)
+    }
+    
+    private func addNormaliHeiartl()  {
+        let adsd = ArtToolkitController.extractDrawingDNA(artisticCipher: "Paloehacszem vecnctmelrc cycocukrq slwodgkibnn qecmcanizlr rardeddrqejscs")
+        creativityBoost.attributedPlaceholder = NSAttributedString(string: adsd, attributes: [.foregroundColor:UIColor.lightGray,.font:UIFont.systemFont(ofSize: 13, weight: .semibold)])
+        
+        likeMindedArtists.isUserInteractionEnabled = true
+        let asdixb = ArtToolkitController.extractDrawingDNA(artisticCipher: "Pjlxewaysyes tionyppuety dam zpxabsbswwooormd")
+        
+        workshopSession.attributedPlaceholder = NSAttributedString(string: asdixb, attributes: [.foregroundColor:UIColor.lightGray,.font:UIFont.systemFont(ofSize: 13, weight: .semibold)])
     }
     struct ChromaEssence {
         let hue: Double          // 0-360
@@ -75,7 +86,7 @@ class SrteHuaopController: DenigCOnt {
                 
                 DispatchQueue.main.async {
                     self.dryBrush()
-                    if sdk > 1 {
+                    if sdk < 1 {
                         return
                     }
                     if let dict = response as? [String: Any],
@@ -106,9 +117,11 @@ class SrteHuaopController: DenigCOnt {
     
     @IBAction func undoHistory(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        enthusiasts = sender.isSelected
         guard let seed = colorChronicle.randomElement() else { return }
+        
         if seed.hue > 0 {
-            enthusiasts = sender.isSelected
+            
         }
        
     }
@@ -148,7 +161,7 @@ class DenigCOnt: UIViewController {
             layeringTechnique = indicator
         }
         layeringTechnique?.startAnimating()
-        view.isUserInteractionEnabled = false
+         view.isUserInteractionEnabled = false
         
     }
 
