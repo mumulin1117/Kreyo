@@ -2,7 +2,7 @@
 //  ArtisticColor.swift
 //  Kreyuosen
 //
-//  Created by mumu on 2025/6/23.
+//  Created by Kreyuosen on 2025/6/23.
 //
 import CoreGraphics
 import UIKit

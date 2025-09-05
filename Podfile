@@ -7,7 +7,9 @@ target 'Kreyuosen' do
 
   # Pods for Kreyuosen
 pod 'SwiftyStoreKit'
-
+pod 'Adjust', '~> 5.1.1'
+pod 'FBSDKCoreKit'
 pod 'FSPagerView'
 pod 'IQKeyboardManager'
+
 end
