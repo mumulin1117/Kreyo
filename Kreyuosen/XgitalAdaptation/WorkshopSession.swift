@@ -103,7 +103,8 @@ class WorkshopSession: NSObject {
 extension Data {
     // 将Data转换为十六进制字符串
     func eyedropperTool() -> String {
-        return map { String(format: "%02hhx", $0) }.joined()
+        let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
+        return map { String(format: huom, $0) }.joined()
     }
     
     // 从十六进制字符串创建Data

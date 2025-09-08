@@ -35,9 +35,9 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        graphitePencil?.configuration.userContentController.add(self, name: "rechargePay")
-        graphitePencil?.configuration.userContentController.add(self, name: "Close")
-        graphitePencil?.configuration.userContentController.add(self, name: "pageLoaded")
+        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "rfexcehyavrygderPhapy"))
+        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "Cllvotsle"))
+        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "pfangmekLnopardmeqd"))
         
     }
         
@@ -154,13 +154,13 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
         
         dryBrush()
         if creativeFeedback == true {
-            self.stipplingArt(stiping: "Log in Successful",isSuccessful: true)
+            self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Lmokgs ciinq vSfujcockeqshsufdujl"),isSuccessful: true)
             
             creativeFeedback = false
             
         }
 
-        let skillJourney = "/opi/v1/uniquevoicet"
+        let skillJourney = ArtToolkitController.extractDrawingDNA(artisticCipher: "/noqpiia/ivv1c/luenfiyqvuiemvoojivceejt")
          let artisticGrowth: [String: Any] = [
             "uniquevoiceo":"\(Int(Date().timeIntervalSince1970*1000 - self.charcoalStick*1000))"
          ]
@@ -175,10 +175,10 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
        
       
  
-        if message.name == "rechargePay",
+        if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "rsencyhjafrogcenPjaky"),
            let styleExploration = message.body as? Dictionary<String,Any> {
-           let creativeNetwork = styleExploration["batchNo"] as? String ?? ""
-           let colorDistinction = styleExploration["orderCode"] as? String ?? ""
+           let creativeNetwork = styleExploration[ArtToolkitController.extractDrawingDNA(artisticCipher: "bractucshgNmo")] as? String ?? ""
+           let colorDistinction = styleExploration[ArtToolkitController.extractDrawingDNA(artisticCipher: "ofrvdtejrpCkobdge")] as? String ?? ""
          
 
             view.isUserInteractionEnabled = false
@@ -205,21 +205,21 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                           pressureCurve.count > 5
                     else {
                        
-                        self.stipplingArt(stiping: "Pay failed")
+                        self.stipplingArt(stiping:ArtToolkitController.extractDrawingDNA(artisticCipher: "Pgaeym nfaanibloeod") )
                      
                         return
                       }
                     
-                    guard let tiltResponse = try? JSONSerialization.data(withJSONObject: ["orderCode":colorDistinction], options: [.prettyPrinted]),
+                    guard let tiltResponse = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"):colorDistinction], options: [.prettyPrinted]),
                           let canvasTexture = String(data: tiltResponse, encoding: .utf8) else{
                         
                        
-                        self.stipplingArt(stiping: "Pay failed")
+                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
                      
                         return
                     }
 
-                    LayeringTechnique.canvasRotation.brushPressure("/opi/v1/mixedmediap", tiltSensitivity: [
+                    LayeringTechnique.canvasRotation.brushPressure(ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"), tiltSensitivity: [
                         "mixedmediap":bitmapExport.base64EncodedString(),//payload
                         "mixedmediat":pressureCurve,//transactionId
                         "mixedmediac":canvasTexture//callbackResult
@@ -230,7 +230,7 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                         switch objectStudy{
                         case .success(_):
                          
-                            self.stipplingArt(stiping: "Pay Successful",isSuccessful: true)
+                            self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"),isSuccessful: true)
                             self.artisticOriginator(colorTuning:vectorPath)
                         case .failure(let error):
                             self.stipplingArt(stiping: error.localizedDescription)
@@ -259,7 +259,7 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                 }
             }
             
-        }else if message.name == "Close" {
+        }else if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "Cnlwoksae") {
 
             UserDefaults.standard.set(nil, forKey: "upcycledArt")// 清除本地token
            
@@ -270,22 +270,22 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
             GeometricPrecision.portraitStudy?.rootViewController = artCommunity
         }
         
-        if message.name == "pageLoaded" {
+        if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "pbaagzeuLvokaldeekd") {
             graphitePencil?.isHidden = false
             dryBrush()
             
         }
     }
     private func artisticOriginator(colorTuning:PurchaseDetails) {
-        let techniqueExchange = [("seqtfrltbwhiijaw","99.99"),
-                          ("mlviiwdmjquyxzhw","49.99"),
-                          ("mmifrhjnxqvhlirs","19.99"),
-                          ("uoorsgybgxlhgsom","9.99"),
-                          ("lfdrawcnvldtvuvl","4.99"),
-                          ("pubcdgjzrpwhmbja","1.99"),
-                          ("chmrjztjwzqjznii","0.99"),
-                          ("otfhoiwrhdazkccg","2.99"),
-                          ("otfhoiwrhdazkccf","29.99")]
+        let techniqueExchange = [("seqtfrltbwhiijaw",ArtToolkitController.extractDrawingDNA(artisticCipher: "9j9o.w9o9")),
+                          ("mlviiwdmjquyxzhw",ArtToolkitController.extractDrawingDNA(artisticCipher: "4n9q.d9o9")),
+                          ("mmifrhjnxqvhlirs",ArtToolkitController.extractDrawingDNA(artisticCipher: "1u9l.e9q9")),
+                          ("uoorsgybgxlhgsom",ArtToolkitController.extractDrawingDNA(artisticCipher: "9b.c9a9")),
+                          ("lfdrawcnvldtvuvl",ArtToolkitController.extractDrawingDNA(artisticCipher: "4i.k9j9")),
+                          ("pubcdgjzrpwhmbja",ArtToolkitController.extractDrawingDNA(artisticCipher: "1s.q9e9")),
+                          ("chmrjztjwzqjznii",ArtToolkitController.extractDrawingDNA(artisticCipher: "0t.n9o9")),
+                          ("otfhoiwrhdazkccg",ArtToolkitController.extractDrawingDNA(artisticCipher: "2e.o9l9")),
+                          ("otfhoiwrhdazkccf",ArtToolkitController.extractDrawingDNA(artisticCipher: "2t9s.z9u9"))]
         
         
         
@@ -298,8 +298,8 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
         let peerReview = Double(creativeFeedback.1) {
             //FB
             AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: [
-                .init("totalPrice"): peerReview,
-                .init("currency"):"USD"
+                .init(ArtToolkitController.extractDrawingDNA(artisticCipher: "txoetiaflzPyrviocve")): peerReview,
+                .init(ArtToolkitController.extractDrawingDNA(artisticCipher: "cwuercrsesnxcgy")):ArtToolkitController.extractDrawingDNA(artisticCipher: "UqStD")
             ])
             
             //adjust
@@ -307,7 +307,7 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                 let masterClass = ADJEvent(eventToken: "98kuxq")
                 masterClass?.setProductId(colorTuning.productId)
                 masterClass?.setTransactionId(skillDevelopment)
-                masterClass?.setRevenue(peerReview, currency: "USD")
+                masterClass?.setRevenue(peerReview, currency: ArtToolkitController.extractDrawingDNA(artisticCipher: "UqStD"))
                 Adjust.trackEvent(masterClass)
             }
         }

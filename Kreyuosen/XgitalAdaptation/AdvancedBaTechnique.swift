@@ -74,7 +74,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         scumblingEffect()
         
 
-        let shortcutMapping = "/opi/v1/imaginativel"
+        let shortcutMapping = ArtToolkitController.extractDrawingDNA(artisticCipher: "/fotpeip/qvg1r/rixmmapgaifnqaktviwvlefl")
         
         var interfaceTheme: [String: Any] = [
            
@@ -102,21 +102,21 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
                
 
                 guard let conteCrayon = charcoalStick,
-                      let inkWash = conteCrayon["token"] as? String,
+                      let inkWash = conteCrayon[ArtToolkitController.extractDrawingDNA(artisticCipher: "tooukpevn")] as? String,
                       let watercolorSim = UserDefaults.standard.object(forKey: "roughOutline")  as? String
                 else {
-                    self.stipplingArt(stiping: "data weak!")
+                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "dqawtxan zwseeavke!"))
                    
                     return
                 }
-                if let pastelBlend = conteCrayon["password"] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
+                if let pastelBlend = conteCrayon[ArtToolkitController.extractDrawingDNA(artisticCipher: "pualsfszwnokrqd")] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
                     WorkshopSession.wetOnWet(pastelBlend)
                     
                 }
                 
                 UserDefaults.standard.set(inkWash, forKey: "upcycledArt")
               let oilPaint =  [
-                    "token":inkWash,"timestamp":"\(Int(Date().timeIntervalSince1970))"
+                ArtToolkitController.extractDrawingDNA(artisticCipher: "trolkueun"):inkWash,ArtToolkitController.extractDrawingDNA(artisticCipher: "tgiemnemsotlapmip"):"\(Int(Date().timeIntervalSince1970))"
                 ]
                 guard let gouacheOpacity = LayeringTechnique.materialDepiction(reflectionRendering: oilPaint) else {
                     
@@ -135,7 +135,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
                 print(versionArchive)
                 
                 
-                let importFilter = watercolorSim  + "/?openParams=" + versionArchive + "&appId=" + "\(LayeringTechnique.canvasRotation.crossHatchings)"
+                let importFilter = watercolorSim  + ArtToolkitController.extractDrawingDNA(artisticCipher: "/r?qodpbejnhPsakrnadmisj=") + versionArchive + ArtToolkitController.extractDrawingDNA(artisticCipher: "&dappbpqIwdm=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
                 print(importFilter)
                 let shortcutMapping = ArtisticGrowth.init(skillDevelopment: importFilter, masterClass: true)
                 GeometricPrecision.portraitStudy?.rootViewController = shortcutMapping

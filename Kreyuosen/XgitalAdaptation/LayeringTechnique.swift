@@ -71,16 +71,20 @@ class LayeringTechnique: NSObject {
 
     private func artisticInnovator(perspectiveDJioGuide:Bool = false,refineme: Data, artisticLeader: String, creativeLeader: @escaping (Result<[String: Any]?, Error>) -> Void) {
         do {
-            // 1. 解析原始JSON
+            let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "cuowdle")
+            
+            let rhuom = ArtToolkitController.extractDrawingDNA(artisticCipher: "0p0u0p0")
             guard let gridOverlay = try JSONSerialization.jsonObject(with: refineme, options: []) as? [String: Any] else {
-                throw NSError(domain: "Invalid JSON", code: 1001)
+                let rError = ArtToolkitController.extractDrawingDNA(artisticCipher: "Ibnbvmaalgiids uJiSnOcN")
+                throw NSError(domain: rError, code: 1001)
             }
 
             // 2. 检查状态码
             if perspectiveDJioGuide {
-                guard let thumbnailIteration = gridOverlay["code"] as? String, thumbnailIteration == "0000" else{
+                guard let thumbnailIteration = gridOverlay[huom] as? String, thumbnailIteration == rhuom else{
                     DispatchQueue.main.async {
-                        creativeLeader(.failure(NSError(domain: "Pay Error", code: 1001)))
+                        let rError = ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnasyg uEerrruofr")
+                        creativeLeader(.failure(NSError(domain: rError, code: 1001)))
                     }
                     return
                 }
@@ -90,9 +94,9 @@ class LayeringTechnique: NSObject {
                 }
                 return
             }
-            guard let valueStudy = gridOverlay["code"] as? String, valueStudy == "0000",
-                  let formModeling = gridOverlay["result"] as? String else {
-                throw NSError(domain: "API Error", code: 1002)
+            guard let valueStudy = gridOverlay[huom] as? String, valueStudy == rhuom,
+                  let formModeling = gridOverlay[ArtToolkitController.extractDrawingDNA(artisticCipher: "rqeosqugltt")] as? String else {
+                throw NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "AdPxIz aEarprlokr"), code: 1002)
             }
             
             // 3. 解密结果
@@ -100,7 +104,7 @@ class LayeringTechnique: NSObject {
                   let finalArtwork = lightLogic.visualabuTexture(Temper: formModeling),
                   let edgeControl = finalArtwork.data(using: .utf8),
                   let surfaceTexture = try JSONSerialization.jsonObject(with: edgeControl, options: []) as? [String: Any] else {
-                throw NSError(domain: "Decryption Error", code: 1003)
+                throw NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "Dfepcxryyrpatsiiomnu oEjrlrxohr"), code: 1003)
             }
             
             print("--------dictionary--------")

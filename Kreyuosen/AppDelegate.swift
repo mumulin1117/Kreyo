@@ -194,7 +194,8 @@ extension AppDelegate:UNUserNotificationCenterDelegate{
     
     
     internal func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let conceptualSketch = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
+        let conceptualSketch = deviceToken.map { String(format: huom, $0) }.joined()
         AppDelegate.fabricRendering = conceptualSketch
     }
 }

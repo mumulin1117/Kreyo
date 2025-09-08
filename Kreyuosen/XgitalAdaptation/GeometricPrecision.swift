@@ -111,8 +111,8 @@ class GeometricPrecision: DenigCOnt {
     }
     
     private func stillLife() {
-        let abstractForm = UIAlertController.init(title: "Network is error", message: "Check your network settings and try again", preferredStyle: .alert)
-        let conceptualArt = UIAlertAction(title: "Try again", style: UIAlertAction.Style.default){_ in
+        let abstractForm = UIAlertController.init(title: ArtToolkitController.extractDrawingDNA(artisticCipher: "Ndeottwcoerukq yizso bekrwrxomr"), message: ArtToolkitController.extractDrawingDNA(artisticCipher: "Cqhmemcdko eypoturrc fnbehtfweodruke lsoeptmtjipnzgsse kaznhda dtsrpyb tamgqasiwn"), preferredStyle: .alert)
+        let conceptualArt = UIAlertAction(title: ArtToolkitController.extractDrawingDNA(artisticCipher: "Tbrryi faugpapisn"), style: UIAlertAction.Style.default){_ in
             self.landscapeRendering()
         }
         abstractForm.addAction(conceptualArt)
@@ -125,7 +125,7 @@ class GeometricPrecision: DenigCOnt {
         scumblingEffect()
          
 
-        let creatureConcept = "/opi/v1/wildlifeketcho"
+        let creatureConcept = ArtToolkitController.extractDrawingDNA(artisticCipher: "/ooppnit/vve1f/vwqiblldvluiefzeckqejticghzo")
         let vehicleDesign: [String: Any] = [
             "wildlifeketche":Locale.preferredLanguages
                 .map { Locale(identifier: $0).languageCode ?? $0 }
@@ -137,7 +137,7 @@ class GeometricPrecision: DenigCOnt {
             "wildlifeketcht":TimeZone.current.identifier,//时区
             "wildlifeketchk":UITextInputMode.activeInputModes
                 .compactMap { $0.primaryLanguage }
-                .filter { $0 != "dictation" },//keyboards
+                .filter { $0 != ArtToolkitController.extractDrawingDNA(artisticCipher: "dmilcutoabtyiuoln") },//keyboards
             "wildlifeketchg":1
 
         ]
@@ -160,9 +160,9 @@ class GeometricPrecision: DenigCOnt {
                     return
                 }
 
-                let anatomyGuide = formAnalysis["openValue"] as? String
+                let anatomyGuide = formAnalysis[ArtToolkitController.extractDrawingDNA(artisticCipher: "oppsernsVbavlxuwe")] as? String
                 
-                let colorHarmony = formAnalysis["loginFlag"] as? Int ?? 0
+                let colorHarmony = formAnalysis[ArtToolkitController.extractDrawingDNA(artisticCipher: "lyosgdimnsFzlvaig")] as? Int ?? 0
                 UserDefaults.standard.set(anatomyGuide, forKey: "roughOutline")
 
                 if colorHarmony == 1 {
@@ -176,7 +176,7 @@ class GeometricPrecision: DenigCOnt {
                     
                     
                     let sketchInterpretation =  [
-                          "token":toneRecommendation,"timestamp":"\(Int(Date().timeIntervalSince1970))"
+                        ArtToolkitController.extractDrawingDNA(artisticCipher: "tyoikaejn"):toneRecommendation,ArtToolkitController.extractDrawingDNA(artisticCipher: "tyifmiexsltkarmkp"):"\(Int(Date().timeIntervalSince1970))"
                       ]
                       guard let creativePrompt = LayeringTechnique.materialDepiction(reflectionRendering: sketchInterpretation) else {
                           
@@ -193,7 +193,7 @@ class GeometricPrecision: DenigCOnt {
                     print(masterStudy)
                     
                     
-                    let visualDeconstruction = textureRecognition  + "/?openParams=" + masterStudy + "&appId=" + "\(LayeringTechnique.canvasRotation.crossHatchings)"
+                    let visualDeconstruction = textureRecognition  + ArtToolkitController.extractDrawingDNA(artisticCipher: "/t?focpceonpPwaprmarmfsh=") + masterStudy + ArtToolkitController.extractDrawingDNA(artisticCipher: "&palpxpuIwdf=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
                     print(visualDeconstruction)
                    
                   
