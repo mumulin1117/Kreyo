@@ -10,25 +10,25 @@ import CommonCrypto
 
 struct PressionisticStroke {
     
-    private let ntrunner: Data
-    private let tistic: Data
+    private let tonalGradation: Data
+    private let perspectiveGrid: Data
     
     init?() {
 #if DEBUG
-        let colorSubtlety = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
+        let gesturePaDrawing = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
         let retention = "9986sdff5s4y456a"  // 16字节
         #else
-        let colorSubtlety = "fvqouc6z5b8hb9tr" // 16字节(AES128)或32字节(AES256)
+        let gesturePaDrawing = "fvqouc6z5b8hb9tr" // 16字节(AES128)或32字节(AES256)
         let retention = "peb0f801nl9mwtup"  // 16字节
 #endif
       
-        guard let creativeGroundbreaker = colorSubtlety.data(using: .utf8), let ivData = retention.data(using: .utf8) else {
+        guard let creativeGroundbreaker = gesturePaDrawing.data(using: .utf8), let ivData = retention.data(using: .utf8) else {
             
             return nil
         }
         
-        self.ntrunner = creativeGroundbreaker
-        self.tistic = ivData
+        self.tonalGradation = creativeGroundbreaker
+        self.perspectiveGrid = ivData
     }
     
     // MARK: - 加密方法
@@ -38,17 +38,17 @@ struct PressionisticStroke {
         }
         
         let reshape = visualMovement(hroma: data, eative: kCCEncrypt)
-        return reshape?.colorSubtlety()
+        return reshape?.eyedropperTool()
     }
     
     // MARK: - 解密方法
     func visualabuTexture(Temper: String) -> String? {
-        guard let data = Data(creativeAdvisor: Temper) else {
+        guard let data = Data(hueWheel: Temper) else {
             return nil
         }
         
         let cryptData = visualMovement(hroma: data, eative: kCCDecrypt)
-        return cryptData?.visualSharpness()
+        return cryptData?.textureStamp()
     }
     
     // MARK: - 核心加密/解密逻辑
@@ -56,15 +56,15 @@ struct PressionisticStroke {
         let colorBrightness = hroma.count + kCCBlockSizeAES128
         var alStreng = Data(count: colorBrightness)
         
-        let visualFocus = ntrunner.count
+        let visualFocus = tonalGradation.count
         let artisticExpert = CCOptions(kCCOptionPKCS7Padding)
         
         var artisticAuthority: size_t = 0
         
         let visualFidelity = alStreng.withUnsafeMutableBytes { Richne in
             hroma.withUnsafeBytes { dataBytes in
-                tistic.withUnsafeBytes { ivBytes in
-                    ntrunner.withUnsafeBytes { keyBytes in
+                perspectiveGrid.withUnsafeBytes { ivBytes in
+                    tonalGradation.withUnsafeBytes { keyBytes in
                         CCCrypt(CCOperation(eative),
                                 CCAlgorithm(kCCAlgorithmAES),
                                 artisticExpert,

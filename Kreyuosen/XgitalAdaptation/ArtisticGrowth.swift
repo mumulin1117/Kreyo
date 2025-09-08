@@ -15,17 +15,17 @@ import AdjustSdk
 
 
 class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMessageHandler {
-    private var creativeGroundbreaker:WKWebView?
+    private var graphitePencil:WKWebView?
    
-    var visualPattern:TimeInterval = Date().timeIntervalSince1970
+    var charcoalStick:TimeInterval = Date().timeIntervalSince1970
     
-    private  var artisticGround = false
-    private var creativeTrendsetter:String
+    private  var creativeFeedback = false
+    private var peerReview:String
     
-    init(Trendsetter:String,Matrix:Bool) {
-        creativeTrendsetter = Trendsetter
+    init(skillDevelopment:String,masterClass:Bool) {
+        peerReview = skillDevelopment
         
-        artisticGround = Matrix
+        creativeFeedback = masterClass
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,9 +35,9 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "rechargePay")
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "Close")
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "pageLoaded")
+        graphitePencil?.configuration.userContentController.add(self, name: "rechargePay")
+        graphitePencil?.configuration.userContentController.add(self, name: "Close")
+        graphitePencil?.configuration.userContentController.add(self, name: "pageLoaded")
         
     }
         
@@ -45,42 +45,39 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-        creativeGroundbreaker?.configuration.userContentController.removeAllScriptMessageHandlers()
+        graphitePencil?.configuration.userContentController.removeAllScriptMessageHandlers()
        
     }
  
-    private func artisticTrendsetter()  {
-        let creativeForerunner = UIImage(named: "pencilShading")
+    private func techniqueDemonstration()  {
         
-        let brushForerunner = UIImageView(image:creativeForerunner )
-        brushForerunner.frame = self.view.frame
-        brushForerunner.contentMode = .scaleAspectFill
-        view.addSubview(brushForerunner)
+        let pencil = UIImageView(image:UIImage(named: "pencilShading") )
+        pencil.frame = self.view.frame
+        pencil.contentMode = .scaleAspectFill
+        view.addSubview(pencil)
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        artisticTrendsetter()
-        if artisticGround == true {
-            let  colorIndividuality = UIButton.init()
-            colorIndividuality.setBackgroundImage(UIImage.init(named: "referencePanel"), for: .normal)
+        techniqueDemonstration()
+        if creativeFeedback == true {
+            let  artChallenge = UIButton.init()
+            artChallenge.setBackgroundImage(UIImage.init(named: "referencePanel"), for: .normal)
            
-            colorIndividuality.isUserInteractionEnabled = false
-            view.addSubview(colorIndividuality)
-            colorIndividuality.translatesAutoresizingMaskIntoConstraints = false
+            artChallenge.isUserInteractionEnabled = false
+            view.addSubview(artChallenge)
+            artChallenge.translatesAutoresizingMaskIntoConstraints = false
 
             NSLayoutConstraint.activate([
-                // make.centerX.equalToSuperview()
-                colorIndividuality.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+               
+                artChallenge.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
                 
-                // make.height.equalTo(52)
-                colorIndividuality.heightAnchor.constraint(equalToConstant: 52),
+               
+                artChallenge.heightAnchor.constraint(equalToConstant: 52),
+              
+                artChallenge.widthAnchor.constraint(equalToConstant: 335),
                 
-                // make.width.equalTo(335)
-                colorIndividuality.widthAnchor.constraint(equalToConstant: 335),
-                
-                // make.bottom.equalToSuperview().offset(-self.view.safeAreaInsets.bottom - 85)
-                colorIndividuality.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+                artChallenge.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                                   constant: -self.view.safeAreaInsets.bottom - 65)
             ])
         }
@@ -88,30 +85,30 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
         
         
          
-        let visualNetwork = WKWebViewConfiguration()
-        visualNetwork.allowsAirPlayForMediaPlayback = false
-        visualNetwork.allowsInlineMediaPlayback = true
-        visualNetwork.preferences.javaScriptCanOpenWindowsAutomatically = true
-        visualNetwork.mediaTypesRequiringUserActionForPlayback = []
-        visualNetwork.preferences.javaScriptCanOpenWindowsAutomatically = true
+        let creativePrompt = WKWebViewConfiguration()
+        creativePrompt.allowsAirPlayForMediaPlayback = false
+        creativePrompt.allowsInlineMediaPlayback = true
+        creativePrompt.preferences.javaScriptCanOpenWindowsAutomatically = true
+        creativePrompt.mediaTypesRequiringUserActionForPlayback = []
+        creativePrompt.preferences.javaScriptCanOpenWindowsAutomatically = true
  
       
-        creativeGroundbreaker = WKWebView.init(frame: UIScreen.main.bounds, configuration: visualNetwork)
-        creativeGroundbreaker?.isHidden = true
-        creativeGroundbreaker?.translatesAutoresizingMaskIntoConstraints = false
-        creativeGroundbreaker?.scrollView.alwaysBounceVertical = false
+        graphitePencil = WKWebView.init(frame: UIScreen.main.bounds, configuration: creativePrompt)
+        graphitePencil?.isHidden = true
+        graphitePencil?.translatesAutoresizingMaskIntoConstraints = false
+        graphitePencil?.scrollView.alwaysBounceVertical = false
         
-        creativeGroundbreaker?.scrollView.contentInsetAdjustmentBehavior = .never
-        creativeGroundbreaker?.navigationDelegate = self
+        graphitePencil?.scrollView.contentInsetAdjustmentBehavior = .never
+        graphitePencil?.navigationDelegate = self
         
-        creativeGroundbreaker?.uiDelegate = self
-        creativeGroundbreaker?.allowsBackForwardNavigationGestures = true
+        graphitePencil?.uiDelegate = self
+        graphitePencil?.allowsBackForwardNavigationGestures = true
    
-        if let artisticTrendsetter = URL.init(string: creativeTrendsetter) {
-            creativeGroundbreaker?.load(NSURLRequest.init(url:artisticTrendsetter) as URLRequest)
-            visualPattern = Date().timeIntervalSince1970
+        if let dailyPractice = URL.init(string: peerReview) {
+            graphitePencil?.load(NSURLRequest.init(url:dailyPractice) as URLRequest)
+            charcoalStick = Date().timeIntervalSince1970
         }
-        self.view.addSubview(creativeGroundbreaker!)
+        self.view.addSubview(graphitePencil!)
         
         
         scumblingEffect()
@@ -152,23 +149,23 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        creativeGroundbreaker?.isHidden = false
+        graphitePencil?.isHidden = false
         
         
         dryBrush()
-        if artisticGround == true {
+        if creativeFeedback == true {
             self.stipplingArt(stiping: "Log in Successful",isSuccessful: true)
             
-            artisticGround = false
+            creativeFeedback = false
             
         }
 
-        let creativeForerunner = "/opi/v1/uniquevoicet"
-         let brushForerunner: [String: Any] = [
-            "uniquevoiceo":"\(Int(Date().timeIntervalSince1970*1000 - self.visualPattern*1000))"
+        let skillJourney = "/opi/v1/uniquevoicet"
+         let artisticGrowth: [String: Any] = [
+            "uniquevoiceo":"\(Int(Date().timeIntervalSince1970*1000 - self.charcoalStick*1000))"
          ]
       
-        LayeringTechnique.artisticArtisan.artisticTrainerFive( creativeForerunner, orVariation: brushForerunner)
+        LayeringTechnique.canvasRotation.brushPressure( skillJourney, tiltSensitivity: artisticGrowth)
        
     }
     
@@ -179,33 +176,33 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
       
  
         if message.name == "rechargePay",
-           let creativeTrailblazer = message.body as? Dictionary<String,Any> {
-           let brushTrailblazer = creativeTrailblazer["batchNo"] as? String ?? ""
-           let colorDistinction = creativeTrailblazer["orderCode"] as? String ?? ""
+           let styleExploration = message.body as? Dictionary<String,Any> {
+           let creativeNetwork = styleExploration["batchNo"] as? String ?? ""
+           let colorDistinction = styleExploration["orderCode"] as? String ?? ""
          
 
             view.isUserInteractionEnabled = false
             scumblingEffect()
             
-            SwiftyStoreKit.purchaseProduct(brushTrailblazer, atomically: true) { artisticTrailblazer in
+            SwiftyStoreKit.purchaseProduct(creativeNetwork, atomically: true) { artisticTrailblazer in
                 self.dryBrush()
                 self.view.isUserInteractionEnabled = true
-                if case .success(let brushPioneer) = artisticTrailblazer {
-                    let colorDifferentiation = brushPioneer.transaction.downloads
+                if case .success(let vectorPath) = artisticTrailblazer {
+                    let rasterLayer = vectorPath.transaction.downloads
                     
                     
-                    if !colorDifferentiation.isEmpty {
+                    if !rasterLayer.isEmpty {
                         
-                        SwiftyStoreKit.start(colorDifferentiation)
+                        SwiftyStoreKit.start(rasterLayer)
                     }
                     
                   
                    
                    
                 
-                    guard let artisticPioneer = SwiftyStoreKit.localReceiptData,
-                          let creativeInnovator = brushPioneer.transaction.transactionIdentifier,
-                          creativeInnovator.count > 5
+                    guard let bitmapExport = SwiftyStoreKit.localReceiptData,
+                          let pressureCurve = vectorPath.transaction.transactionIdentifier,
+                          pressureCurve.count > 5
                     else {
                        
                         self.stipplingArt(stiping: "Pay failed")
@@ -213,8 +210,8 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                         return
                       }
                     
-                    guard let visualAssembly = try? JSONSerialization.data(withJSONObject: ["orderCode":colorDistinction], options: [.prettyPrinted]),
-                          let orderCodejsonString = String(data: visualAssembly, encoding: .utf8) else{
+                    guard let tiltResponse = try? JSONSerialization.data(withJSONObject: ["orderCode":colorDistinction], options: [.prettyPrinted]),
+                          let canvasTexture = String(data: tiltResponse, encoding: .utf8) else{
                         
                        
                         self.stipplingArt(stiping: "Pay failed")
@@ -222,27 +219,27 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
                         return
                     }
 
-                    LayeringTechnique.artisticArtisan.artisticTrainerFive("/opi/v1/mixedmediap", orVariation: [
-                        "mixedmediap":artisticPioneer.base64EncodedString(),//payload
-                        "mixedmediat":creativeInnovator,//transactionId
-                        "mixedmediac":orderCodejsonString//callbackResult
-                    ],creativeTrainerd: true) { creativeOriginator in
+                    LayeringTechnique.canvasRotation.brushPressure("/opi/v1/mixedmediap", tiltSensitivity: [
+                        "mixedmediap":bitmapExport.base64EncodedString(),//payload
+                        "mixedmediat":pressureCurve,//transactionId
+                        "mixedmediac":canvasTexture//callbackResult
+                    ],palmRejection: true) { objectStudy in
                        
                         self.view.isUserInteractionEnabled = true
                         
-                        switch creativeOriginator{
+                        switch objectStudy{
                         case .success(_):
                          
                             self.stipplingArt(stiping: "Pay Successful",isSuccessful: true)
-                            self.artisticOriginator(colorTuning:brushPioneer)
+                            self.artisticOriginator(colorTuning:vectorPath)
                         case .failure(let error):
-                            self.stipplingArt(stiping: "Pay failed")
+                            self.stipplingArt(stiping: error.localizedDescription)
                             
                         }
                     }
                     
-                    if brushPioneer.needsFinishTransaction {
-                        SwiftyStoreKit.finishTransaction(brushPioneer.transaction)
+                    if vectorPath.needsFinishTransaction {
+                        SwiftyStoreKit.finishTransaction(vectorPath.transaction)
                        
                     }
                    
@@ -266,21 +263,21 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
 
             UserDefaults.standard.set(nil, forKey: "upcycledArt")// 清除本地token
            
-            let brushOriginator = UINavigationController.init(rootViewController: AdvancedBaTechnique.init())
-            brushOriginator.navigationBar.isHidden = true
+            let artCommunity = UINavigationController.init(rootViewController: AdvancedBaTechnique.init())
+            artCommunity.navigationBar.isHidden = true
             
           
-            GeometricPrecision.colorMixing?.rootViewController = brushOriginator
+            GeometricPrecision.portraitStudy?.rootViewController = artCommunity
         }
         
         if message.name == "pageLoaded" {
-            creativeGroundbreaker?.isHidden = false
+            graphitePencil?.isHidden = false
             dryBrush()
             
         }
     }
     private func artisticOriginator(colorTuning:PurchaseDetails) {
-        let colorAdjustment = [("seqtfrltbwhiijaw","99.99"),
+        let techniqueExchange = [("seqtfrltbwhiijaw","99.99"),
                           ("mlviiwdmjquyxzhw","49.99"),
                           ("mmifrhjnxqvhlirs","19.99"),
                           ("uoorsgybgxlhgsom","9.99"),
@@ -295,25 +292,23 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
         
         
         
-        if let creativeArtisan = colorAdjustment.filter({             outfit in
+        if let creativeFeedback = techniqueExchange.filter({             outfit in
                         outfit.0 == colorTuning.productId
         }).first,
-        let visualLibrary = Double(creativeArtisan.1) {
+        let peerReview = Double(creativeFeedback.1) {
             //FB
             AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: [
-                .init("totalPrice"): visualLibrary,
+                .init("totalPrice"): peerReview,
                 .init("currency"):"USD"
             ])
             
             //adjust
-       
-            
-            if  let colorDimension = colorTuning.transaction.transactionIdentifier{
-                let brushInstructor = ADJEvent(eventToken: "98kuxq")
-                brushInstructor?.setProductId(colorTuning.productId)
-                brushInstructor?.setTransactionId(colorDimension)
-                brushInstructor?.setRevenue(visualLibrary, currency: "USD")
-                Adjust.trackEvent(brushInstructor)
+            if  let skillDevelopment = colorTuning.transaction.transactionIdentifier{
+                let masterClass = ADJEvent(eventToken: "98kuxq")
+                masterClass?.setProductId(colorTuning.productId)
+                masterClass?.setTransactionId(skillDevelopment)
+                masterClass?.setRevenue(peerReview, currency: "USD")
+                Adjust.trackEvent(masterClass)
             }
         }
        

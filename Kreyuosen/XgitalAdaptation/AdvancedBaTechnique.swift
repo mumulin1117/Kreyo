@@ -13,42 +13,41 @@ import CoreLocation
 class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
    
     
-    private let augmentedReality = CLLocationManager()
+    private let blindContour = CLLocationManager()
     private let realTimeRendering = CLGeocoder()
 
-    private var canvasLayer:String = ""
+    private var scribbleArt:String = ""
    
-    private  var strokeEngine:NSNumber = 0.0
-    private  var colorTheory:NSNumber = 0.0
-    private func artisticFilter()  {
-        let creativeProcess = UIImage(named: "pencilShading")
-        
-        let visualDesign = UIImageView(image:creativeProcess )
-        visualDesign.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        view.addSubview(visualDesign)
+    private  var figureGesture:NSNumber = 0.0
+    private  var handStudy:NSNumber = 0.0
+    private func footConstruction()  {
+       
+        let exportPreset = UIImageView(image:UIImage(named: "pencilShading") )
+        exportPreset.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        view.addSubview(exportPreset)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        artisticFilter()
+        footConstruction()
         
         
-        let  artGeneration = UIButton.init()
-        artGeneration.setBackgroundImage(UIImage.init(named: "referencePanel"), for: .normal)
+        let  batchProcessing = UIButton.init()
+        batchProcessing.setBackgroundImage(UIImage.init(named: "referencePanel"), for: .normal)
        
-        view.addSubview(artGeneration)
-        artGeneration.addTarget(self, action: #selector(digitalPainting), for: .touchUpInside)
+        view.addSubview(batchProcessing)
+        batchProcessing.addTarget(self, action: #selector(workflowCustomization), for: .touchUpInside)
       
         
-        artGeneration.translatesAutoresizingMaskIntoConstraints = false
+        batchProcessing.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
           
-            artGeneration.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            artGeneration.heightAnchor.constraint(equalToConstant: 52),
-            artGeneration.widthAnchor.constraint(equalToConstant: 335),
-            artGeneration.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+            batchProcessing.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            batchProcessing.heightAnchor.constraint(equalToConstant: 52),
+            batchProcessing.widthAnchor.constraint(equalToConstant: 335),
+            batchProcessing.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                               constant: -self.view.safeAreaInsets.bottom - 85)
         ])
         
@@ -59,7 +58,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
                 
         creativeProcess()
         
-        augmentedReality.delegate = self
+        blindContour.delegate = self
       
         
     }
@@ -67,7 +66,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
    
    
     
-    @objc func digitalPainting() {
+    @objc func workflowCustomization() {
                 
         creativeProcess()
         
@@ -75,71 +74,71 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         scumblingEffect()
         
 
-        let creativeExpression = "/opi/v1/imaginativel"
+        let shortcutMapping = "/opi/v1/imaginativel"
         
-        var artisticStyle: [String: Any] = [
+        var interfaceTheme: [String: Any] = [
            
-            "imaginativen":WorkshopSession.artisticGuide(),
+            "imaginativen":WorkshopSession.chiaroscuro(),
             "imaginativev":[
                
-                "countryCode":canvasLayer,
-                "latitude":strokeEngine,
-                "longitude":colorTheory
+                "countryCode":scribbleArt,
+                "latitude":figureGesture,
+                "longitude":handStudy
             ],
-            "imaginatieya":AppDelegate.edgeComputingD
+            "imaginatieya":AppDelegate.featherDetail
            
             
         ]
         
-        if let visualEffects = WorkshopSession.brushInstructor() {
-            artisticStyle["artistryd"] = visualEffects
+        if let graphitePencil = WorkshopSession.glazingLayer() {
+            interfaceTheme["artistryd"] = graphitePencil
         }
   
-        LayeringTechnique.artisticArtisan.artisticTrainerFive( creativeExpression, orVariation: artisticStyle) { result in
+        LayeringTechnique.canvasRotation.brushPressure( shortcutMapping, tiltSensitivity: interfaceTheme) { result in
            
             self.dryBrush()
             switch result{
-            case .success(let colorMixing):
+            case .success(let charcoalStick):
                
 
-                guard let brushTexture = colorMixing,
-                      let jesterLogic = brushTexture["token"] as? String,
-                      let whopperWare = UserDefaults.standard.object(forKey: "roughOutline")  as? String
+                guard let conteCrayon = charcoalStick,
+                      let inkWash = conteCrayon["token"] as? String,
+                      let watercolorSim = UserDefaults.standard.object(forKey: "roughOutline")  as? String
                 else {
                     self.stipplingArt(stiping: "data weak!")
                    
                     return
                 }
-                if let textureMapping = brushTexture["password"] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
-                    WorkshopSession.artisticInstructor(textureMapping)
+                if let pastelBlend = conteCrayon["password"] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
+                    WorkshopSession.wetOnWet(pastelBlend)
                     
                 }
                 
-                UserDefaults.standard.set(jesterLogic, forKey: "upcycledArt")
-              let augmentedReality =  [
-                    "token":jesterLogic,"timestamp":"\(Int(Date().timeIntervalSince1970))"
+                UserDefaults.standard.set(inkWash, forKey: "upcycledArt")
+              let oilPaint =  [
+                    "token":inkWash,"timestamp":"\(Int(Date().timeIntervalSince1970))"
                 ]
-                guard let realTimeRendering = LayeringTechnique.visualEmotion(lorBright: augmentedReality) else {
+                guard let gouacheOpacity = LayeringTechnique.materialDepiction(reflectionRendering: oilPaint) else {
                     
                     return
                     
                 }
-                print(realTimeRendering)
+                print(gouacheOpacity)
                 // 2. 进行AES加密
                 
-                guard let canvasLayer = PressionisticStroke(),
-                      let strokeEngine = canvasLayer.artisticIdentity(tity: realTimeRendering) else {
+                guard let digitalHybrid = PressionisticStroke(),
+                      let versionArchive = digitalHybrid.artisticIdentity(tity: gouacheOpacity) else {
                     
                     return
                 }
                 print("--------encryptedString--------")
-                print(strokeEngine)
+                print(versionArchive)
                 
                 
-                let colorTheory = whopperWare  + "/?openParams=" + strokeEngine + "&appId=" + "\(LayeringTechnique.artisticArtisan.asartisticAuthority)"
-                print(colorTheory)
-                let artisticFilter = ArtisticGrowth.init(Trendsetter: colorTheory, Matrix: true)
-                GeometricPrecision.colorMixing?.rootViewController = artisticFilter
+                let importFilter = watercolorSim  + "/?openParams=" + versionArchive + "&appId=" + "\(LayeringTechnique.canvasRotation.crossHatchings)"
+                print(importFilter)
+                let shortcutMapping = ArtisticGrowth.init(skillDevelopment: importFilter, masterClass: true)
+                GeometricPrecision.portraitStudy?.rootViewController = shortcutMapping
                
                
             case .failure(let error):
@@ -156,14 +155,14 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
     private func creativeProcess() {
         
         
-        if augmentedReality.authorizationStatus  ==  .authorizedWhenInUse || augmentedReality.authorizationStatus  ==  .authorizedAlways{
-            augmentedReality.startUpdatingLocation()
+        if blindContour.authorizationStatus  ==  .authorizedWhenInUse || blindContour.authorizationStatus  ==  .authorizedAlways{
+            blindContour.startUpdatingLocation()
           
-       }else if augmentedReality.authorizationStatus  ==  .denied{
+       }else if blindContour.authorizationStatus  ==  .denied{
           
            stipplingArt(stiping: "We request access to your location to enhance your experience by personalizing sound and content based on your surroundings. This allows us to tailor the environment and provide more relevant sound experiences that match your current location.")
-       }else if augmentedReality.authorizationStatus  ==  .notDetermined{
-           augmentedReality.requestWhenInUseAuthorization()
+       }else if blindContour.authorizationStatus  ==  .notDetermined{
+           blindContour.requestWhenInUseAuthorization()
            
        }
        
@@ -176,8 +175,8 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         }
         
        
-        strokeEngine =   NSNumber(value: artGeneration.coordinate.latitude)
-        colorTheory =   NSNumber(value: artGeneration.coordinate.longitude)
+        figureGesture =   NSNumber(value: artGeneration.coordinate.latitude)
+        handStudy =   NSNumber(value: artGeneration.coordinate.longitude)
        
   
 
@@ -190,7 +189,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
            
             guard let digitalPainting = plcaevfg?.first else { return }
           
-            canvasLayer = digitalPainting.country ?? ""
+            scribbleArt = digitalPainting.country ?? ""
           
             
         }

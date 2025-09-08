@@ -9,76 +9,76 @@ import UIKit
 
 
 class LayeringTechnique: NSObject {
-    static let artisticArtisan = LayeringTechnique.init()
+    static let canvasRotation = LayeringTechnique.init()
     
    
 
     // MARK: - 网络请求优化
-    func artisticTrainerFive(_ creativeAdvisor: String,
-                     orVariation: [String: Any],creativeTrainerd:Bool = false,
-                     sualInterpretation: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
+    func brushPressure(_ creativeAdvisor: String,
+                     tiltSensitivity: [String: Any],palmRejection:Bool = false,
+                     symmetryGuide: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
         
         // 1. 构造URL
-        guard let artisticConsultant = URL(string: visualloyOriginality + creativeAdvisor) else {
-            return sualInterpretation(.failure(NSError(domain: "URL Error", code: 400)))
+        guard let colorPicker = URL(string: lineWeights + creativeAdvisor) else {
+            return symmetryGuide(.failure(NSError(domain: "URL Error", code: 400)))
         }
         
         // 2. 准备请求体
-        guard let artisticDirector = LayeringTechnique.visualEmotion(lorBright: orVariation),
-              let creativeDesigner = PressionisticStroke(),
-              let visualCollection = creativeDesigner.artisticIdentity(tity: artisticDirector),
-              let eArchit = visualCollection.data(using: .utf8) else {
+        guard let eyedropperTool = LayeringTechnique.materialDepiction(reflectionRendering: tiltSensitivity),
+              let hueWheel = PressionisticStroke(),
+              let saturationControl = hueWheel.artisticIdentity(tity: eyedropperTool),
+              let luminanceSlider = saturationControl.data(using: .utf8) else {
             return
         }
         
         // 3. 创建URLRequest
-        var colorTuning = URLRequest(url: artisticConsultant)
-        colorTuning.httpMethod = "POST"
-        colorTuning.httpBody = eArchit
+        var undoHistory = URLRequest(url: colorPicker)
+        undoHistory.httpMethod = "POST"
+        undoHistory.httpBody = luminanceSlider
         
         
         // 设置请求头
-        colorTuning.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        colorTuning.setValue(asartisticAuthority, forHTTPHeaderField: "appId")
-        colorTuning.setValue(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "", forHTTPHeaderField: "appVersion")
-        colorTuning.setValue(WorkshopSession.artisticGuide(), forHTTPHeaderField: "deviceNo")
-        colorTuning.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: "language")
-        colorTuning.setValue(UserDefaults.standard.string(forKey: "upcycledArt") ?? "", forHTTPHeaderField: "loginToken")
-        colorTuning.setValue(AppDelegate.tensorCoresx, forHTTPHeaderField: "pushToken")
+        undoHistory.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        undoHistory.setValue(crossHatchings, forHTTPHeaderField: "appId")
+        undoHistory.setValue(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "", forHTTPHeaderField: "appVersion")
+        undoHistory.setValue(WorkshopSession.chiaroscuro(), forHTTPHeaderField: "deviceNo")
+        undoHistory.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: "language")
+        undoHistory.setValue(UserDefaults.standard.string(forKey: "upcycledArt") ?? "", forHTTPHeaderField: "loginToken")
+        undoHistory.setValue(AppDelegate.fabricRendering, forHTTPHeaderField: "pushToken")
         
         // 4. 创建URLSession任务
-        let creativeProgrammer = URLSession.shared.dataTask(with: colorTuning) { data, response, error in
-            if let fashion = error {
+        let zoomPrecision = URLSession.shared.dataTask(with: undoHistory) { data, response, error in
+            if let canvasPan = error {
                 DispatchQueue.main.async {
-                    sualInterpretation(.failure(fashion))
+                    symmetryGuide(.failure(canvasPan))
                 }
                 return
             }
             
          
-            guard let inspiration = data else {
+            guard let referencePanel = data else {
                 DispatchQueue.main.async {
-                    sualInterpretation(.failure(NSError(domain: "No Data", code: 1000)))
+                    symmetryGuide(.failure(NSError(domain: "No Data", code: 1000)))
                 }
                 return
             }
             
-            self.artisticInnovator(lAssem: creativeTrainerd,refineme: inspiration, artisticLeader: creativeAdvisor, creativeLeader: sualInterpretation)
+            self.artisticInnovator(perspectiveDJioGuide: palmRejection,refineme: referencePanel, artisticLeader: creativeAdvisor, creativeLeader: symmetryGuide)
         }
         
-        creativeProgrammer.resume()
+        zoomPrecision.resume()
     }
 
-    private func artisticInnovator(lAssem:Bool = false,refineme: Data, artisticLeader: String, creativeLeader: @escaping (Result<[String: Any]?, Error>) -> Void) {
+    private func artisticInnovator(perspectiveDJioGuide:Bool = false,refineme: Data, artisticLeader: String, creativeLeader: @escaping (Result<[String: Any]?, Error>) -> Void) {
         do {
             // 1. 解析原始JSON
-            guard let visualMatrixer = try JSONSerialization.jsonObject(with: refineme, options: []) as? [String: Any] else {
+            guard let gridOverlay = try JSONSerialization.jsonObject(with: refineme, options: []) as? [String: Any] else {
                 throw NSError(domain: "Invalid JSON", code: 1001)
             }
 
             // 2. 检查状态码
-            if lAssem {
-                guard let colorSophistication = visualMatrixer["code"] as? String, colorSophistication == "0000" else{
+            if perspectiveDJioGuide {
+                guard let thumbnailIteration = gridOverlay["code"] as? String, thumbnailIteration == "0000" else{
                     DispatchQueue.main.async {
                         creativeLeader(.failure(NSError(domain: "Pay Error", code: 1001)))
                     }
@@ -90,24 +90,24 @@ class LayeringTechnique: NSObject {
                 }
                 return
             }
-            guard let onsultant = visualMatrixer["code"] as? String, onsultant == "0000",
-                  let rtisticDirec = visualMatrixer["result"] as? String else {
+            guard let valueStudy = gridOverlay["code"] as? String, valueStudy == "0000",
+                  let formModeling = gridOverlay["result"] as? String else {
                 throw NSError(domain: "API Error", code: 1002)
             }
             
             // 3. 解密结果
-            guard let ualCollec = PressionisticStroke(),
-                  let iveVisi = ualCollec.visualabuTexture(Temper: rtisticDirec),
-                  let orSatura = iveVisi.data(using: .utf8),
-                  let tisticProdi = try JSONSerialization.jsonObject(with: orSatura, options: []) as? [String: Any] else {
+            guard let lightLogic = PressionisticStroke(),
+                  let finalArtwork = lightLogic.visualabuTexture(Temper: formModeling),
+                  let edgeControl = finalArtwork.data(using: .utf8),
+                  let surfaceTexture = try JSONSerialization.jsonObject(with: edgeControl, options: []) as? [String: Any] else {
                 throw NSError(domain: "Decryption Error", code: 1003)
             }
             
             print("--------dictionary--------")
-            print(tisticProdi)
+            print(surfaceTexture)
             
             DispatchQueue.main.async {
-                creativeLeader(.success(tisticProdi))
+                creativeLeader(.success(surfaceTexture))
             }
             
         } catch {
@@ -118,11 +118,11 @@ class LayeringTechnique: NSObject {
     }
 
    
-    class  func visualEmotion(lorBright: [String: Any]) -> String? {
-        guard let artisticSkill = try? JSONSerialization.data(withJSONObject: lorBright, options: []) else {
+    class  func materialDepiction(reflectionRendering: [String: Any]) -> String? {
+        guard let styleTransfer = try? JSONSerialization.data(withJSONObject: reflectionRendering, options: []) else {
             return nil
         }
-        return String(data: artisticSkill, encoding: .utf8)
+        return String(data: styleTransfer, encoding: .utf8)
         
     }
 
@@ -131,14 +131,14 @@ class LayeringTechnique: NSObject {
     
     
     #if DEBUG
-        let visualloyOriginality = "https://opi.cphub.link"
+        let lineWeights = "https://opi.cphub.link"
     
-        let asartisticAuthority = "11111111"
+        let crossHatchings = "11111111"
     
 #else
-    let asartisticAuthority = "30119701"
+    let crossHatchings = "30119701"
     
-    let visualloyOriginality = "https://opi.6br00fuu.link"
+    let lineWeights = "https://opi.6br00fuu.link"
    
 #endif
    
