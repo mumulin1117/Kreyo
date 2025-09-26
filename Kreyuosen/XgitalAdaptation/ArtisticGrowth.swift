@@ -51,7 +51,7 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
  
     private func techniqueDemonstration()  {
         
-        let pencil = UIImageView(image:UIImage(named: "pencilShading") )
+        let pencil = UIImageView(image:UIImage(named: "pencilShadinger") )
         pencil.frame = self.view.frame
         pencil.contentMode = .scaleAspectFill
         view.addSubview(pencil)
