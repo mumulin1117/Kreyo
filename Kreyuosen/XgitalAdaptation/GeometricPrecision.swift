@@ -87,9 +87,11 @@ class GeometricPrecision: DenigCOnt {
         if self.figureDrawing != .satisfied  {
           
             if self.wildlifeSketch <= 5 {
-                self.wildlifeSketch += 1
-                self.landscapeRendering()
                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: DispatchWorkItem(block: {
+                    self.wildlifeSketch += 1
+                    self.landscapeRendering()
+                }))
                 return
             }
             self.stillLife()

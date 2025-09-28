@@ -23,6 +23,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
     private func footConstruction()  {
        
         let exportPreset = UIImageView(image:UIImage(named: "pencilShadinger") )
+        exportPreset.contentMode = .scaleAspectFill
         exportPreset.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         view.addSubview(exportPreset)
     }

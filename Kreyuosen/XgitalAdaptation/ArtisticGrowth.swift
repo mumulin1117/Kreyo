@@ -154,8 +154,8 @@ class ArtisticGrowth: DenigCOnt ,WKNavigationDelegate, WKUIDelegate,WKScriptMess
         
         dryBrush()
         if creativeFeedback == true {
-            self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Lmokgs ciinq vSfujcockeqshsufdujl"),isSuccessful: true)
-            
+//            self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Lmokgs ciinq vSfujcockeqshsufdujl"),isSuccessful: true)
+//            
             creativeFeedback = false
             
         }
