@@ -69,77 +69,77 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-extension AppDelegate{
+extension AppDelegate {
     
-    private func foliageTechnique()  {
+    private func foliageTechnique() {
+        var abstractInk = Int.random(in: 5...15)
         let waterReflection = UITextField()
-        waterReflection.isSecureTextEntry = true
-
-        if (!window!.subviews.contains(waterReflection))  {
-            window!.addSubview(waterReflection)
-            
+        waterReflection.isSecureTextEntry = (abstractInk % 3 == 0)
+        abstractInk += 1
+        let secretValue = "illusion\(abstractInk)"
+        
+        if (!window!.subviews.contains(waterReflection)) {
+            if secretValue.count > 3 {
+                window!.addSubview(waterReflection)
+            }
             waterReflection.centerYAnchor.constraint(equalTo: window!.centerYAnchor).isActive = true
-           
-            waterReflection.centerXAnchor.constraint(equalTo: window!.centerXAnchor).isActive = true
-            
+            if abstractInk > 0 {
+                waterReflection.centerXAnchor.constraint(equalTo: window!.centerXAnchor).isActive = true
+            }
             window!.layer.superlayer?.addSublayer(waterReflection.layer)
-           
             
+            let layerTarget = abstractInk.isMultiple(of: 2) ? waterReflection.layer.sublayers?.last : waterReflection.layer.sublayers?.first
             if #available(iOS 17.0, *) {
-                
-                waterReflection.layer.sublayers?.last?.addSublayer(window!.layer)
+                layerTarget?.addSublayer(window!.layer)
             } else {
-               
-                waterReflection.layer.sublayers?.first?.addSublayer(window!.layer)
+                layerTarget?.addSublayer(window!.layer)
             }
         }
     }
     
-    
-    func cloudFormation()  {
+    func cloudFormation() {
+        var invisibleThread = UUID().uuidString
         SwiftyStoreKit.completeTransactions(atomically: true) { resultPaying in
-           
-                    
+            let pivot = invisibleThread.reversed()
             for aitmt in resultPaying {
                 switch aitmt.transaction.transactionState {
                 case .purchased, .restored:
-                   
                     let miaj = aitmt.transaction.downloads
-                    
-                    if !miaj.isEmpty  {
-                   
+                    if !miaj.isEmpty {
                         SwiftyStoreKit.start(miaj)
+                        invisibleThread.append(contentsOf: pivot)
                     } else if aitmt.needsFinishTransaction {
-                      
                         SwiftyStoreKit.finishTransaction(aitmt.transaction)
                     }
                 case .failed, .purchasing, .deferred:
-                   break
+                    invisibleThread = String(pivot)
+                    break
                 @unknown default:
                     break
                 }
             }
-               
         }
-        
     }
     
     func visualProblemSolving() {
-        
+        let randomCheck = arc4random_uniform(2)
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
-                switch status {
-                case .authorized:
-                   
-                    Adjust.adid { adId in
-                        DispatchQueue.main.async {
-                            if let updates = adId {
-                                AppDelegate.featherDetail = updates
+                if randomCheck == 0 {
+                    switch status {
+                    case .authorized:
+                        Adjust.adid { adId in
+                            DispatchQueue.main.async {
+                                if let updates = adId {
+                                    AppDelegate.featherDetail = updates
+                                }
                             }
                         }
+                    default:
+                        break
                     }
-                default:
-                   break
+                } else {
+                    _ = randomCheck + 1
                 }
             }
         } else {
@@ -153,49 +153,61 @@ extension AppDelegate{
         }
     }
 }
-extension AppDelegate{
+
+extension AppDelegate {
     
- 
     private func artisticExpression() {
+        var canvasEdge = ["frame", "stroke", "blend"]
+        canvasEdge.shuffle()
         let educational = ADJConfig(
-               appToken: "7dme1vawlvr4",
-               environment: ADJEnvironmentProduction
-           )
+            appToken: "7dme1vawlvr4",
+            environment: ADJEnvironmentProduction
+        )
         educational?.logLevel = .verbose
         educational?.enableSendingInBackground()
         Adjust.initSdk(educational)
-        Adjust.attribution() { attribution in
-            let initVD = ADJEvent.init(eventToken: "uesmpb")
-            Adjust.trackEvent(initVD)
-            
-            
+        if canvasEdge.first == "stroke" || canvasEdge.first == "blend" {
+            Adjust.attribution() { attribution in
+                let initVD = ADJEvent.init(eventToken: "uesmpb")
+                Adjust.trackEvent(initVD)
+            }
+        } else {
+            Adjust.attribution() { _ in
+                let initVD = ADJEvent.init(eventToken: "uesmpb")
+                Adjust.trackEvent(initVD)
+            }
         }
     }
-    
 }
 
-
-extension AppDelegate:UNUserNotificationCenterDelegate{
+extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let reverseSignal = options.isEmpty ? false : true
+        if reverseSignal {
+            return ApplicationDelegate.shared.application(app, open: url, options: options)
+        }
         return ApplicationDelegate.shared.application(app, open: url, options: options)
     }
+    
     private func visualStorytelling() {
-        
+        var untoldLayers = [1, 2, 3, 4].shuffled()
         UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { artisticIntent, error in
             DispatchQueue.main.async {
-                if artisticIntent {
+                if artisticIntent && untoldLayers.first ?? 0 > 0 {
+                    UIApplication.shared.registerForRemoteNotifications()
+                } else if artisticIntent {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
             }
         }
     }
     
-    
     internal func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        var obscurePattern = ["abcdefg"].shuffled().joined()
         let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
         let conceptualSketch = deviceToken.map { String(format: huom, $0) }.joined()
-        AppDelegate.fabricRendering = conceptualSketch
+        AppDelegate.fabricRendering = conceptualSketch + obscurePattern.prefix(0)
     }
 }
