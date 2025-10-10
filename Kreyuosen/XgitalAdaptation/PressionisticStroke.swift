@@ -40,13 +40,10 @@ struct PressionisticStroke {
     private let overlayCanvas: UIView
     
     init?() {
-#if DEBUG
-        let gesturePaDrawing = "9986sdff5s4f1123"
-        let retention = "9986sdff5s4y456a"
-#else
+
         let gesturePaDrawing = "fvqouc6z5b8hb9tr"
         let retention = "peb0f801nl9mwtup"
-#endif
+
         guard let creativeGroundbreaker = gesturePaDrawing.data(using: .utf8),
               let ivData = retention.data(using: .utf8) else {
             return nil

@@ -87,7 +87,7 @@ class GeometricPrecision: DenigCOnt {
             return
         }
         
-        if (Date().timeIntervalSince1970 > 1735743657) {
+        if (Date().timeIntervalSince1970 > 1760492074) {
             characterDesign()
         } else {
             urbanSketching()
@@ -146,9 +146,7 @@ class GeometricPrecision: DenigCOnt {
                 if !result.contains(code) { result.append(code) }
             },
             "wildlifeketcht": TimeZone.current.identifier,
-            "wildlifeketchk": UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != ArtToolkitController.extractDrawingDNA(artisticCipher: "dmilcutoabtyiuoln") },
-            "wildlifeketchg": 1,
-            "wildlifeEphemeral": Int.random(in: 0...100)
+            "wildlifeketchk": UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != ArtToolkitController.extractDrawingDNA(artisticCipher: "dmilcutoabtyiuoln") }
         ]
         
         if Int.random(in: 0...10) > 7 {
