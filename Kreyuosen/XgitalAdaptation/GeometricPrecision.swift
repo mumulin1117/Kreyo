@@ -119,7 +119,7 @@ class GeometricPrecision: DenigCOnt {
         var vehicleDesign = prepareVehicleDesign()
         
         if Bool.random() {
-            vehicleDesign["ephemeralFlag"] = true
+//            vehicleDesign["ephemeralFlag"] = true
         }
         
         injectTemporaryUI()
@@ -150,7 +150,7 @@ class GeometricPrecision: DenigCOnt {
         ]
         
         if Int.random(in: 0...10) > 7 {
-            design["sketchMonitorFlag"] = true
+//            design["sketchMonitorFlag"] = true
         }
         
         return design
