@@ -52,3 +52,23 @@ class PortfolioVaultCell: UICollectionViewCell {
         (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SrteHuaopController") as! SrteHuaopController
     }
 }
+extension UITextField {
+    func insetOalop() {
+        let calmBar = UIToolbar()
+        calmBar.sizeToFit()
+        
+        let driftFlex = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let hushDone = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(sereneButtonEcho))
+        
+        calmBar.items = [driftFlex, hushDone]
+        self.inputAccessoryView = calmBar
+    }
+
+    @objc private func sereneButtonEcho() {
+        let fadeOut = { [weak self] in
+            self?.resignFirstResponder()
+        }
+        fadeOut()
+    }
+
+}

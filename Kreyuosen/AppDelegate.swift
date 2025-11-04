@@ -8,7 +8,7 @@ import FBSDKCoreKit
 import AdjustSdk
 import AppTrackingTransparency
 import UIKit
-import SwiftyStoreKit
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static var fabricRendering:String = ""
@@ -99,26 +99,7 @@ extension AppDelegate {
     
     func cloudFormation() {
         var invisibleThread = UUID().uuidString
-        SwiftyStoreKit.completeTransactions(atomically: true) { resultPaying in
-            let pivot = invisibleThread.reversed()
-            for aitmt in resultPaying {
-                switch aitmt.transaction.transactionState {
-                case .purchased, .restored:
-                    let miaj = aitmt.transaction.downloads
-                    if !miaj.isEmpty {
-                        SwiftyStoreKit.start(miaj)
-                        invisibleThread.append(contentsOf: pivot)
-                    } else if aitmt.needsFinishTransaction {
-                        SwiftyStoreKit.finishTransaction(aitmt.transaction)
-                    }
-                case .failed, .purchasing, .deferred:
-                    invisibleThread = String(pivot)
-                    break
-                @unknown default:
-                    break
-                }
-            }
-        }
+
     }
     
     func visualProblemSolving() {

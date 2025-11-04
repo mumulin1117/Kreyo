@@ -7,7 +7,6 @@
 
 import UIKit
 
-import FSPagerView
 extension Double {
     
     var xInspire: CGFloat {
@@ -19,7 +18,7 @@ extension Double {
     }
 }
 
-class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+class ArtToolkitController: DenigCOnt,UICollectionViewDataSource, UICollectionViewDelegate {
     private var sketchTimeline: [SketchCommit] = []
       
     private var sfumatoEffect = Array<Dictionary<String,Any>>()
@@ -49,17 +48,38 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         return ""
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == sketchCarousel {
+            let next = PromptIdeasController(
+                   stillLife: TraditionalMethod.resolutionSetting.detailEnhancement(emphasizing: "\(indexPath.item)")
+               )
+               navigationController?.pushViewController(next, animated: true)
+            return
+        }
+        
         let KIJJI = artselection[indexPath.row]["stillLife"] as? Int
         let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.shortcutKey.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     private let autoSaveInterval: TimeInterval = 300
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        artselection.count
+        if collectionView == sketchCarousel {
+            return sfumatoEffect.count
+        }
+        return artselection.count
     }
     private let maxUndoSteps = 20
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == sketchCarousel {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SketchCarouselCell", for: indexPath) as! SketchCarouselCell
+                let data = sfumatoEffect[indexPath.item]
+                if let imgURL = (data["coolHues"] as? [String])?.first {
+                    AppDelegate.scumblingEffect(layeringTechnique: cell.imageView, contrastRatio: imgURL)
+                }
+                cell.titleLabel.text = data["portraitMode"] as? String ?? ""
+                return cell
+        }
         let artselectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtToolkitARTCell", for: indexPath) as! ArtToolkitARTCell
         let KIJJI = artselection[indexPath.row]
         if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
@@ -92,35 +112,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
     
         
     }
-    func numberOfItems(in pagerView: FSPagerView) -> Int {
-        sfumatoEffect.count
-    }
-    
-    func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
-        let mainge = pagerView.dequeueReusableCell(withReuseIdentifier: "mainge", at: index)
-        mainge.imageView?.contentMode = .scaleAspectFill
-        
-        let KIJJI = sfumatoEffect[index]
-        if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
-            AppDelegate.scumblingEffect(layeringTechnique: mainge.imageView!, contrastRatio: assd)
-        }
-       
-       
-        mainge.textLabel?.text = KIJJI["portraitMode"] as? String
-        mainge.textLabel?.textColor = .white
-        mainge.textLabel?.textAlignment = .center
-        mainge.textLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
-        mainge.textLabel?.backgroundColor = .clear
-        mainge.layer.cornerRadius = 20
-        mainge.layer.masksToBounds = true
-        return mainge
-    }
-    
-    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.resolutionSetting.detailEnhancement(emphasizing: "\(index)"))
-        self.navigationController?.pushViewController(localArtists, animated: true)
-    }
+
 
     @IBOutlet weak var heightBrush: NSLayoutConstraint!
     
@@ -138,8 +130,9 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
     
     @IBOutlet weak var dremao: NSLayoutConstraint!
    
-  
-    private var sketchDekgn:FSPagerView?
+    private var sketchCarousel: UICollectionView!
+    private var autoScrollTimer: Timer?
+
     
     
     override func viewDidLoad() {
@@ -153,31 +146,64 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
         topiaibBer.constant =  20.yInspire
         Sdcvet.constant =  20.yInspire
         
+        setupSketchCarousel()
         
-        
-        sketchDekgn = FSPagerView.init(frame: .zero)
-        sketchDekgn?.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "mainge")
-        sketchDekgn?.dataSource = self
-        sketchDekgn?.transformer = FSPagerViewTransformer(type: .linear)
-        sketchDekgn?.backgroundColor = .clear
-        sketchDekgn?.itemSize = CGSize(width: 260, height: 210.yInspire) // 缩小尺寸增强立体
-        sketchDekgn?.automaticSlidingInterval = 2
-        
-        sketchDekgn?.delegate = self
-        if let transformer = sketchDekgn?.transformer as? FSPagerViewTransformer {
-            transformer.minimumScale = 0.8  // 后方卡片缩放
-            transformer.minimumAlpha = 0.5  // 后方卡片透明度
-            
-        }
-        self.brushStrokes.addSubview(sketchDekgn ?? UIView())
-        
+
         artTutorial()
         
         beginnerFriendly(r: 12, g: 12, b: 12)
         
     }
         
+    func setupSketchCarousel() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 260, height: 210.yInspire)
+        layout.minimumLineSpacing = 24
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 32, bottom: 0, right: 32)
         
+        sketchCarousel = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        sketchCarousel.backgroundColor = .clear
+        sketchCarousel.showsHorizontalScrollIndicator = false
+        sketchCarousel.decelerationRate = .fast
+        sketchCarousel.clipsToBounds = false
+        sketchCarousel.register(SketchCarouselCell.self, forCellWithReuseIdentifier: "SketchCarouselCell")
+        
+        sketchCarousel.delegate = self
+        sketchCarousel.dataSource = self
+        
+        brushStrokes.addSubview(sketchCarousel)
+        sketchCarousel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            sketchCarousel.leadingAnchor.constraint(equalTo: brushStrokes.leadingAnchor),
+            sketchCarousel.trailingAnchor.constraint(equalTo: brushStrokes.trailingAnchor),
+            sketchCarousel.topAnchor.constraint(equalTo: brushStrokes.topAnchor),
+            sketchCarousel.bottomAnchor.constraint(equalTo: brushStrokes.bottomAnchor)
+        ])
+        
+        startAutoScroll()
+    }
+    func startAutoScroll() {
+        autoScrollTimer?.invalidate()
+        autoScrollTimer = Timer.scheduledTimer(withTimeInterval: 2.5, repeats: true) { [weak self] _ in
+            guard let self = self, !self.sfumatoEffect.isEmpty else { return }
+            let visible = self.sketchCarousel.indexPathsForVisibleItems.sorted()
+            guard let current = visible.first else { return }
+            let next = IndexPath(item: (current.item + 1) % self.sfumatoEffect.count, section: 0)
+            self.sketchCarousel.scrollToItem(at: next, at: .centeredHorizontally, animated: true)
+        }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let centerX = scrollView.contentOffset.x + scrollView.bounds.width / 2
+        for cell in sketchCarousel.visibleCells {
+            let baseX = cell.center.x
+            let distance = abs(centerX - baseX)
+            let scale = max(0.8, 1 - distance / scrollView.bounds.width)
+            cell.transform = CGAffineTransform(scaleX: scale, y: scale)
+            cell.alpha = max(0.5, scale)
+        }
+    }
+
     func generateArtisticInsights() -> [String] {
             guard !sketchTimeline.isEmpty else { return [] }
             
@@ -216,7 +242,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        sketchDekgn?.frame = brushStrokes.bounds
+        sketchCarousel.frame = brushStrokes.bounds
     }
 
     @IBOutlet weak var Sdcvet: NSLayoutConstraint!
@@ -260,7 +286,7 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
                         let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? Array<[String: Any]>  {
                         if sdk < 1 {
                             self.sfumatoEffect = chiaroscuro
-                            self.sketchDekgn?.reloadData()
+                            self.sketchCarousel.reloadData()
                             
                         }
                        
@@ -327,3 +353,40 @@ class ArtToolkitController: DenigCOnt, FSPagerViewDelegate, FSPagerViewDataSourc
 }
 
 
+final class SketchCarouselCell: UICollectionViewCell {
+    let imageView = UIImageView()
+    let titleLabel = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 20
+        imageView.clipsToBounds = true
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = .white
+        titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        titleLabel.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        titleLabel.layer.cornerRadius = 10
+        titleLabel.clipsToBounds = true
+        
+        contentView.addSubview(imageView)
+        contentView.addSubview(titleLabel)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4),
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
+            titleLabel.heightAnchor.constraint(equalToConstant: 28)
+        ])
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

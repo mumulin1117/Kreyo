@@ -7,7 +7,7 @@
 
 import UIKit
 import WebKit
-import SwiftyStoreKit
+
 
 enum TraditionalMethod:String {
     case negativeSpace = "negativeSpace"
@@ -315,23 +315,18 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
 
 extension PromptIdeasController{
     func abstractGeometry(artResource:String)  {
-        SwiftyStoreKit.purchaseProduct(artResource, atomically: true) { psResult in
+        JIAollzj.shared.startPurchase(id: artResource) { dosio in
             self.dryBrush()
             
             self.view.isUserInteractionEnabled = true
-            if case .success(_) = psResult {
+            switch dosio{
+            case .success(let fsdse):
                 self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pwasyd vstuocfcnershsvfluelh!"))
                 self.draperyFolds.evaluateJavaScript("colorPalette()", completionHandler: nil)
-            }else if case .error(let error) = psResult {
-                self.view.isUserInteractionEnabled = true
-                if error.code == .paymentCancelled {
-                    
-                    return
-                }
-          
-                self.stipplingArt(stiping: error.localizedDescription)
+            case .failure(let mkso):
+                self.stipplingArt(stiping: mkso.localizedDescription)
             }
-            
         }
+
     }
 }

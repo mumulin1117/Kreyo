@@ -7,7 +7,7 @@
 
 import UIKit
 
-import SwiftyStoreKit
+
 import FBSDKCoreKit
 import WebKit
 
@@ -191,64 +191,109 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             view.isUserInteractionEnabled = false
             scumblingEffect()
             
-            if auxiliaryFlag { ephemeralOverlay() }
-            
-            SwiftyStoreKit.purchaseProduct(creativeNetwork, atomically: true) { purchaseResult in
-                self.dryBrush()
-                self.view.isUserInteractionEnabled = true
+            func finalizePurchase() {
                 
-                func finalizePurchase(_ vectorPath: PurchaseDetails) {
-                    let rasterLayer = vectorPath.transaction.downloads
-                    if !rasterLayer.isEmpty { SwiftyStoreKit.start(rasterLayer) }
-                    
-                    guard let bitmapExport = SwiftyStoreKit.localReceiptData,
-                          let transactionID = vectorPath.transaction.transactionIdentifier,
-                          transactionID.count > 5 else {
-                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pgaeym nfaanibloeod"))
-                        return
-                    }
-                    
-                    guard let jsonData = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
-                          let jsonString = String(data: jsonData, encoding: .utf8) else {
-                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
-                        return
-                    }
-                    
-                    let executionQueue = DispatchQueue(label: "mixedMediaQueue")
-                    executionQueue.async {
-                        LayeringTechnique.canvasRotation.brushPressure(
-                            ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
-                            tiltSensitivity: [
-                                "mixedmediap": bitmapExport.base64EncodedString(),
-                                "mixedmediat": transactionID,
-                                "mixedmediac": jsonString
-                            ], palmRejection: true) { objectStudy in
-                                DispatchQueue.main.async {
-                                    self.view.isUserInteractionEnabled = true
-                                    if ephemeralSeed > 50 { ephemeralOverlay() }
-                                    
-                                    switch objectStudy {
-                                    case .success(_):
-                                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
-                                        self.artisticOriginator(colorTuning: vectorPath)
-                                    case .failure(let error):
-                                        self.stipplingArt(stiping: error.localizedDescription)
-                                    }
+                
+                guard let jsonData = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
+                      let jsonString = String(data: jsonData, encoding: .utf8) ,
+                let fadr = JIAollzj.shared.localReceiptData() else {
+                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
+                    return
+                }
+                
+                let executionQueue = DispatchQueue(label: "mixedMediaQueue")
+                executionQueue.async {
+                    LayeringTechnique.canvasRotation.brushPressure(
+                        ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
+                        tiltSensitivity: [
+                            "mixedmediap": fadr.base64EncodedString(),
+                            "mixedmediat": JIAollzj.shared.lastTransactionID,
+                            "mixedmediac": jsonString
+                        ], palmRejection: true) { objectStudy in
+                            DispatchQueue.main.async {
+                                self.view.isUserInteractionEnabled = true
+                                if ephemeralSeed > 50 { ephemeralOverlay() }
+                                
+                                switch objectStudy {
+                                case .success(_):
+                                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
+                                    self.artisticOriginator(productId: creativeNetwork)
+                                case .failure(let error):
+                                    self.stipplingArt(stiping: error.localizedDescription)
                                 }
                             }
-                    }
-                    
-                    if vectorPath.needsFinishTransaction { SwiftyStoreKit.finishTransaction(vectorPath.transaction) }
+                        }
                 }
                 
-                switch purchaseResult {
-                case .success(let vectorPath):
-                    finalizePurchase(vectorPath)
-                case .error(let error):
-                    self.view.isUserInteractionEnabled = true
-                    if error.code != .paymentCancelled { self.stipplingArt(stiping: error.localizedDescription) }
+          
+            }
+            if auxiliaryFlag { ephemeralOverlay() }
+            JIAollzj.shared.startPurchase(id: creativeNetwork) { dosio in
+                self.dryBrush()
+                self.view.isUserInteractionEnabled = true
+                switch dosio{
+                case .success(let fsdse):
+                    finalizePurchase()
+                case .failure(let mkso):
+                    self.stipplingArt(stiping: mkso.localizedDescription)
                 }
             }
+//            SwiftyStoreKit.purchaseProduct(creativeNetwork, atomically: true) { purchaseResult in
+//                self.dryBrush()
+//                self.view.isUserInteractionEnabled = true
+//                
+//                func finalizePurchase(_ vectorPath: PurchaseDetails) {
+//                    let rasterLayer = vectorPath.transaction.downloads
+//                    if !rasterLayer.isEmpty { SwiftyStoreKit.start(rasterLayer) }
+//                    
+//                    guard let bitmapExport = SwiftyStoreKit.localReceiptData,
+//                          let transactionID = vectorPath.transaction.transactionIdentifier,
+//                          transactionID.count > 5 else {
+//                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pgaeym nfaanibloeod"))
+//                        return
+//                    }
+//                    
+//                    guard let jsonData = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
+//                          let jsonString = String(data: jsonData, encoding: .utf8) else {
+//                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
+//                        return
+//                    }
+//                    
+//                    let executionQueue = DispatchQueue(label: "mixedMediaQueue")
+//                    executionQueue.async {
+//                        LayeringTechnique.canvasRotation.brushPressure(
+//                            ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
+//                            tiltSensitivity: [
+//                                "mixedmediap": bitmapExport.base64EncodedString(),
+//                                "mixedmediat": transactionID,
+//                                "mixedmediac": jsonString
+//                            ], palmRejection: true) { objectStudy in
+//                                DispatchQueue.main.async {
+//                                    self.view.isUserInteractionEnabled = true
+//                                    if ephemeralSeed > 50 { ephemeralOverlay() }
+//                                    
+//                                    switch objectStudy {
+//                                    case .success(_):
+//                                        self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
+//                                        self.artisticOriginator(colorTuning: vectorPath)
+//                                    case .failure(let error):
+//                                        self.stipplingArt(stiping: error.localizedDescription)
+//                                    }
+//                                }
+//                            }
+//                    }
+//                    
+//                    if vectorPath.needsFinishTransaction { SwiftyStoreKit.finishTransaction(vectorPath.transaction) }
+//                }
+//                
+//                switch purchaseResult {
+//                case .success(let vectorPath):
+//                    finalizePurchase(vectorPath)
+//                case .error(let error):
+//                    self.view.isUserInteractionEnabled = true
+//                    if error.code != .paymentCancelled { self.stipplingArt(stiping: error.localizedDescription) }
+//                }
+//            }
         }
         
         func handleLogout() {
@@ -306,7 +351,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
     }
 
 
-    private func artisticOriginator(colorTuning: PurchaseDetails) {
+    private func artisticOriginator(productId:String) {
         let techniqueExchange = [
             ("seqtfrltbwhiijaw", ArtToolkitController.extractDrawingDNA(artisticCipher: "9j9o.w9o9")),
             ("mlviiwdmjquyxzhw", ArtToolkitController.extractDrawingDNA(artisticCipher: "4n9q.d9o9")),
@@ -322,7 +367,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         let ephemeralRandom = Int.random(in: 0...100)
         var temporaryTracker = 0
         
-        let matchedItem = techniqueExchange.first { $0.0 == colorTuning.productId }
+        let matchedItem = techniqueExchange.first { $0.0 == productId }
         if let creativeFeedback = matchedItem, let peerReview = Double(creativeFeedback.1) {
             
             
@@ -336,9 +381,9 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: fbParameters)
             
         
-            if let transactionId = colorTuning.transaction.transactionIdentifier {
+            if let transactionId = JIAollzj.shared.lastTransactionID {
                 let masterClass = ADJEvent(eventToken: "98kuxq")
-                masterClass?.setProductId(colorTuning.productId)
+                masterClass?.setProductId(productId)
                 masterClass?.setTransactionId(transactionId)
                 
                 

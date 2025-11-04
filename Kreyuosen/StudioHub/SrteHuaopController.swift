@@ -23,6 +23,7 @@ class SrteHuaopController: DenigCOnt {
         likeMindedArtists.isUserInteractionEnabled = true
         uniqueVoice(uilabel:likeMindedArtists)
         addNormaliHeiartl()
+        workshopSession.insetOalop()
         mutualInspiration.isUserInteractionEnabled = true
         uniqueVoice(uilabel:mutualInspiration)
     }
@@ -30,7 +31,7 @@ class SrteHuaopController: DenigCOnt {
     private func addNormaliHeiartl()  {
         let adsd = ArtToolkitController.extractDrawingDNA(artisticCipher: "Paloehacszem vecnctmelrc cycocukrq slwodgkibnn qecmcanizlr rardeddrqejscs")
         creativityBoost.attributedPlaceholder = NSAttributedString(string: adsd, attributes: [.foregroundColor:UIColor.lightGray,.font:UIFont.systemFont(ofSize: 13, weight: .semibold)])
-        
+        creativityBoost.insetOalop()
         likeMindedArtists.isUserInteractionEnabled = true
         let asdixb = ArtToolkitController.extractDrawingDNA(artisticCipher: "Pjlxewaysyes tionyppuety dam zpxabsbswwooormd")
         
