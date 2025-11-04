@@ -315,7 +315,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
 
 extension PromptIdeasController{
     func abstractGeometry(artResource:String)  {
-        JIAollzj.shared.startPurchase(id: artResource) { dosio in
+        KreyoPurchaseManager.conceptSketch.thumbnailSketch(textureBrush: artResource) { dosio in
             self.dryBrush()
             
             self.view.isUserInteractionEnabled = true

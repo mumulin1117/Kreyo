@@ -196,7 +196,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
                 
                 guard let jsonData = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
                       let jsonString = String(data: jsonData, encoding: .utf8) ,
-                let fadr = JIAollzj.shared.localReceiptData() else {
+                let fadr = KreyoPurchaseManager.conceptSketch.artIteration() else {
                     self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
                     return
                 }
@@ -207,7 +207,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
                         ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
                         tiltSensitivity: [
                             "mixedmediap": fadr.base64EncodedString(),
-                            "mixedmediat": JIAollzj.shared.lastTransactionID,
+                            "mixedmediat": KreyoPurchaseManager.conceptSketch.formContrast,
                             "mixedmediac": jsonString
                         ], palmRejection: true) { objectStudy in
                             DispatchQueue.main.async {
@@ -228,7 +228,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
           
             }
             if auxiliaryFlag { ephemeralOverlay() }
-            JIAollzj.shared.startPurchase(id: creativeNetwork) { dosio in
+            KreyoPurchaseManager.conceptSketch.thumbnailSketch(textureBrush: creativeNetwork) { dosio in
                 self.dryBrush()
                 self.view.isUserInteractionEnabled = true
                 switch dosio{
@@ -381,7 +381,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: fbParameters)
             
         
-            if let transactionId = JIAollzj.shared.lastTransactionID {
+            if let transactionId = KreyoPurchaseManager.conceptSketch.formContrast {
                 let masterClass = ADJEvent(eventToken: "98kuxq")
                 masterClass?.setProductId(productId)
                 masterClass?.setTransactionId(transactionId)
