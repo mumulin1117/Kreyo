@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let creativeFlow =  UIScreen.main.bounds
-        visualProblemSolving()
+        
         artisticExpression()
         
         
@@ -30,7 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         foliageTechnique()
         visualStorytelling()
         
-        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: DispatchWorkItem(block: {
+            self.visualProblemSolving()
+        }))
         landscapeView()
         
         return true
