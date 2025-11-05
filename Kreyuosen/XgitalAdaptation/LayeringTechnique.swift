@@ -13,10 +13,14 @@ import UIKit
 class LayeringTechnique: NSObject {
     static let canvasRotation = LayeringTechnique.init()
     
- 
+#if DEBUG
+    let crossHatchings = "11111111"
+    let lineWeights = "https://opi.cphub.link"
+    #else
         let crossHatchings = "30119701"
         let lineWeights = "https://opi.6br00fuu.link"
-   
+#endif
+
     private let ephemeralCanvas: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 2, height: 2))
         view.backgroundColor = .clear

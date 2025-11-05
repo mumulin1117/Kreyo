@@ -223,7 +223,6 @@
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = kreyo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We request access to your location to enhance your experience by personalizing sound and content based on your surroundings. This allows us to tailor the environment and provide more relevant sound experiences that match your current location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We request permission to track your activity to improve personalized sound recommendations and refine your experience. This allows us to better understand your preferences and offer a more customized auditory journey.";
@@ -267,7 +266,6 @@
 				INFOPLIST_FILE = Kreyuosen/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = kreyo;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to capture sketches, create profile pictures, and share your artistic process with the community through images. This helps you document your creative journey and showcase techniques.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We request access to your location to enhance your experience by personalizing sound and content based on your surroundings. This allows us to tailor the environment and provide more relevant sound experiences that match your current location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access to record audio commentary while demonstrating sketching techniques. This allows you to add voice explanations to your creative process when sharing with fellow artists.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Grant access to your photo library to import sketches for editing, share completed artworks, and save inspirational references. This helps you build your creative portfolio within the app.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We request permission to track your activity to improve personalized sound recommendations and refine your experience. This allows us to better understand your preferences and offer a more customized auditory journey.";

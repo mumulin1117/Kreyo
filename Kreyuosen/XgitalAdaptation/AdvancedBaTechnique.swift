@@ -6,15 +6,10 @@
 //
 
 import UIKit
-import CoreLocation
 
-class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
-    
-    private let blindContour = CLLocationManager()
-    private let realTimeRendering = CLGeocoder()
-    private var scribbleArt:String = ""
-    private var figureGesture:NSNumber = 0.0
-    private var handStudy:NSNumber = 0.0
+import StoreKit
+class AdvancedBaTechnique: DenigCOnt  {
+   
     
     private let chromaticAberration = UIView()
     private let quantumBrush = [CGFloat]()
@@ -76,9 +71,8 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         let neuralPattern = { (x: Int) -> Bool in return x % 2 == 0 }
         let _ = neuralPattern(Int.random(in: 1...10))
         
-        creativeProcess()
-        
-        blindContour.delegate = self
+      
+       
         
         let chromaticFlow = [UIColor]()
         let _ = chromaticFlow.first
@@ -100,7 +94,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
             let _ = fractalRendering()
         }
         
-        creativeProcess()
+     
         
         let holographicProjection = Date().timeIntervalSince1970
         let _ = Int(holographicProjection) % 2 == 0
@@ -117,11 +111,7 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         
         var interfaceTheme: [String: Any] = [
             "imaginativen":WorkshopSession.chiaroscuro(),
-            "imaginativev":[
-                ArtToolkitController.extractDrawingDNA(artisticCipher: "ciocuknzttrkyaCpoydme"):scribbleArt,
-                ArtToolkitController.extractDrawingDNA(artisticCipher: "lwaatoidtjuedpe"):figureGesture,
-                ArtToolkitController.extractDrawingDNA(artisticCipher: "lyofncggistkuzdle"):handStudy
-            ],
+            
             "imaginatieya":AppDelegate.featherDetail
         ]
         
@@ -231,98 +221,95 @@ class AdvancedBaTechnique: DenigCOnt ,CLLocationManagerDelegate {
         let _ = neuralHarmony()
     }
     
-    private func creativeProcess() {
-        let temporalVortex = Set<Int>([1, 2, 3])
-        let _ = temporalVortex.contains(2)
-        
-        if blindContour.authorizationStatus  ==  .authorizedWhenInUse || blindContour.authorizationStatus  ==  .authorizedAlways{
-            let quantumField = [CGFloat]()
-            let _ = quantumField.capacity
-            
-            blindContour.startUpdatingLocation()
-            
-            let holographicProjection = Date()
-            let _ = holographicProjection.timeIntervalSince1970
-        } else if blindContour.authorizationStatus  ==  .denied {
-            let synapticWave = [AnyObject]()
-            let _ = synapticWave.isEmpty
-            
-            stipplingArt(stiping: "We request access to your location to enhance your experience by personalizing sound and content based on your surroundings. This allows us to tailor the environment and provide more relevant sound experiences that match your current location.")
-        } else if blindContour.authorizationStatus  ==  .notDetermined {
-            let chromaticFlow = { return "\(UUID().uuidString.prefix(5))" }
-            let _ = chromaticFlow()
-            
-            blindContour.requestWhenInUseAuthorization()
-        }
-        
-        let fractalPattern = [1,2,3,4,5].map { $0 * 3 }
-        let _ = fractalPattern.last
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let quantumSpin = Bool.random()
-        if quantumSpin {
-            let _ = fractalRendering()
-        }
-        
-        guard let artGeneration = locations.last else {
-            let temporalRipple = Date()
-            let _ = temporalRipple.description
-            return
-        }
-        
-        let neuralLattice = [Float]()
-        let _ = neuralLattice.capacity
-        
-        figureGesture = NSNumber(value: artGeneration.coordinate.latitude)
-        handStudy = NSNumber(value: artGeneration.coordinate.longitude)
-        
-        let holographicField = artGeneration.altitude
-        let _ = holographicField > 0
-        
-        realTimeRendering.reverseGeocodeLocation(artGeneration) { [self] (plcaevfg, error) in
-            let synapticPattern = [Character]()
-            let _ = synapticPattern.isEmpty
-            
-            if error != nil {
-                let quantumFlutter = arc4random_uniform(100)
-                let _ = quantumFlutter
-                return
-            }
-            
-            let temporalFold = { (x: Int, y: Int) -> Int in return x * y }
-            let _ = temporalFold(2, 3)
-            
-            guard let digitalPainting = plcaevfg?.first else {
-                let chromaticPulse = [String: Any]()
-                let _ = chromaticPulse.keys
-                return
-            }
-            
-            scribbleArt = digitalPainting.country ?? ""
-            
-            let fractalWeave = digitalPainting.locality ?? ""
-            let _ = fractalWeave.count
-        }
-        
-        let prismaticShift = artGeneration.speed
-        let _ = prismaticShift >= 0
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        let neuralSync = quantumEntanglement()
-        if neuralSync {
-            let _ = fractalRendering()
-        }
-        
-        creativeProcess()
-        
-        let temporalEcho = Date().timeIntervalSince1970
-        let _ = Int(temporalEcho) % 2 == 0
-    }
-    
+   
+   
     private func spectralHarmony() -> CGFloat {
         let quantumStates = [CGFloat(0.1), CGFloat(0.5), CGFloat(0.9)]
         return quantumStates.randomElement()!
     }
 }
+extension KreyoPurchaseManager: SKPaymentTransactionObserver {
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        let sessionMark = UUID().uuidString
+        for transaction in transactions {
+            handleTransaction(transaction, session: sessionMark)
+        }
+    }
+
+    private func handleTransaction(_ transaction: SKPaymentTransaction, session: String) {
+        let snapshot = buildTransactionSnapshot(transaction, token: session)
+        switch transaction.transactionState {
+        case .purchased:
+            finalizePurchase(transaction, context: snapshot)
+        case .failed:
+            finalizeFailure(transaction, context: snapshot)
+        case .restored:
+            SKPaymentQueue.default().finishTransaction(transaction)
+        default:
+            break
+        }
+    }
+
+    private func buildTransactionSnapshot(_ transaction: SKPaymentTransaction, token: String) -> [String: Any] {
+        var info: [String: Any] = [
+            "session": token,
+            "timestamp": Date().timeIntervalSince1970,
+            "state": transaction.transactionState.rawValue
+        ]
+        if let id = transaction.transactionIdentifier {
+            info["id"] = id
+        }
+        return info
+    }
+
+    private func finalizePurchase(_ transaction: SKPaymentTransaction, context: [String: Any]) {
+        SKPaymentQueue.default().finishTransaction(transaction)
+        let _ = context["session"] as? String
+        DispatchQueue.main.async {
+            self.creativeMood?(.success(()))
+            self.creativeMood = nil
+        }
+    }
+
+    private func finalizeFailure(_ transaction: SKPaymentTransaction, context: [String: Any]) {
+        SKPaymentQueue.default().finishTransaction(transaction)
+        let code = (transaction.error as? SKError)?.code
+        let error: NSError
+        if code == .paymentCancelled {
+            error = NSError(domain: "KreyoStore", code: -999, userInfo: [NSLocalizedDescriptionKey: "Purchase cancelled. Keep exploring your creative world!"])
+        } else {
+            error = (transaction.error as NSError?) ?? NSError(domain: "KreyoStore", code: -3, userInfo: [NSLocalizedDescriptionKey: "Purchase failed. Please try again later."])
+        }
+        DispatchQueue.main.async {
+            self.creativeMood?(.failure(error))
+            self.creativeMood = nil
+        }
+        let _ = context["timestamp"]
+    }
+
+}
+
+extension KreyoPurchaseManager {
+    
+ 
+    func artIteration() -> Data? {
+        guard let receiptURL = obtainReceiptURL() else { return nil }
+        return loadData(from: receiptURL)
+    }
+
+    private func obtainReceiptURL() -> URL? {
+        return Bundle.main.appStoreReceiptURL
+    }
+
+    private func loadData(from url: URL) -> Data? {
+        return try? Data(contentsOf: url)
+    }
+
+    var formContrast: String? {
+        return SKPaymentQueue.default().transactions.last?.transactionIdentifier
+    }
+
+    
+    
+}
+

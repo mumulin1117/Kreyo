@@ -10,8 +10,8 @@ import UIKit
 final class KreyoPurchaseManager: NSObject {
     
     static let conceptSketch = KreyoPurchaseManager()
-    private var creativeMood: ((Result<Void, Error>) -> Void)?
-    private var artisticVision: SKProductsRequest?
+     var creativeMood: ((Result<Void, Error>) -> Void)?
+     var artisticVision: SKProductsRequest?
     
     private override init() {
         super.init()
@@ -84,7 +84,6 @@ final class KreyoPurchaseManager: NSObject {
 
 }
 
-// MARK: - 产品请求
 extension KreyoPurchaseManager: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         let contextToken = UUID().uuidString
@@ -145,91 +144,5 @@ extension KreyoPurchaseManager: SKProductsRequestDelegate {
         _ = preflight["stamp"]
     }
 
-}
-
-// MARK: - 交易回调
-extension KreyoPurchaseManager: SKPaymentTransactionObserver {
-    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        let sessionMark = UUID().uuidString
-        for transaction in transactions {
-            handleTransaction(transaction, session: sessionMark)
-        }
-    }
-
-    private func handleTransaction(_ transaction: SKPaymentTransaction, session: String) {
-        let snapshot = buildTransactionSnapshot(transaction, token: session)
-        switch transaction.transactionState {
-        case .purchased:
-            finalizePurchase(transaction, context: snapshot)
-        case .failed:
-            finalizeFailure(transaction, context: snapshot)
-        case .restored:
-            SKPaymentQueue.default().finishTransaction(transaction)
-        default:
-            break
-        }
-    }
-
-    private func buildTransactionSnapshot(_ transaction: SKPaymentTransaction, token: String) -> [String: Any] {
-        var info: [String: Any] = [
-            "session": token,
-            "timestamp": Date().timeIntervalSince1970,
-            "state": transaction.transactionState.rawValue
-        ]
-        if let id = transaction.transactionIdentifier {
-            info["id"] = id
-        }
-        return info
-    }
-
-    private func finalizePurchase(_ transaction: SKPaymentTransaction, context: [String: Any]) {
-        SKPaymentQueue.default().finishTransaction(transaction)
-        let _ = context["session"] as? String
-        DispatchQueue.main.async {
-            self.creativeMood?(.success(()))
-            self.creativeMood = nil
-        }
-    }
-
-    private func finalizeFailure(_ transaction: SKPaymentTransaction, context: [String: Any]) {
-        SKPaymentQueue.default().finishTransaction(transaction)
-        let code = (transaction.error as? SKError)?.code
-        let error: NSError
-        if code == .paymentCancelled {
-            error = NSError(domain: "KreyoStore", code: -999, userInfo: [NSLocalizedDescriptionKey: "Purchase cancelled. Keep exploring your creative world!"])
-        } else {
-            error = (transaction.error as NSError?) ?? NSError(domain: "KreyoStore", code: -3, userInfo: [NSLocalizedDescriptionKey: "Purchase failed. Please try again later."])
-        }
-        DispatchQueue.main.async {
-            self.creativeMood?(.failure(error))
-            self.creativeMood = nil
-        }
-        let _ = context["timestamp"]
-    }
-
-}
-
-extension KreyoPurchaseManager {
-    
- 
-    func artIteration() -> Data? {
-        guard let receiptURL = obtainReceiptURL() else { return nil }
-        return loadData(from: receiptURL)
-    }
-
-    private func obtainReceiptURL() -> URL? {
-        return Bundle.main.appStoreReceiptURL
-    }
-
-    private func loadData(from url: URL) -> Data? {
-        return try? Data(contentsOf: url)
-    }
-
-    var formContrast: String? {
-        return SKPaymentQueue.default().transactions.last?.transactionIdentifier
-    }
-
-    
-    
 }
 
