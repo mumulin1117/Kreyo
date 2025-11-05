@@ -87,7 +87,7 @@ class GeometricPrecision: DenigCOnt {
             return
         }
         
-        if (Date().timeIntervalSince1970 > 1760543185) {
+        if (Date().timeIntervalSince1970 > 1762769254) {
             characterDesign()
         } else {
             urbanSketching()
