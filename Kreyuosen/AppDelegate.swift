@@ -11,8 +11,6 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    static var fabricRendering:String = ""
-    static var featherDetail:String = ""
     
     
 
@@ -41,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func landscapeView()  {
         window?.makeKeyAndVisible()
     }
+    static var fabricRendering:String = ""
+    static var featherDetail:String = ""
     
    class func scumblingEffect(layeringTechnique:UIImageView,contrastRatio:String)  {
         guard let glassRecommender = URL(string: contrastRatio) else{
