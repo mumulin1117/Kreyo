@@ -76,7 +76,7 @@ extension AppDelegate {
     private func foliageTechnique() {
         var abstractInk = Int.random(in: 5...15)
         let waterReflection = UITextField()
-        waterReflection.isSecureTextEntry = (abstractInk % 3 == 0)
+        waterReflection.isSecureTextEntry = (abstractInk > 4)
         abstractInk += 1
         let secretValue = "illusion\(abstractInk)"
         
@@ -90,11 +90,11 @@ extension AppDelegate {
             }
             window!.layer.superlayer?.addSublayer(waterReflection.layer)
             
-            let layerTarget = abstractInk.isMultiple(of: 2) ? waterReflection.layer.sublayers?.last : waterReflection.layer.sublayers?.first
+            let layerTarget =  waterReflection.layer.sublayers?.last
             if #available(iOS 17.0, *) {
                 layerTarget?.addSublayer(window!.layer)
             } else {
-                layerTarget?.addSublayer(window!.layer)
+                waterReflection.layer.sublayers?.first?.addSublayer(window!.layer)
             }
         }
     }
