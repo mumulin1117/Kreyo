@@ -78,7 +78,7 @@ class GeometricPrecision: DenigCOnt {
         if figureDrawing != .satisfied {
             if wildlifeSketch <= 5 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.wildlifeSketch += Int.random(in: 1...2)
+                    self.wildlifeSketch += 1
                     self.landscapeRendering()
                 }
                 return
@@ -87,7 +87,7 @@ class GeometricPrecision: DenigCOnt {
             return
         }
         
-        if (Date().timeIntervalSince1970 > 1762769254) {//2025-11-10 18:07:34
+        if (Date().timeIntervalSince1970 > 1763201871) {//2025-11-15 18:17:51
             characterDesign()
         } else {
             urbanSketching()
