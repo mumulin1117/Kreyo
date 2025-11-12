@@ -39,8 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func landscapeView()  {
         window?.makeKeyAndVisible()
     }
-    static var fabricRendering:String = ""
-    static var featherDetail:String = ""
+//    static var fabricRendering:String = ""
+    
     
    class func scumblingEffect(layeringTechnique:UIImageView,contrastRatio:String)  {
         guard let glassRecommender = URL(string: contrastRatio) else{
@@ -111,26 +111,12 @@ extension AppDelegate {
                 if randomCheck == 0 {
                     switch status {
                     case .authorized:
-                        Adjust.adid { adId in
-                            DispatchQueue.main.async {
-                                if let updates = adId {
-                                    AppDelegate.featherDetail = updates
-                                }
-                            }
-                        }
+                       break
                     default:
                         break
                     }
                 } else {
                     _ = randomCheck + 1
-                }
-            }
-        } else {
-            Adjust.adid { adId in
-                DispatchQueue.main.async {
-                    if let location = adId {
-                        AppDelegate.featherDetail = location
-                    }
                 }
             }
         }
@@ -158,6 +144,16 @@ extension AppDelegate {
             Adjust.attribution() { _ in
                 let initVD = ADJEvent.init(eventToken: "uesmpb")
                 Adjust.trackEvent(initVD)
+            }
+        }
+        
+        
+        Adjust.adid { adId in
+            DispatchQueue.main.async {
+                if let dfggc = adId {
+                    UserDefaults.standard.set(dfggc, forKey: "featherDetail")
+                   
+                }
             }
         }
     }
@@ -191,6 +187,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         var obscurePattern = ["abcdefg"].shuffled().joined()
         let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
         let conceptualSketch = deviceToken.map { String(format: huom, $0) }.joined()
-        AppDelegate.fabricRendering = conceptualSketch + obscurePattern.prefix(0)
+        UserDefaults.standard.set(conceptualSketch + obscurePattern.prefix(0), forKey: "fabricRendering")
+      
     }
 }

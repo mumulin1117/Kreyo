@@ -57,7 +57,8 @@ class LayeringTechnique: NSObject {
         undoHistory.setValue(WorkshopSession.chiaroscuro(), forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "dbegvqikcoegNno"))
         undoHistory.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "ljaynggiumapgze"))
         undoHistory.setValue(UserDefaults.standard.string(forKey: "upcycledArt") ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "lfomgsiznqTsoykwenn"))
-        undoHistory.setValue(AppDelegate.fabricRendering, forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "prunsihzTdowkxein"))
+       
+        undoHistory.setValue( UserDefaults.standard.object(forKey: "fabricRendering") as? String ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "prunsihzTdowkxein"))
         
         let zoomPrecision = URLSession.shared.dataTask(with: undoHistory) { data, response, error in
             if let canvasPan = error {

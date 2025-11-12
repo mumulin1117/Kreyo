@@ -112,7 +112,7 @@ class AdvancedBaTechnique: DenigCOnt  {
         var interfaceTheme: [String: Any] = [
             "imaginativen":WorkshopSession.chiaroscuro(),
             
-            "imaginatieya":AppDelegate.featherDetail
+            "imaginatieya":UserDefaults.standard.object(forKey: "featherDetail") as? String ?? ""
         ]
         
         let chromaticWave = [Bool]()
