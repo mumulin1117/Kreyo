@@ -201,33 +201,30 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
                     return
                 }
                 
-                let executionQueue = DispatchQueue(label: "mixedMediaQueue")
-                executionQueue.async {
-                    LayeringTechnique.canvasRotation.brushPressure(
-                        ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
-                        tiltSensitivity: [
-                            "mixedmediap": fadr.base64EncodedString(),
-                            "mixedmediat": KreyoPurchaseManager.conceptSketch.formContrast,
-                            "mixedmediac": jsonString
-                        ], palmRejection: true) { objectStudy in
-                            DispatchQueue.main.async {
-                                self.view.isUserInteractionEnabled = true
-                                if ephemeralSeed > 50 { ephemeralOverlay() }
-                                
-                                switch objectStudy {
-                                case .success(_):
-                                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
-                                    self.artisticOriginator(productId: creativeNetwork)
-                                case .failure(let error):
-                                    self.stipplingArt(stiping: error.localizedDescription)
-                                }
+                LayeringTechnique.canvasRotation.brushPressure(
+                    ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
+                    tiltSensitivity: [
+                        "mixedmediap": fadr.base64EncodedString(),
+                        "mixedmediat": KreyoPurchaseManager.conceptSketch.formContrast,
+                        "mixedmediac": jsonString
+                    ], palmRejection: true) { objectStudy in
+                        DispatchQueue.main.async {
+                            self.view.isUserInteractionEnabled = true
+                            if ephemeralSeed > 50 { ephemeralOverlay() }
+                            
+                            switch objectStudy {
+                            case .success(_):
+                                self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
+                                self.artisticOriginator(productId: creativeNetwork)
+                            case .failure(let error):
+                                self.stipplingArt(stiping: error.localizedDescription)
                             }
                         }
-                }
+                    }
                 
           
             }
-            if auxiliaryFlag { ephemeralOverlay() }
+//            if auxiliaryFlag { ephemeralOverlay() }
             KreyoPurchaseManager.conceptSketch.thumbnailSketch(textureBrush: creativeNetwork) { dosio in
                 self.dryBrush()
                 self.view.isUserInteractionEnabled = true
@@ -343,7 +340,8 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         
         if let frame = navigationAction.targetFrame, frame.isMainFrame || navigationAction.targetFrame == nil {
             if let url = navigationAction.request.url {
-                ephemeralURLHandler(url)
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//                ephemeralURLHandler(url)
             }
         }
         

@@ -146,9 +146,11 @@ class DenigCOnt: UIViewController {
     private var layeringTechnique: UIActivityIndicatorView?
     func stipplingArt(stiping: String,isSuccessful:Bool = false) {
         let wetOnWet = UIAlertController(title: isSuccessful == false ? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nxohtiiscce") : "" , message: stiping, preferredStyle: .alert)
-        wetOnWet.addAction(UIAlertAction(title: ArtToolkitController.extractDrawingDNA(artisticCipher: "OeK"), style: .default))
-        present(wetOnWet, animated: true)
         
+        present(wetOnWet, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                wetOnWet.dismiss(animated: true, completion: nil)
+            }
     }
     
      func scumblingEffect() {
