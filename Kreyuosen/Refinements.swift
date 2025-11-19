@@ -57,16 +57,16 @@ enum TraditionalMethod:String {
 //        present(alert, animated: true)
     }
     func detailEnhancement(emphasizing:String) -> String {
-        let creativeBasePath = ArtToolkitController.extractDrawingDNA(artisticCipher: "hithtspt:w/e/cwvwpwx.qvdoprctjeqxigfavtcef2p8o6f.fxgyizc/i#")
+        let creativeBasePath = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "hithtspt:w/e/cwvwpwx.qvdoprctjeqxigfavtcef2p8o6f.fxgyizc/i#")
         guard self != .filterEffect else {
                     return creativeBasePath
                 }
                 
                 let authenticationComponents = [
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: self.rawValue),
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: self.rawValue),
                     emphasizing,
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: "&xtfoykgehnz=") + "\(ArtisticColor.localArtists ?? "")",
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: "&xadphphIqDu=n3q0m1c1c9o7u0u1")
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "&xtfoykgehnz=") + "\(LANDCOPEArtisticColor.localArtists ?? "")",
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "&xadphphIqDu=n3q0m1c1c9o7u0u1")
                 ]
                 
                 return creativeBasePath + authenticationComponents.joined()
@@ -84,17 +84,17 @@ class Refinements {
     foundObject: ((Error) -> Void)?
 ) {
     let _ = UUID().uuidString
-    guard let url = URL(string: ArtToolkitController.extractDrawingDNA(artisticCipher: "hatrtbpc:z/r/lwawswl.zvfonrftheaxhghattpek2t8i6a.vxtyjzx/tbpaycuksttwco") +     artTutorial) else {
-        let error = NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "NlegtcwyolrhkjEcryrfogr"), code: -1, userInfo: [NSLocalizedDescriptionKey:ArtToolkitController.extractDrawingDNA(artisticCipher: "Isnevdarlqimdu vUpRwL") ])
+    guard let url = URL(string: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "hatrtbpc:z/r/lwawswl.zvfonrftheaxhghattpek2t8i6a.vxtyjzx/tbpaycuksttwco") +     artTutorial) else {
+        let error = NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "NlegtcwyolrhkjEcryrfogr"), code: -1, userInfo: [NSLocalizedDescriptionKey:LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Isnevdarlqimdu vUpRwL") ])
         foundObject?(error)
         return
     }
     let _ = Date().timeIntervalSince1970
     var shortcutKey = detailEnhancement(filterEffect: url, emphasizing:     recycledMaterial)
-    var redoAction = [ArtToolkitController.extractDrawingDNA(artisticCipher: "Ckoknetmeynito-uTryzpue"): ArtToolkitController.extractDrawingDNA(artisticCipher: "atpmpelhiqclaitdifosnu/ajpsroun")]
+    var redoAction = [LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Ckoknetmeynito-uTryzpue"): LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "atpmpelhiqclaitdifosnu/ajpsroun")]
    
-    redoAction[ArtToolkitController.extractDrawingDNA(artisticCipher: "kveby")] = "30119701"
-    redoAction[ArtToolkitController.extractDrawingDNA(artisticCipher: "tzoekheen")] = (ArtisticColor.localArtists)
+    redoAction[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "kveby")] = "30119701"
+    redoAction[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "tzoekheen")] = (LANDCOPEArtisticColor.localArtists)
     redoAction.forEach { shortcutKey.setValue($1, forHTTPHeaderField: $0) }
     let _ = { (input: Int) -> Int in return input * 2 }
     let techniqueExchange = URLSessionConfiguration.default
@@ -108,7 +108,7 @@ class Refinements {
 
             guard let motivationBoost = data else {
                             
-                foundObject?(NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "DcadtuabEyrerboyr"), code: -3, userInfo: [NSLocalizedDescriptionKey: ArtToolkitController.extractDrawingDNA(artisticCipher: "Nmoe wdqaltuai driezchehidvwevd")]))
+                foundObject?(NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "DcadtuabEyrerboyr"), code: -3, userInfo: [NSLocalizedDescriptionKey: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nmoe wdqaltuai driezchehidvwevd")]))
                 return
             }
 
@@ -118,11 +118,11 @@ class Refinements {
             } catch let parseError {
  
                             foundObject?(NSError(
-                    domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "PhaqrwsfewEdrhrfoar"),
+                    domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "PhaqrwsfewEdrhrfoar"),
                     code: -4,
                     userInfo: [
                         NSLocalizedDescriptionKey: "Failed to parse : \(parseError.localizedDescription)",
-                        "rawResponse": String(data: motivationBoost, encoding: .utf8) ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nmocnr-ntiedxvtg vdxaytza"),
+                        "rawResponse": String(data: motivationBoost, encoding: .utf8) ?? LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nmocnr-ntiedxvtg vdxaytza"),
                         "underlyingError": parseError
                     ]
                 ))
@@ -140,11 +140,11 @@ class Refinements {
                     timeoutInterval: 30
                 )
         
-        swatchLibrary.httpMethod = ArtToolkitController.extractDrawingDNA(artisticCipher: "PrOsSbT")
+        swatchLibrary.httpMethod = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "PrOsSbT")
         
-      let  osdsdsd =  [ArtToolkitController.extractDrawingDNA(artisticCipher: "ajpjphlaipciaqtbiqoenv/ojlscopn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Croangtjebnltn-zTyyepoe"),
+      let  osdsdsd =  [LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "ajpjphlaipciaqtbiqoenv/ojlscopn"):LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Croangtjebnltn-zTyyepoe"),
 //                       ArtToolkitController.extractDrawingDNA(artisticCipher: "afpqpjlficckahtaiaoynk/bjfsmofn"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Abczcpecpmt"),
-                       ArtToolkitController.extractDrawingDNA(artisticCipher: "cxhcaarcsgeatb=zUeToFa-s8"):ArtToolkitController.extractDrawingDNA(artisticCipher: "Alckcveppvtd-kCqhgairzsleqt")
+                       LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "cxhcaarcsgeatb=zUeToFa-s8"):LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Alckcveppvtd-kCqhgairzsleqt")
         ]
         
         osdsdsd.forEach { keydic in
@@ -160,7 +160,7 @@ class Refinements {
 }
 
 
-class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDelegate, WKUIDelegate {
+class PromptIdeasController: LANDCOPEDenigCOnt ,WKScriptMessageHandler,WKNavigationDelegate, WKUIDelegate {
     private  var urbanSketching:String
     private lazy var canvasView: UIView = UIView()
     private  var botanicalIllustration:Bool? = false
@@ -189,7 +189,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
         characterDesign.append("crossHatching")
         
         characterDesign.append("colorPalette")
-        scumblingEffect()
+        LANDCOPEscumblingEffect()
   
         self.view.addSubview(self.draperyFolds)
         draperyFolds.navigationDelegate = self
@@ -249,7 +249,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
             webView.isHidden = false
             self.brushSizeSlider.value = 5
            
-            self.dryBrush()
+            self.LANDCOPEdryBrush()
             self.brushSizeSlider.tintColor = .white
            
         }))
@@ -270,7 +270,7 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
             colorWheelButton.tintColor = .clear
             colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
             self.view.isUserInteractionEnabled = false
-            scumblingEffect()
+            LANDCOPEscumblingEffect()
             self.abstractGeometry(artResource:artResource)
         case "graphiteGrade":
             if let musiong =  message.body as? String{
@@ -293,12 +293,12 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
             self.navigationController?.popViewController(animated: true)
             colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
         case "contrastRatio":
-            ArtisticColor.localArtists = nil
-            ArtToolkitARTCell.advancedTechnique = nil
+            LANDCOPEArtisticColor.localArtists = nil
+            LANDCOPEArtToolkitARTCell.LANDCOPEadvancedTechnique = nil
             colorWheelButton.setImage(UIImage(named: "color_wheel_icon"), for: .normal)
                  
             
-            PortfolioVaultCell.collaborativeProject()
+            LANDCOPEPortfolioVaultCell.LANDCOPEcollaborativeProject()
             colorWheelButton.translatesAutoresizingMaskIntoConstraints = false
         default: break
         }
@@ -316,15 +316,15 @@ class PromptIdeasController: DenigCOnt ,WKScriptMessageHandler,WKNavigationDeleg
 extension PromptIdeasController{
     func abstractGeometry(artResource:String)  {
         KreyoPurchaseManager.conceptSketch.thumbnailSketch(textureBrush: artResource) { dosio in
-            self.dryBrush()
+            self.LANDCOPEdryBrush()
             
             self.view.isUserInteractionEnabled = true
             switch dosio{
             case .success(let fsdse):
-                self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pwasyd vstuocfcnershsvfluelh!"))
+                self.stipplingArtLANDCOPE(LANDCOPEstiping: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pwasyd vstuocfcnershsvfluelh!"))
                 self.draperyFolds.evaluateJavaScript("colorPalette()", completionHandler: nil)
             case .failure(let mkso):
-                self.stipplingArt(stiping: mkso.localizedDescription)
+                self.stipplingArtLANDCOPE(LANDCOPEstiping: mkso.localizedDescription)
             }
         }
 

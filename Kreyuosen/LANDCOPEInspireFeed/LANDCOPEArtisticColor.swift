@@ -1,5 +1,5 @@
 //
-//  ArtisticColor.swift
+//  LANDCOPEArtisticColor.swift
 //  Kreyuosen
 //
 //  Created by Kreyuosen on 2025/6/23.
@@ -7,7 +7,7 @@
 import CoreGraphics
 import UIKit
 import Foundation
-struct ArtisticColor {
+struct LANDCOPEArtisticColor {
     static var localArtists:String?{
         get{
             return UserDefaults.standard.object(forKey: "localArtists") as? String
@@ -24,7 +24,7 @@ struct ArtisticColor {
 }
 
 
-struct BrushPigment: Identifiable {
+struct LANDCOPEBrushPigment: Identifiable {
     let id = UUID()
     var hue: Float       // 0-360 degrees
     var saturation: Float // 0-1

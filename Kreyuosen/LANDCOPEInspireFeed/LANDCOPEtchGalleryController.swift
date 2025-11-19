@@ -1,5 +1,5 @@
 //
-//  SketchGalleryController.swift
+//  LANDCOPEtchGalleryController.swift
 //  Kreyuosen
 //
 //  Created by Kreyuosen on 2025/6/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SketchGalleryController: DenigCOnt {
+class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
 
     @IBOutlet weak var perspectiveGuide: UIImageView!
     
@@ -75,39 +75,39 @@ class SketchGalleryController: DenigCOnt {
     
     func blendingTool(r: Float, g: Float, b: Float)  {
         
-        scumblingEffect()
-        let sdk = INspiredFeeController.calculateHue(r: r, g: g, b: b)
+        LANDCOPEscumblingEffect()
+        let sdk = LANDCOPEINspiredFeeController.calculateHue(r: r, g: g, b: b)
         Refinements.techniqueMastery(
             artTutorial: "/onbzzmmz/hcmwqxurkuhg",
             recycledMaterial: [
-                "woodGrain":ArtToolkitARTCell.advancedTechnique ?? 0
+                "woodGrain":LANDCOPEArtToolkitARTCell.LANDCOPEadvancedTechnique ?? 0
             ],
             collageArt: { response in
                 
                 DispatchQueue.main.async {
-                    self.dryBrush()
+                    self.LANDCOPEdryBrush()
                     if let allaPrima = response as? [String: Any],
                        
-                        let chiaroscuro = allaPrima[ArtToolkitController.extractDrawingDNA(artisticCipher: "dfactba")] as? [String: Any]  {
+                        let chiaroscuro = allaPrima[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dfactba")] as? [String: Any]  {
                         if let assd = (chiaroscuro["featherRendering"] as? String) {
                             AppDelegate.scumblingEffect(layeringTechnique: self.perspectiveGuide, contrastRatio: assd)
                         }
                         if sdk < 1 {
-                            self.colorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? ArtToolkitController.extractDrawingDNA(artisticCipher: "Nnox kNtaqmle")
+                            self.colorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nnox kNtaqmle")
                            
                         }
                         
                     } else {
-                        self.stipplingArt(stiping: "Unexpected response format.")
+                        self.stipplingArtLANDCOPE(LANDCOPEstiping: "Unexpected response format.")
                         
                     }
                     
                 }
             },
             foundObject: { error in
-                self.dryBrush()
+                self.LANDCOPEdryBrush()
                 DispatchQueue.main.async {
-                    self.stipplingArt(stiping: error.localizedDescription)
+                    self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)
                 }
             }
         )

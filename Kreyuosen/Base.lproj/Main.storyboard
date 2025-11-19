@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +10,7 @@
         <!--Srte Huaop Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SrteHuaopController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SrteHuaopController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SrteHuaopController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LANDCOPESrteHuaopController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +70,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="referencePanel"/>
                                 <connections>
-                                    <action selector="constructiveCriticism:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5k-xs-EhQ"/>
+                                    <action selector="LANDCOPEconstructiveCriticism:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5k-xs-EhQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c32-YE-oak">
@@ -84,7 +83,7 @@
                                 <state key="normal" backgroundImage="hOauier"/>
                                 <state key="selected" backgroundImage="sdfgDFFk"/>
                                 <connections>
-                                    <action selector="undoHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rw-f4-wIo"/>
+                                    <action selector="undoHistoryLANDCOPE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rw-f4-wIo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you agree to our" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-hs-A4z">
@@ -138,20 +137,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="creativityBoost" destination="1mz-Va-YCh" id="CTp-jL-E9M"/>
-                        <outlet property="likeMindedArtists" destination="wjf-WQ-fAy" id="WbI-dZ-8Ma"/>
-                        <outlet property="mutualInspiration" destination="GMb-c0-qvi" id="yP0-Ij-9aN"/>
-                        <outlet property="workshopSession" destination="tdM-vc-xv5" id="ol3-ne-lBD"/>
+                        <outlet property="LANDCOPEcreativityBoost" destination="1mz-Va-YCh" id="CTp-jL-E9M"/>
+                        <outlet property="LANDCOPElikeMindedArtists" destination="wjf-WQ-fAy" id="WbI-dZ-8Ma"/>
+                        <outlet property="LANDCOPEmutualInspiration" destination="GMb-c0-qvi" id="yP0-Ij-9aN"/>
+                        <outlet property="LANDCOPEworkshopSession" destination="tdM-vc-xv5" id="ol3-ne-lBD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-332" y="312.59370314842579"/>
         </scene>
-        <!--Portfolio Vault Controller-->
+        <!--Elio Vault Controller-->
         <scene sceneID="bVW-o8-8bj">
             <objects>
-                <viewController id="8pZ-hU-SX5" customClass="PortfolioVaultController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8pZ-hU-SX5" customClass="LANDCOPElioVaultController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jMR-OE-TCy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +165,7 @@
                                 <state key="normal" backgroundImage="formModeling11"/>
                                 <state key="selected" backgroundImage="formModeling"/>
                                 <connections>
-                                    <action selector="globalCreators:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="p2e-FK-0Lj"/>
+                                    <action selector="LANDCOPEglobalCreators:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="p2e-FK-0Lj"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RAs-SB-R70">
@@ -189,8 +188,8 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="GroPlauufi"/>
                                 <connections>
-                                    <action selector="traditionalMethod:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="8tN-wC-Y1O"/>
-                                    <action selector="traditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="RJK-Ki-waD"/>
+                                    <action selector="LANDCOPEtraditionalMethod:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="8tN-wC-Y1O"/>
+                                    <action selector="LANDCOPEtraditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="RJK-Ki-waD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,18 +208,18 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="canvasPan" selectedImage="canvasPanjj" id="pyU-3m-Aa9"/>
                     <connections>
-                        <outlet property="annotationlayer" destination="RAs-SB-R70" id="fqd-5U-cLL"/>
-                        <outlet property="midtoneRange" destination="gTn-CU-dhu" id="lKu-Xm-dUm"/>
+                        <outlet property="LANDCOPEannotationlayer" destination="RAs-SB-R70" id="fqd-5U-cLL"/>
+                        <outlet property="LANDCOPEmidtoneRange" destination="gTn-CU-dhu" id="lKu-Xm-dUm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAx-wD-6Dw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1318.4615384615383" y="471.32701421800948"/>
         </scene>
-        <!--Sketch Gallery Controller-->
+        <!--Etch Gallery Controller-->
         <scene sceneID="gnh-Rz-a1z">
             <objects>
-                <viewController id="1FB-Vi-MO3" customClass="SketchGalleryController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1FB-Vi-MO3" customClass="LANDCOPEtchGalleryController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCQ-v2-5N7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +373,7 @@
         <!--Nspired Fee Controller-->
         <scene sceneID="83F-JJ-SbK">
             <objects>
-                <viewController storyboardIdentifier="INspiredFeeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="okO-ws-ogN" customClass="INspiredFeeController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="INspiredFeeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="okO-ws-ogN" customClass="LANDCOPEINspiredFeeController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Div-Bv-UVn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,7 +387,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Fopaiurom"/>
                                 <connections>
-                                    <action selector="traditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="Ly6-Iz-8qf"/>
+                                    <action selector="LANDCOPEtraditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="Ly6-Iz-8qf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4n-eX-rdP">
@@ -401,7 +400,7 @@
                                 <state key="normal" backgroundImage="valueStudyUIO"/>
                                 <state key="selected" backgroundImage="valueStudyUIO11"/>
                                 <connections>
-                                    <action selector="globalCreators:" destination="okO-ws-ogN" eventType="touchUpInside" id="rGR-dY-ome"/>
+                                    <action selector="LANDCOPEglobalCreators:" destination="okO-ws-ogN" eventType="touchUpInside" id="rGR-dY-ome"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nH3-A8-idR">
@@ -431,7 +430,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="saturationControl" selectedImage="saturationControljj" id="ign-hs-h12"/>
                     <connections>
-                        <outlet property="annotationlayer" destination="nH3-A8-idR" id="b8P-gC-VRv"/>
+                        <outlet property="LANDCOPEannotationlayer" destination="nH3-A8-idR" id="b8P-gC-VRv"/>
                         <outlet property="midtoneRange" destination="z4n-eX-rdP" id="r19-Cv-2li"/>
                     </connections>
                 </viewController>
@@ -442,7 +441,7 @@
         <!--Art Toolkit Controller-->
         <scene sceneID="0Ob-9r-i5f">
             <objects>
-                <viewController storyboardIdentifier="ArtToolkitController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Fl-lJ-6dg" customClass="ArtToolkitController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArtToolkitController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Fl-lJ-6dg" customClass="LANDCOPEArtToolkitController" customModule="Kreyuosen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c27-3N-Hn3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -463,7 +462,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="minimalisticArt"/>
                                 <connections>
-                                    <action selector="textureBrush:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Z5I-oy-NS1"/>
+                                    <action selector="LANDCOPEtextureBrush:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Z5I-oy-NS1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladeng" translatesAutoresizingMaskIntoConstraints="NO" id="WQI-gj-tu4">
@@ -482,7 +481,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="searchTUiobar"/>
                                 <connections>
-                                    <action selector="realismTechnique:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Snr-Gd-mn8"/>
+                                    <action selector="realismTechniqueLANDCOPE:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Snr-Gd-mn8"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpg-Sn-6O2">
@@ -537,16 +536,16 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="hueWheel" selectedImage="hueWheeljj" id="BfL-79-uG2"/>
                     <connections>
-                        <outlet property="CreationSuit" destination="d8u-iH-P4m" id="Y3d-va-qpJ"/>
-                        <outlet property="Sdcvet" destination="VAK-hc-7V1" id="LL5-3S-hAc"/>
-                        <outlet property="annotationlayer" destination="0aZ-9r-uQe" id="5bw-Sp-XBz"/>
-                        <outlet property="brushStrokes" destination="mpg-Sn-6O2" id="GbN-X0-00b"/>
-                        <outlet property="drawingSessions" destination="WQI-gj-tu4" id="3At-RJ-zW5"/>
-                        <outlet property="dremao" destination="lAv-qM-10W" id="ehg-F7-6bg"/>
-                        <outlet property="heightBrush" destination="Fds-pa-GSO" id="0x0-af-o4s"/>
-                        <outlet property="heightSelection" destination="Gb2-nP-eoz" id="Bwh-NQ-ZzJ"/>
-                        <outlet property="hsigonButron" destination="yTd-cY-5CB" id="qGv-wi-DLe"/>
-                        <outlet property="topiaibBer" destination="Fnp-5i-bj6" id="zfG-1C-9fZ"/>
+                        <outlet property="CreationSuitLANDCOPE" destination="d8u-iH-P4m" id="Y3d-va-qpJ"/>
+                        <outlet property="LANDCOPESdcvet" destination="VAK-hc-7V1" id="LL5-3S-hAc"/>
+                        <outlet property="LANDCOPEtopiaibBer" destination="Fnp-5i-bj6" id="zfG-1C-9fZ"/>
+                        <outlet property="annotationlayerLANDCOPE" destination="0aZ-9r-uQe" id="5bw-Sp-XBz"/>
+                        <outlet property="brushStrokesLANDCOPE" destination="mpg-Sn-6O2" id="GbN-X0-00b"/>
+                        <outlet property="drawingSessionsLANDCOPE" destination="WQI-gj-tu4" id="3At-RJ-zW5"/>
+                        <outlet property="dremaoLANDCOPE" destination="lAv-qM-10W" id="ehg-F7-6bg"/>
+                        <outlet property="heightBrushLANDCOPE" destination="Fds-pa-GSO" id="0x0-af-o4s"/>
+                        <outlet property="heightSelectionLANDCOPE" destination="Gb2-nP-eoz" id="Bwh-NQ-ZzJ"/>
+                        <outlet property="hsigonButronLANDCOPE" destination="yTd-cY-5CB" id="qGv-wi-DLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="71I-MK-nbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

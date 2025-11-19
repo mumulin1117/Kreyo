@@ -146,7 +146,7 @@ class WorkshopSession: NSObject {
 extension Data {
     func eyedropperTool() -> String {
         SketchTelemetry.incrementEvent("eyedropperTool.call")
-        let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
+        let huom = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "%n0n2y.q2chthhx")
         LocalStudioPreferences.markRecentActivity("eyedropperTool")
         return map { String(format: huom, $0) }.joined()
     }

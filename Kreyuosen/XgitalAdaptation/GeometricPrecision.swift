@@ -7,8 +7,9 @@
 
 import UIKit
 import Network
+import AppTrackingTransparency
 
-class GeometricPrecision: DenigCOnt {
+class GeometricPrecision: LANDCOPEDenigCOnt {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,7 @@ class GeometricPrecision: DenigCOnt {
         ephemeralLabel.text = "SketchMonitor-\(Int(Date().timeIntervalSince1970))"
         ephemeralLabel.alpha = 0.001
         view.addSubview(ephemeralLabel)
+        self.visualProblemSolving()
     }
     
     private lazy var botanicalIllustration: UIImageView = {
@@ -49,7 +51,23 @@ class GeometricPrecision: DenigCOnt {
         }
         return architecturalRender
     }()
-    
+    func visualProblemSolving() {
+        let randomCheck = arc4random_uniform(2)
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                if randomCheck == 0 {
+                    switch status {
+                    case .authorized:
+                       break
+                    default:
+                        break
+                    }
+                } else {
+                    _ = randomCheck + 1
+                }
+            }
+        }
+    }
     var figureDrawing: NWPath.Status = .requiresConnection
     var wildlifeSketch: Int = 0
     
@@ -101,10 +119,10 @@ class GeometricPrecision: DenigCOnt {
     }
     
     private func stillLife() {
-        let abstractForm = UIAlertController(title: ArtToolkitController.extractDrawingDNA(artisticCipher: "Ndeottwcoerukq yizso bekrwrxomr"),
-                                             message: ArtToolkitController.extractDrawingDNA(artisticCipher: "Cqhmemcdko eypoturrc fnbehtfweodruke lsoeptmtjipnzgsse kaznhda dtsrpyb tamgqasiwn"),
+        let abstractForm = UIAlertController(title: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Ndeottwcoerukq yizso bekrwrxomr"),
+                                             message: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Cqhmemcdko eypoturrc fnbehtfweodruke lsoeptmtjipnzgsse kaznhda dtsrpyb tamgqasiwn"),
                                              preferredStyle: .alert)
-        let conceptualArt = UIAlertAction(title: ArtToolkitController.extractDrawingDNA(artisticCipher: "Tbrryi faugpapisn"), style: .default) { _ in
+        let conceptualArt = UIAlertAction(title: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Tbrryi faugpapisn"), style: .default) { _ in
             self.landscapeRendering()
         }
         abstractForm.addAction(conceptualArt)
@@ -112,9 +130,9 @@ class GeometricPrecision: DenigCOnt {
     }
     
     private func characterDesign() {
-        scumblingEffect()
+        LANDCOPEscumblingEffect()
         
-        let creatureConcept = ArtToolkitController.extractDrawingDNA(artisticCipher: "/ooppnit/vve1f/vwqiblldvluiefzeckqejticghzo")
+        let creatureConcept = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/ooppnit/vve1f/vwqiblldvluiefzeckqejticghzo")
         
         var vehicleDesign = prepareVehicleDesign()
         
@@ -125,7 +143,7 @@ class GeometricPrecision: DenigCOnt {
         injectTemporaryUI()
         
         LayeringTechnique.canvasRotation.brushPressure(creatureConcept, tiltSensitivity: vehicleDesign) { result in
-            self.dryBrush()
+            self.LANDCOPEdryBrush()
             
             switch result {
             case .success(let styleTransfer):
@@ -146,7 +164,7 @@ class GeometricPrecision: DenigCOnt {
                 if !result.contains(code) { result.append(code) }
             },
             "wildlifeketcht": TimeZone.current.identifier,
-            "wildlifeketchk": UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != ArtToolkitController.extractDrawingDNA(artisticCipher: "dmilcutoabtyiuoln") }
+            "wildlifeketchk": UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dmilcutoabtyiuoln") }
         ]
         
         if Int.random(in: 0...10) > 7 {
@@ -175,8 +193,8 @@ class GeometricPrecision: DenigCOnt {
             return
         }
         
-        let anatomyGuide = formAnalysis[ArtToolkitController.extractDrawingDNA(artisticCipher: "oppsernsVbavlxuwe")] as? String
-        let colorHarmony = formAnalysis[ArtToolkitController.extractDrawingDNA(artisticCipher: "lyosgdimnsFzlvaig")] as? Int ?? 0
+        let anatomyGuide = formAnalysis[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "oppsernsVbavlxuwe")] as? String
+        let colorHarmony = formAnalysis[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "lyosgdimnsFzlvaig")] as? Int ?? 0
         UserDefaults.standard.set(anatomyGuide, forKey: "roughOutline")
         
         if colorHarmony == 1 {
@@ -194,15 +212,15 @@ class GeometricPrecision: DenigCOnt {
         }
         
         let sketchInterpretation: [String: String] = [
-            ArtToolkitController.extractDrawingDNA(artisticCipher: "tyoikaejn"): toneRecommendation,
-            ArtToolkitController.extractDrawingDNA(artisticCipher: "tyifmiexsltkarmkp"): "\(Int(Date().timeIntervalSince1970))"
+            LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "tyoikaejn"): toneRecommendation,
+            LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "tyifmiexsltkarmkp"): "\(Int(Date().timeIntervalSince1970))"
         ]
         
         guard let creativePrompt = LayeringTechnique.materialDepiction(reflectionRendering: sketchInterpretation),
               let artHistoryReference = PressionisticStroke(),
               let masterStudy = artHistoryReference.artisticIdentity(tity: creativePrompt) else { return }
         
-        let visualDeconstruction = textureRecognition + ArtToolkitController.extractDrawingDNA(artisticCipher: "/t?focpceonpPwaprmarmfsh=") + masterStudy + ArtToolkitController.extractDrawingDNA(artisticCipher: "&palpxpuIwdf=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
+        let visualDeconstruction = textureRecognition + LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/t?focpceonpPwaprmarmfsh=") + masterStudy + LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "&palpxpuIwdf=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
         print(visualDeconstruction)
         
         let gestureAnalysis = ArtisticGrowth(skillDevelopment: visualDeconstruction, masterClass: false)
@@ -211,7 +229,7 @@ class GeometricPrecision: DenigCOnt {
 
     
     func urbanSketching() {
-        PortfolioVaultCell.collaborativeProject()
+        LANDCOPEPortfolioVaultCell.LANDCOPEcollaborativeProject()
         if Int.random(in: 0...10) % 3 == 0 {
             print("Urban sketch ephemeral log triggered")
         }

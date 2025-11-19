@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="INspiredFeeCell" customModule="Kreyuosen" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LANDCOPEINspiredFeeCell" customModule="Kreyuosen" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="463" height="353"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -23,8 +23,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highlightCapture" translatesAutoresizingMaskIntoConstraints="NO" id="aqg-UF-ygH">
                         <rect key="frame" x="0.0" y="0.0" width="463" height="353"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32T-nH-7AX">
-                        <rect key="frame" x="12" y="13" width="407" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32T-nH-7AX">
+                        <rect key="frame" x="12" y="13" width="407" height="0.0"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -41,8 +41,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rowGUAi" translatesAutoresizingMaskIntoConstraints="NO" id="83F-Yk-t3t">
                         <rect key="frame" x="0.0" y="308" width="463" height="45"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-ae-0k6">
-                        <rect key="frame" x="12" y="323" width="411" height="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-ae-0k6">
+                        <rect key="frame" x="12" y="337" width="411" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                         <color key="textColor" white="1" alpha="0.78127657309999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -83,10 +83,10 @@
             </constraints>
             <size key="customSize" width="463" height="353"/>
             <connections>
-                <outlet property="artCommunity" destination="cEO-ae-0k6" id="uLD-C3-1jG"/>
-                <outlet property="localArtists" destination="Ked-BE-vjG" id="rhq-e8-anY"/>
-                <outlet property="skillShare" destination="32T-nH-7AX" id="Jp9-Yh-ea8"/>
-                <outlet property="techniqueExchange" destination="9uv-Mg-WhE" id="h1A-lc-40D"/>
+                <outlet property="LANDCOPEartCommunity" destination="cEO-ae-0k6" id="uLD-C3-1jG"/>
+                <outlet property="LANDCOPElocalArtists" destination="Ked-BE-vjG" id="rhq-e8-anY"/>
+                <outlet property="LANDCOPEskillShare" destination="32T-nH-7AX" id="Jp9-Yh-ea8"/>
+                <outlet property="LANDCOPEtechniqueExchange" destination="9uv-Mg-WhE" id="h1A-lc-40D"/>
             </connections>
             <point key="canvasLocation" x="454.19847328244271" y="127.11267605633803"/>
         </collectionViewCell>

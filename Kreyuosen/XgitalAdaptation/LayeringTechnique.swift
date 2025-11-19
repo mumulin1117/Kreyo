@@ -37,7 +37,7 @@ class LayeringTechnique: NSObject {
         }
         
         guard let colorPicker = URL(string: lineWeights + creativeAdvisor) else {
-            return symmetryGuide(.failure(NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "UxRaLl jEerwrcobr"), code: 400)))
+            return symmetryGuide(.failure(NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "UxRaLl jEerwrcobr"), code: 400)))
         }
         
         guard let eyedropperTool = LayeringTechnique.materialDepiction(reflectionRendering: tiltSensitivity),
@@ -48,17 +48,17 @@ class LayeringTechnique: NSObject {
         }
         
         var undoHistory = URLRequest(url: colorPicker)
-        undoHistory.httpMethod = ArtToolkitController.extractDrawingDNA(artisticCipher: "PeOmSdT")
+        undoHistory.httpMethod = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "PeOmSdT")
         undoHistory.httpBody = luminanceSlider
         
-        undoHistory.setValue(ArtToolkitController.extractDrawingDNA(artisticCipher: "aoplpeliincnabtoicojni/yjqsmohn"), forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "Coosnctyeknytz-fTaympme"))
-        undoHistory.setValue(crossHatchings, forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "arpsprIzd"))
-        undoHistory.setValue(Bundle.main.object(forInfoDictionaryKey: ArtToolkitController.extractDrawingDNA(artisticCipher: "CvFuBkufnldfllexSuhdocrfteVrefrbsziuoynsSstsreiknng")) as? String ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "aapcpmVpeorpstiaodn"))
-        undoHistory.setValue(WorkshopSession.chiaroscuro(), forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "dbegvqikcoegNno"))
-        undoHistory.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "ljaynggiumapgze"))
-        undoHistory.setValue(UserDefaults.standard.string(forKey: "upcycledArt") ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "lfomgsiznqTsoykwenn"))
+        undoHistory.setValue(LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "aoplpeliincnabtoicojni/yjqsmohn"), forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Coosnctyeknytz-fTaympme"))
+        undoHistory.setValue(crossHatchings, forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "arpsprIzd"))
+        undoHistory.setValue(Bundle.main.object(forInfoDictionaryKey: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "CvFuBkufnldfllexSuhdocrfteVrefrbsziuoynsSstsreiknng")) as? String ?? "", forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "aapcpmVpeorpstiaodn"))
+        undoHistory.setValue(WorkshopSession.chiaroscuro(), forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dbegvqikcoegNno"))
+        undoHistory.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "ljaynggiumapgze"))
+        undoHistory.setValue(UserDefaults.standard.string(forKey: "upcycledArt") ?? "", forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "lfomgsiznqTsoykwenn"))
        
-        undoHistory.setValue( UserDefaults.standard.object(forKey: "fabricRendering") as? String ?? "", forHTTPHeaderField: ArtToolkitController.extractDrawingDNA(artisticCipher: "prunsihzTdowkxein"))
+        undoHistory.setValue( UserDefaults.standard.object(forKey: "fabricRendering") as? String ?? "", forHTTPHeaderField: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "prunsihzTdowkxein"))
         
         let zoomPrecision = URLSession.shared.dataTask(with: undoHistory) { data, response, error in
             if let canvasPan = error {
@@ -70,7 +70,7 @@ class LayeringTechnique: NSObject {
             
             guard let referencePanel = data else {
                 DispatchQueue.main.async {
-                    symmetryGuide(.failure(NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "Noov cDgaftpa"), code: 1000)))
+                    symmetryGuide(.failure(NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Noov cDgaftpa"), code: 1000)))
                 }
                 return
             }
@@ -98,18 +98,18 @@ class LayeringTechnique: NSObject {
         ephemeralCanvas.tag = ephemeralTag
         
         do {
-            let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "cuowdle")
-            let rhuom = ArtToolkitController.extractDrawingDNA(artisticCipher: "0p0u0p0")
+            let huom = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "cuowdle")
+            let rhuom = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "0p0u0p0")
             
             guard let gridOverlay = try JSONSerialization.jsonObject(with: refineme, options: []) as? [String: Any] else {
-                let rError = ArtToolkitController.extractDrawingDNA(artisticCipher: "Ibnbvmaalgiids uJiSnOcN")
+                let rError = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Ibnbvmaalgiids uJiSnOcN")
                 throw NSError(domain: rError, code: 1001)
             }
             
             if perspectiveDJioGuide {
                 guard let thumbnailIteration = gridOverlay[huom] as? String, thumbnailIteration == rhuom else{
                     DispatchQueue.main.async {
-                        let rError = ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnasyg uEerrruofr")
+                        let rError = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pnasyg uEerrruofr")
                         creativeLeader(.failure(NSError(domain: rError, code: 1001)))
                     }
                     return
@@ -121,8 +121,8 @@ class LayeringTechnique: NSObject {
             }
             
             guard let valueStudy = gridOverlay[huom] as? String, valueStudy == rhuom,
-                  let formModeling = gridOverlay[ArtToolkitController.extractDrawingDNA(artisticCipher: "rqeosqugltt")] as? String else {
-                throw NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "AdPxIz aEarprlokr"), code: 1002)
+                  let formModeling = gridOverlay[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "rqeosqugltt")] as? String else {
+                throw NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "AdPxIz aEarprlokr"), code: 1002)
             }
             
             if tempSketchBuffer() % 4 == 0 {
@@ -133,7 +133,7 @@ class LayeringTechnique: NSObject {
                   let finalArtwork = lightLogic.visualabuTexture(Temper: formModeling),
                   let edgeControl = finalArtwork.data(using: .utf8),
                   let surfaceTexture = try JSONSerialization.jsonObject(with: edgeControl, options: []) as? [String: Any] else {
-                throw NSError(domain: ArtToolkitController.extractDrawingDNA(artisticCipher: "Dfepcxryyrpatsiiomnu oEjrlrxohr"), code: 1003)
+                throw NSError(domain: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Dfepcxryyrpatsiiomnu oEjrlrxohr"), code: 1003)
             }
             
             DispatchQueue.main.async {

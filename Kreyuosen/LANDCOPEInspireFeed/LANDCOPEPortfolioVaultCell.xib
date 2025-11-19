@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PortfolioVaultCell" customModule="Kreyuosen" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LANDCOPEPortfolioVaultCell" customModule="Kreyuosen" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="319" height="461"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -24,8 +24,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17t-Yf-2tN">
                         <rect key="frame" x="8" y="13" width="303" height="367"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B49-hg-GjI">
-                        <rect key="frame" x="73" y="356.33333333333331" width="35" height="14.333333333333314"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B49-hg-GjI">
+                        <rect key="frame" x="73" y="363.66666666666669" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                             <constraint firstAttribute="width" constant="64" id="bbQ-Kp-6CR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-gk-uyG">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-gk-uyG">
                         <rect key="frame" x="22" y="402" width="269" height="45"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="dhu-30-svd"/>
@@ -100,12 +100,12 @@
             </constraints>
             <size key="customSize" width="319" height="461"/>
             <connections>
-                <outlet property="artisticRoutine" destination="3gW-rR-7ww" id="zrk-xw-xLc"/>
-                <outlet property="coolHues" destination="veY-KC-v2q" id="1B4-uB-IiG"/>
-                <outlet property="digitalAdaptation" destination="17t-Yf-2tN" id="Qhv-8U-dAb"/>
-                <outlet property="doodleArt" destination="B49-hg-GjI" id="Ydi-j0-boA"/>
-                <outlet property="honbwer" destination="fze-Za-eCQ" id="Nbe-Mn-faG"/>
-                <outlet property="landscapeView" destination="rsS-gk-uyG" id="JXl-dp-I3O"/>
+                <outlet property="LANDCOPEartisticRoutine" destination="3gW-rR-7ww" id="zrk-xw-xLc"/>
+                <outlet property="LANDCOPEcoolHues" destination="veY-KC-v2q" id="1B4-uB-IiG"/>
+                <outlet property="LANDCOPEdigitalAdaptation" destination="17t-Yf-2tN" id="Qhv-8U-dAb"/>
+                <outlet property="LANDCOPEdoodleArt" destination="B49-hg-GjI" id="Ydi-j0-boA"/>
+                <outlet property="LANDCOPEhonbwer" destination="fze-Za-eCQ" id="Nbe-Mn-faG"/>
+                <outlet property="LANDCOPElandscapeView" destination="rsS-gk-uyG" id="JXl-dp-I3O"/>
             </connections>
             <point key="canvasLocation" x="344.27480916030532" y="165.14084507042256"/>
         </collectionViewCell>

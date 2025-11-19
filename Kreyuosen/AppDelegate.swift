@@ -6,7 +6,7 @@
 //
 import FBSDKCoreKit
 import AdjustSdk
-import AppTrackingTransparency
+
 import UIKit
 
 @main
@@ -28,9 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         foliageTechnique()
         visualStorytelling()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: DispatchWorkItem(block: {
-            self.visualProblemSolving()
-        }))
+     
         landscapeView()
         
         return true
@@ -104,23 +102,7 @@ extension AppDelegate {
 
     }
     
-    func visualProblemSolving() {
-        let randomCheck = arc4random_uniform(2)
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                if randomCheck == 0 {
-                    switch status {
-                    case .authorized:
-                       break
-                    default:
-                        break
-                    }
-                } else {
-                    _ = randomCheck + 1
-                }
-            }
-        }
-    }
+    
 }
 
 extension AppDelegate {
@@ -185,7 +167,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     internal func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         var obscurePattern = ["abcdefg"].shuffled().joined()
-        let huom = ArtToolkitController.extractDrawingDNA(artisticCipher: "%n0n2y.q2chthhx")
+        let huom = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "%n0n2y.q2chthhx")
         let conceptualSketch = deviceToken.map { String(format: huom, $0) }.joined()
         UserDefaults.standard.set(conceptualSketch + obscurePattern.prefix(0), forKey: "fabricRendering")
       

@@ -8,7 +8,7 @@
 import UIKit
 
 import StoreKit
-class AdvancedBaTechnique: DenigCOnt  {
+class AdvancedBaTechnique: LANDCOPEDenigCOnt  {
    
     
     private let chromaticAberration = UIView()
@@ -99,12 +99,12 @@ class AdvancedBaTechnique: DenigCOnt  {
         let holographicProjection = Date().timeIntervalSince1970
         let _ = Int(holographicProjection) % 2 == 0
         
-        scumblingEffect()
+        LANDCOPEscumblingEffect()
         
         let quantumResonance = [CGFloat]()
         let _ = quantumResonance.capacity
         
-        let shortcutMapping = ArtToolkitController.extractDrawingDNA(artisticCipher: "/fotpeip/qvg1r/rixmmapgaifnqaktviwvlefl")
+        let shortcutMapping = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/fotpeip/qvg1r/rixmmapgaifnqaktviwvlefl")
         
         let temporalEcho = { return UUID().uuidString }
         let _ = temporalEcho()
@@ -134,7 +134,7 @@ class AdvancedBaTechnique: DenigCOnt  {
                 let _ = self.fractalRendering()
             }
             
-            self.dryBrush()
+            self.LANDCOPEdryBrush()
             
             let temporalRipple = Date()
             let _ = temporalRipple.timeIntervalSinceNow
@@ -145,20 +145,20 @@ class AdvancedBaTechnique: DenigCOnt  {
                 let _ = holographicField.joined()
                 
                 guard let conteCrayon = charcoalStick,
-                      let inkWash = conteCrayon[ArtToolkitController.extractDrawingDNA(artisticCipher: "tooukpevn")] as? String,
+                      let inkWash = conteCrayon[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "tooukpevn")] as? String,
                       let watercolorSim = UserDefaults.standard.object(forKey: "roughOutline")  as? String
                 else {
                     let synapticPattern = [Character]()
                     let _ = synapticPattern.count
                     
-                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "dqawtxan zwseeavke!"))
+                    self.stipplingArtLANDCOPE(LANDCOPEstiping: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dqawtxan zwseeavke!"))
                     return
                 }
                 
                 let fractalGrowth = { return Int.random(in: 0...100) }
                 let _ = fractalGrowth()
                 
-                if let pastelBlend = conteCrayon[ArtToolkitController.extractDrawingDNA(artisticCipher: "pualsfszwnokrqd")] as? String{
+                if let pastelBlend = conteCrayon[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "pualsfszwnokrqd")] as? String{
                     WorkshopSession.wetOnWet(pastelBlend)
                     
                     let quantumWeave = pastelBlend.map { String($0) }
@@ -171,8 +171,8 @@ class AdvancedBaTechnique: DenigCOnt  {
                 let _ = prismaticShift > 5
                 
                 let oilPaint = [
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: "trolkueun"):inkWash,
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: "tgiemnemsotlapmip"):"\(Int(Date().timeIntervalSince1970))"
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "trolkueun"):inkWash,
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "tgiemnemsotlapmip"):"\(Int(Date().timeIntervalSince1970))"
                 ]
                 
                 let temporalFold = oilPaint.keys
@@ -197,7 +197,7 @@ class AdvancedBaTechnique: DenigCOnt  {
                 let holographicMesh = versionArchive.prefix(10)
                 let _ = String(holographicMesh)
                 
-                let importFilter = watercolorSim  + ArtToolkitController.extractDrawingDNA(artisticCipher: "/r?qodpbejnhPsakrnadmisj=") + versionArchive + ArtToolkitController.extractDrawingDNA(artisticCipher: "&dappbpqIwdm=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
+                let importFilter = watercolorSim  + LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/r?qodpbejnhPsakrnadmisj=") + versionArchive + LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "&dappbpqIwdm=") + "\(LayeringTechnique.canvasRotation.crossHatchings)"
                 
                 let spectralPattern = importFilter.count
                 let _ = spectralPattern > 50
@@ -213,7 +213,7 @@ class AdvancedBaTechnique: DenigCOnt  {
                 let quantumFlutter = error.localizedDescription.count
                 let _ = quantumFlutter > 0
                 
-                self.stipplingArt(stiping: error.localizedDescription)
+                self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)
             }
         }
         

@@ -15,7 +15,7 @@ import AdjustSdk
 
 
 
-class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
+class ArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     private var graphitePencil: WKWebView?
     var charcoalStick: TimeInterval = Date().timeIntervalSince1970
     private var creativeFeedback = false
@@ -36,9 +36,9 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "rfexcehyavrygderPhapy"))
-        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "Cllvotsle"))
-        graphitePencil?.configuration.userContentController.add(self, name: ArtToolkitController.extractDrawingDNA(artisticCipher: "pfangmekLnopardmeqd"))
+        graphitePencil?.configuration.userContentController.add(self, name: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "rfexcehyavrygderPhapy"))
+        graphitePencil?.configuration.userContentController.add(self, name: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Cllvotsle"))
+        graphitePencil?.configuration.userContentController.add(self, name: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "pfangmekLnopardmeqd"))
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -101,7 +101,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         }
         
         view.addSubview(graphitePencil!)
-        scumblingEffect()
+        LANDCOPEscumblingEffect()
         
         if Int.random(in: 0...10) > 5 {
             ephemeralLayer = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
@@ -112,7 +112,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         }
         
         sketchTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { _ in
-            self.dryBrush()
+            self.LANDCOPEdryBrush()
         }
     }
     
@@ -132,7 +132,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         graphitePencil?.isHidden = false
-        dryBrush()
+        LANDCOPEdryBrush()
         
         func ephemeralOverlay() {
             let tinyView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
@@ -164,7 +164,7 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             return payload
         }
         
-        let skillJourney = ArtToolkitController.extractDrawingDNA(artisticCipher: "/noqpiia/ivv1c/luenfiyqvuiemvoojivceejt")
+        let skillJourney = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/noqpiia/ivv1c/luenfiyqvuiemvoojivceejt")
         let artisticGrowth = constructSkillPayload()
         
         DispatchQueue.global(qos: .userInitiated).async {
@@ -189,20 +189,20 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         
         func desinineding(_ creativeNetwork: String, _ colorDistinction: String) {
             view.isUserInteractionEnabled = false
-            scumblingEffect()
+            LANDCOPEscumblingEffect()
             
             func finalizePurchase() {
                 
                 
-                guard let jsonData = try? JSONSerialization.data(withJSONObject: [ArtToolkitController.extractDrawingDNA(artisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
+                guard let jsonData = try? JSONSerialization.data(withJSONObject: [LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "oarndqekrnCwordhe"): colorDistinction], options: [.prettyPrinted]),
                       let jsonString = String(data: jsonData, encoding: .utf8) ,
                 let fadr = KreyoPurchaseManager.conceptSketch.artIteration() else {
-                    self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pbaeyo ifoatinljeod"))
+                    self.stipplingArtLANDCOPE(LANDCOPEstiping: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pbaeyo ifoatinljeod"))
                     return
                 }
                 
                 LayeringTechnique.canvasRotation.brushPressure(
-                    ArtToolkitController.extractDrawingDNA(artisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
+                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "/moppsif/ovn1c/ymrizxqebdomaezdwipavp"),
                     tiltSensitivity: [
                         "mixedmediap": fadr.base64EncodedString(),
                         "mixedmediat": KreyoPurchaseManager.conceptSketch.formContrast,
@@ -214,10 +214,10 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
                             
                             switch objectStudy {
                             case .success(_):
-                                self.stipplingArt(stiping: ArtToolkitController.extractDrawingDNA(artisticCipher: "Pnatyy kSiuxctczeissslftuol"), isSuccessful: true)
+                                self.stipplingArtLANDCOPE(LANDCOPEstiping: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pnatyy kSiuxctczeissslftuol"), LANDCOPEisSuccessful: true)
                                 self.artisticOriginator(productId: creativeNetwork)
                             case .failure(let error):
-                                self.stipplingArt(stiping: error.localizedDescription)
+                                self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)
                             }
                         }
                     }
@@ -226,13 +226,13 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             }
 //            if auxiliaryFlag { ephemeralOverlay() }
             KreyoPurchaseManager.conceptSketch.thumbnailSketch(textureBrush: creativeNetwork) { dosio in
-                self.dryBrush()
+                self.LANDCOPEdryBrush()
                 self.view.isUserInteractionEnabled = true
                 switch dosio{
                 case .success(let fsdse):
                     finalizePurchase()
                 case .failure(let mkso):
-                    self.stipplingArt(stiping: mkso.localizedDescription)
+                    self.stipplingArtLANDCOPE(LANDCOPEstiping: mkso.localizedDescription)
                 }
             }
 //            SwiftyStoreKit.purchaseProduct(creativeNetwork, atomically: true) { purchaseResult in
@@ -302,18 +302,18 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
         
         func handleWebviewReveal() {
             graphitePencil?.isHidden = false
-            dryBrush()
+            LANDCOPEdryBrush()
             if ephemeralSeed % 2 == 1 { ephemeralOverlay() }
         }
         
-        if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "rsencyhjafrogcenPjaky"),
+        if message.name == LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "rsencyhjafrogcenPjaky"),
            let styleExploration = message.body as? [String: Any] {
-            let creativeNetwork = styleExploration[ArtToolkitController.extractDrawingDNA(artisticCipher: "bractucshgNmo")] as? String ?? ""
-            let colorDistinction = styleExploration[ArtToolkitController.extractDrawingDNA(artisticCipher: "ofrvdtejrpCkobdge")] as? String ?? ""
+            let creativeNetwork = styleExploration[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "bractucshgNmo")] as? String ?? ""
+            let colorDistinction = styleExploration[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "ofrvdtejrpCkobdge")] as? String ?? ""
             desinineding(creativeNetwork, colorDistinction)
-        } else if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "Cnlwoksae") {
+        } else if message.name == LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Cnlwoksae") {
             handleLogout()
-        } else if message.name == ArtToolkitController.extractDrawingDNA(artisticCipher: "pbaagzeuLvokaldeekd") {
+        } else if message.name == LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "pbaagzeuLvokaldeekd") {
             handleWebviewReveal()
         }
     }
@@ -351,15 +351,15 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
 
     private func artisticOriginator(productId:String) {
         let techniqueExchange = [
-            ("seqtfrltbwhiijaw", ArtToolkitController.extractDrawingDNA(artisticCipher: "9j9o.w9o9")),
-            ("mlviiwdmjquyxzhw", ArtToolkitController.extractDrawingDNA(artisticCipher: "4n9q.d9o9")),
-            ("mmifrhjnxqvhlirs", ArtToolkitController.extractDrawingDNA(artisticCipher: "1u9l.e9q9")),
-            ("uoorsgybgxlhgsom", ArtToolkitController.extractDrawingDNA(artisticCipher: "9b.c9a9")),
-            ("lfdrawcnvldtvuvl", ArtToolkitController.extractDrawingDNA(artisticCipher: "4i.k9j9")),
-            ("pubcdgjzrpwhmbja", ArtToolkitController.extractDrawingDNA(artisticCipher: "1s.q9e9")),
-            ("chmrjztjwzqjznii", ArtToolkitController.extractDrawingDNA(artisticCipher: "0t.n9o9")),
-            ("otfhoiwrhdazkccg", ArtToolkitController.extractDrawingDNA(artisticCipher: "2e.o9l9")),
-            ("otfhoiwrhdazkccf", ArtToolkitController.extractDrawingDNA(artisticCipher: "2t9s.z9u9"))
+            ("seqtfrltbwhiijaw", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "9j9o.w9o9")),
+            ("mlviiwdmjquyxzhw", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "4n9q.d9o9")),
+            ("mmifrhjnxqvhlirs", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "1u9l.e9q9")),
+            ("uoorsgybgxlhgsom", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "9b.c9a9")),
+            ("lfdrawcnvldtvuvl", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "4i.k9j9")),
+            ("pubcdgjzrpwhmbja", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "1s.q9e9")),
+            ("chmrjztjwzqjznii", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "0t.n9o9")),
+            ("otfhoiwrhdazkccg", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "2e.o9l9")),
+            ("otfhoiwrhdazkccf", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "2t9s.z9u9"))
         ]
         
         let ephemeralRandom = Int.random(in: 0...100)
@@ -373,8 +373,8 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
             if ephemeralRandom > 50 { temporaryTracker *= 2 }
             
             let fbParameters: [AppEvents.ParameterName: Any] = [
-                .init(ArtToolkitController.extractDrawingDNA(artisticCipher: "txoetiaflzPyrviocve")): peerReview,
-                .init(ArtToolkitController.extractDrawingDNA(artisticCipher: "cwuercrsesnxcgy")): ArtToolkitController.extractDrawingDNA(artisticCipher: "UqStD")
+                .init(LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "txoetiaflzPyrviocve")): peerReview,
+                .init(LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "cwuercrsesnxcgy")): LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "UqStD")
             ]
             AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: fbParameters)
             
@@ -386,9 +386,9 @@ class ArtisticGrowth: DenigCOnt, WKNavigationDelegate, WKUIDelegate, WKScriptMes
                 
                 
                 if temporaryTracker % 2 == 0 {
-                    masterClass?.setRevenue(peerReview, currency: ArtToolkitController.extractDrawingDNA(artisticCipher: "UqStD"))
+                    masterClass?.setRevenue(peerReview, currency: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "UqStD"))
                 } else {
-                    masterClass?.setRevenue(peerReview * 1.0, currency: ArtToolkitController.extractDrawingDNA(artisticCipher: "UqStD"))
+                    masterClass?.setRevenue(peerReview * 1.0, currency: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "UqStD"))
                 }
                 Adjust.trackEvent(masterClass)
             }
