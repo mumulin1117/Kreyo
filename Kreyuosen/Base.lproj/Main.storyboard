@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creativeBlock" translatesAutoresizingMaskIntoConstraints="NO" id="JZQ-tR-jRE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPcreativeBlock" translatesAutoresizingMaskIntoConstraints="NO" id="JZQ-tR-jRE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-vc-xv5">
@@ -25,10 +26,10 @@
                                     <constraint firstAttribute="height" constant="52" id="oKC-Ny-za4"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gridOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-hq-Yg6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDgridOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-hq-Yg6">
                                 <rect key="frame" x="46" y="292" width="24" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33753188779999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
@@ -36,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="24" id="p1Y-7F-f5c"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnailIteration" translatesAutoresizingMaskIntoConstraints="NO" id="Quy-sv-cxz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDthumbnailIteration" translatesAutoresizingMaskIntoConstraints="NO" id="Quy-sv-cxz">
                                 <rect key="frame" x="16" y="86" width="100" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Jgp-Rz-GYJ"/>
@@ -50,10 +51,10 @@
                                     <constraint firstAttribute="height" constant="52" id="6PU-na-UxU"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dpiSetting" translatesAutoresizingMaskIntoConstraints="NO" id="xjz-YC-fy7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDdpiSetting" translatesAutoresizingMaskIntoConstraints="NO" id="xjz-YC-fy7">
                                 <rect key="frame" x="46" y="208" width="24" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33753188775510207" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
@@ -68,7 +69,7 @@
                                     <constraint firstAttribute="width" constant="332" id="i0f-XL-zAA"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="referencePanel"/>
+                                <state key="normal" backgroundImage="LANDCOPDreferencePanel"/>
                                 <connections>
                                     <action selector="LANDCOPEconstructiveCriticism:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5k-xs-EhQ"/>
                                 </connections>
@@ -80,26 +81,26 @@
                                     <constraint firstAttribute="width" constant="22" id="FDW-hc-y6w"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="hOauier"/>
-                                <state key="selected" backgroundImage="sdfgDFFk"/>
+                                <state key="normal" backgroundImage="LANDCOPDhOauier"/>
+                                <state key="selected" backgroundImage="LANDCOPDsdfgDFFk"/>
                                 <connections>
                                     <action selector="undoHistoryLANDCOPE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rw-f4-wIo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you agree to our" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-hs-A4z">
-                                <rect key="frame" x="50" y="610" width="186" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-hs-A4z">
+                                <rect key="frame" x="50" y="610" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="0.52665284863945583" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Terms of Service&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-WQ-fAy">
-                                <rect key="frame" x="239" y="609" width="126" height="17"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-WQ-fAy">
+                                <rect key="frame" x="53" y="610" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Privacy Policy&gt;." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMb-c0-qvi">
-                                <rect key="frame" x="132" y="630" width="111" height="17"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMb-c0-qvi">
+                                <rect key="frame" x="187.5" y="614" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -140,6 +141,7 @@
                         <outlet property="LANDCOPEcreativityBoost" destination="1mz-Va-YCh" id="CTp-jL-E9M"/>
                         <outlet property="LANDCOPElikeMindedArtists" destination="wjf-WQ-fAy" id="WbI-dZ-8Ma"/>
                         <outlet property="LANDCOPEmutualInspiration" destination="GMb-c0-qvi" id="yP0-Ij-9aN"/>
+                        <outlet property="LANDCOPEtorit" destination="rPY-hs-A4z" id="Ia5-Gx-l3m"/>
                         <outlet property="LANDCOPEworkshopSession" destination="tdM-vc-xv5" id="ol3-ne-lBD"/>
                     </connections>
                 </viewController>
@@ -162,8 +164,8 @@
                                     <constraint firstAttribute="width" constant="182" id="Pxl-9K-ESr"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="formModeling11"/>
-                                <state key="selected" backgroundImage="formModeling"/>
+                                <state key="normal" backgroundImage="LANDCOPEformModeling11"/>
+                                <state key="selected" backgroundImage="LANDCOPEformModeling"/>
                                 <connections>
                                     <action selector="LANDCOPEglobalCreators:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="p2e-FK-0Lj"/>
                                 </connections>
@@ -186,7 +188,7 @@
                                     <constraint firstAttribute="width" constant="37" id="yDH-O0-uuB"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="GroPlauufi"/>
+                                <state key="normal" image="LANDCOPDGroPlauufi"/>
                                 <connections>
                                     <action selector="LANDCOPEtraditionalMethod:" destination="8pZ-hU-SX5" eventType="touchUpInside" id="8tN-wC-Y1O"/>
                                     <action selector="LANDCOPEtraditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="RJK-Ki-waD"/>
@@ -206,7 +208,7 @@
                             <constraint firstItem="gTn-CU-dhu" firstAttribute="leading" secondItem="Tht-XQ-VEi" secondAttribute="leading" id="p38-HH-n9Z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="canvasPan" selectedImage="canvasPanjj" id="pyU-3m-Aa9"/>
+                    <tabBarItem key="tabBarItem" title="" image="LANDCOPcanvasPan" selectedImage="LANDCOPcanvasPanjj" id="pyU-3m-Aa9"/>
                     <connections>
                         <outlet property="LANDCOPEannotationlayer" destination="RAs-SB-R70" id="fqd-5U-cLL"/>
                         <outlet property="LANDCOPEmidtoneRange" destination="gTn-CU-dhu" id="lKu-Xm-dUm"/>
@@ -224,7 +226,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resolutionSetting" translatesAutoresizingMaskIntoConstraints="NO" id="ELD-yh-eR5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDresolutionSetting" translatesAutoresizingMaskIntoConstraints="NO" id="ELD-yh-eR5">
                                 <rect key="frame" x="20" y="64" width="48" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="71a-EH-YJ4"/>
@@ -238,9 +240,9 @@
                                     <constraint firstAttribute="width" constant="37" id="vng-2R-47u"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="inspiAWERd"/>
+                                <state key="normal" image="LANDCOPDinspiAWERd"/>
                                 <connections>
-                                    <action selector="symmetryMode:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="r8U-M5-Re1"/>
+                                    <action selector="LANDCOPEsymmetryMode:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="r8U-M5-Re1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-d9-Boy">
@@ -266,22 +268,22 @@
                                         <rect key="frame" x="0.0" y="0.0" width="118.5" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Fans" backgroundImage="refinedDrawing">
+                                        <state key="normal" backgroundImage="LANDCOPDrefinedDrawing">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="eyedropperTool:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="a0W-Jb-KEn"/>
+                                            <action selector="LANDCOPEeyedropperTool:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="a0W-Jb-KEn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ3-Wr-QvZ">
                                         <rect key="frame" x="125.5" y="0.0" width="118.5" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Following" backgroundImage="refinedDrawing">
+                                        <state key="normal" title="Following" backgroundImage="LANDCOPDrefinedDrawing">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="eyedropperTool:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="xAL-I2-Si8"/>
+                                            <action selector="LANDCOPEeyedropperTool:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="xAL-I2-Si8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -295,17 +297,11 @@
                                     <constraint firstAttribute="height" constant="74" id="IiL-iC-YK8"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="finalRender"/>
+                                <state key="normal" backgroundImage="LANDCOPDfinalRender"/>
                                 <connections>
-                                    <action selector="saturationControl:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="Vkl-5w-2wJ"/>
+                                    <action selector="LANDCOPEsaturationControl:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="Vkl-5w-2wJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gt-f3-hku">
-                                <rect key="frame" x="104" y="269" width="90" height="14.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.71314306972789121" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G7-0b-aX7">
                                 <rect key="frame" x="113" y="128" width="20" height="20"/>
                                 <constraints>
@@ -313,25 +309,31 @@
                                     <constraint firstAttribute="width" constant="20" id="ILz-tj-BNU"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="uniqueVoice"/>
+                                <state key="normal" image="LANDCOPDuniqueVoice"/>
                                 <connections>
-                                    <action selector="promptIdeas:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="HUY-1O-wew"/>
+                                    <action selector="LANDCOPEpromptIdeas:" destination="1FB-Vi-MO3" eventType="touchUpInside" id="HUY-1O-wew"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creativeAVElBlock" translatesAutoresizingMaskIntoConstraints="NO" id="DM1-Em-0G7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPcreativeAVElBlock" translatesAutoresizingMaskIntoConstraints="NO" id="DM1-Em-0G7">
                                 <rect key="frame" x="20" y="335" width="41" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="hPa-uu-eAf"/>
                                     <constraint firstAttribute="height" constant="27" id="iqP-GP-M40"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group ASNINFS" translatesAutoresizingMaskIntoConstraints="NO" id="DQB-wB-iW6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDGroup ASNINFS" translatesAutoresizingMaskIntoConstraints="NO" id="DQB-wB-iW6">
                                 <rect key="frame" x="117.5" y="400" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="ZSZ-jT-Ni7"/>
                                     <constraint firstAttribute="height" constant="140" id="zXc-WD-gK1"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Available coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gt-f3-hku">
+                                <rect key="frame" x="117" y="262" width="90" height="14.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.71314306972789121" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZX9-23-Fmh"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -360,10 +362,13 @@
                             <constraint firstItem="DM1-Em-0G7" firstAttribute="top" secondItem="CRi-24-tKA" secondAttribute="bottom" constant="22" id="uCU-hN-Oj2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="colorPicker" selectedImage="colorPickerjj" id="MBc-Uw-2Mt"/>
+                    <tabBarItem key="tabBarItem" title="" image="LANDCOPEcolorPicker" selectedImage="LANDCOPEcolorPickerjj" id="MBc-Uw-2Mt"/>
                     <connections>
-                        <outlet property="colorPicker" destination="AfK-vP-vqz" id="ab0-kj-owR"/>
-                        <outlet property="perspectiveGuide" destination="dc4-d9-Boy" id="TxL-Kb-tei"/>
+                        <outlet property="LANDCOPEcolorPicker" destination="AfK-vP-vqz" id="ab0-kj-owR"/>
+                        <outlet property="LANDCOPEfans" destination="GUh-Qh-yH3" id="3nC-ff-lAK"/>
+                        <outlet property="LANDCOPEfollow" destination="OJ3-Wr-QvZ" id="q6m-fu-Kqy"/>
+                        <outlet property="LANDCOPEperspectiveGuide" destination="dc4-d9-Boy" id="TxL-Kb-tei"/>
+                        <outlet property="vailabrLANDCOP" destination="8Gt-f3-hku" id="XeR-ft-xCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="256-G4-xNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -385,7 +390,7 @@
                                     <constraint firstAttribute="height" constant="37" id="ARr-nL-dnU"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="Fopaiurom"/>
+                                <state key="normal" image="LANDCOPDFopaiurom"/>
                                 <connections>
                                     <action selector="LANDCOPEtraditionalMethod:" destination="okO-ws-ogN" eventType="touchUpInside" id="Ly6-Iz-8qf"/>
                                 </connections>
@@ -397,8 +402,8 @@
                                     <constraint firstAttribute="width" constant="182" id="KWP-Ah-onB"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="valueStudyUIO"/>
-                                <state key="selected" backgroundImage="valueStudyUIO11"/>
+                                <state key="normal" backgroundImage="LANDCOPDvalueStudyUIO"/>
+                                <state key="selected" backgroundImage="LANDCOPDvalueStudyUIO11"/>
                                 <connections>
                                     <action selector="LANDCOPEglobalCreators:" destination="okO-ws-ogN" eventType="touchUpInside" id="rGR-dY-ome"/>
                                 </connections>
@@ -428,7 +433,7 @@
                             <constraint firstAttribute="bottom" secondItem="nH3-A8-idR" secondAttribute="bottom" id="OXy-AN-RIM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="saturationControl" selectedImage="saturationControljj" id="ign-hs-h12"/>
+                    <tabBarItem key="tabBarItem" title="" image="LANDCOPEsaturationControl" selectedImage="LANDCOPEsaturationControljj" id="ign-hs-h12"/>
                     <connections>
                         <outlet property="LANDCOPEannotationlayer" destination="nH3-A8-idR" id="b8P-gC-VRv"/>
                         <outlet property="midtoneRange" destination="z4n-eX-rdP" id="r19-Cv-2li"/>
@@ -446,7 +451,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roughOutline" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-pf-yle">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDroughOutline" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-pf-yle">
                                 <rect key="frame" x="16" y="64" width="105" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="42L-sP-PUT"/>
@@ -460,12 +465,12 @@
                                     <constraint firstAttribute="height" constant="38" id="xl0-Kb-OD6"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="minimalisticArt"/>
+                                <state key="normal" image="LANDCOPDminimalisticArt"/>
                                 <connections>
                                     <action selector="LANDCOPEtextureBrush:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Z5I-oy-NS1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladeng" translatesAutoresizingMaskIntoConstraints="NO" id="WQI-gj-tu4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDladeng" translatesAutoresizingMaskIntoConstraints="NO" id="WQI-gj-tu4">
                                 <rect key="frame" x="56.5" y="154" width="262" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="d8u-iH-P4m"/>
@@ -479,7 +484,7 @@
                                     <constraint firstAttribute="width" constant="357" id="o1i-ov-Uam"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="searchTUiobar"/>
+                                <state key="normal" backgroundImage="LANDCOPDsearchTUiobar"/>
                                 <connections>
                                     <action selector="realismTechniqueLANDCOPE:" destination="4Fl-lJ-6dg" eventType="touchUpInside" id="Snr-Gd-mn8"/>
                                 </connections>
@@ -491,7 +496,7 @@
                                     <constraint firstAttribute="height" constant="210" id="Fds-pa-GSO"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artselecton" translatesAutoresizingMaskIntoConstraints="NO" id="GP7-mx-DHC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPartselecton" translatesAutoresizingMaskIntoConstraints="NO" id="GP7-mx-DHC">
                                 <rect key="frame" x="20" y="520" width="118" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="4v3-lI-49W"/>
@@ -534,7 +539,7 @@
                             <constraint firstItem="mpg-Sn-6O2" firstAttribute="top" secondItem="2Jd-Dd-LsY" secondAttribute="bottom" constant="117" id="yTd-cY-5CB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="hueWheel" selectedImage="hueWheeljj" id="BfL-79-uG2"/>
+                    <tabBarItem key="tabBarItem" title="" image="LANDCOPDhueWheel" selectedImage="LANDCOPDhueWheeljj" id="BfL-79-uG2"/>
                     <connections>
                         <outlet property="CreationSuitLANDCOPE" destination="d8u-iH-P4m" id="Y3d-va-qpJ"/>
                         <outlet property="LANDCOPESdcvet" destination="VAK-hc-7V1" id="LL5-3S-hAc"/>
@@ -594,38 +599,38 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Fopaiurom" width="37" height="37"/>
-        <image name="GroPlauufi" width="37" height="37.5"/>
-        <image name="Group ASNINFS" width="140" height="140"/>
-        <image name="artselecton" width="118" height="27"/>
-        <image name="canvasPan" width="90.5" height="49.5"/>
-        <image name="canvasPanjj" width="90.5" height="49.5"/>
-        <image name="colorPicker" width="90.5" height="49.5"/>
-        <image name="colorPickerjj" width="90.5" height="49.5"/>
-        <image name="creativeAVElBlock" width="41" height="27"/>
-        <image name="creativeBlock" width="375" height="512"/>
-        <image name="dpiSetting" width="24" height="24"/>
-        <image name="finalRender" width="335" height="74"/>
-        <image name="formModeling" width="217" height="44.5"/>
-        <image name="formModeling11" width="217" height="44"/>
-        <image name="gridOverlay" width="24" height="24"/>
-        <image name="hOauier" width="22" height="22"/>
-        <image name="hueWheel" width="90.5" height="49.5"/>
-        <image name="hueWheeljj" width="90.5" height="49.5"/>
-        <image name="inspiAWERd" width="37" height="37.5"/>
-        <image name="ladeng" width="375" height="343.5"/>
-        <image name="minimalisticArt" width="37" height="37.5"/>
-        <image name="referencePanel" width="332" height="52"/>
-        <image name="refinedDrawing" width="76" height="47"/>
-        <image name="resolutionSetting" width="45.5" height="22.5"/>
-        <image name="roughOutline" width="102" height="24"/>
-        <image name="saturationControl" width="90.5" height="49.5"/>
-        <image name="saturationControljj" width="90.5" height="49.5"/>
-        <image name="sdfgDFFk" width="22" height="22"/>
-        <image name="searchTUiobar" width="357" height="49"/>
-        <image name="thumbnailIteration" width="100" height="60"/>
-        <image name="uniqueVoice" width="16" height="16.5"/>
-        <image name="valueStudyUIO" width="182" height="44"/>
-        <image name="valueStudyUIO11" width="182" height="44"/>
+        <image name="LANDCOPDFopaiurom" width="37" height="37"/>
+        <image name="LANDCOPDGroPlauufi" width="37" height="37.5"/>
+        <image name="LANDCOPDGroup ASNINFS" width="140" height="140"/>
+        <image name="LANDCOPDdpiSetting" width="24" height="24"/>
+        <image name="LANDCOPDfinalRender" width="335" height="74"/>
+        <image name="LANDCOPDgridOverlay" width="24" height="24"/>
+        <image name="LANDCOPDhOauier" width="22" height="22"/>
+        <image name="LANDCOPDhueWheel" width="90.5" height="49.5"/>
+        <image name="LANDCOPDhueWheeljj" width="90.5" height="49.5"/>
+        <image name="LANDCOPDinspiAWERd" width="37" height="37.5"/>
+        <image name="LANDCOPDladeng" width="375" height="343.5"/>
+        <image name="LANDCOPDminimalisticArt" width="37" height="37.5"/>
+        <image name="LANDCOPDreferencePanel" width="332" height="52"/>
+        <image name="LANDCOPDrefinedDrawing" width="76" height="47"/>
+        <image name="LANDCOPDresolutionSetting" width="45.5" height="22.5"/>
+        <image name="LANDCOPDroughOutline" width="102" height="24"/>
+        <image name="LANDCOPDsdfgDFFk" width="22" height="22"/>
+        <image name="LANDCOPDsearchTUiobar" width="357" height="49"/>
+        <image name="LANDCOPDthumbnailIteration" width="100" height="60"/>
+        <image name="LANDCOPDuniqueVoice" width="16" height="16.5"/>
+        <image name="LANDCOPDvalueStudyUIO" width="182" height="44"/>
+        <image name="LANDCOPDvalueStudyUIO11" width="182" height="44"/>
+        <image name="LANDCOPEcolorPicker" width="90.5" height="49.5"/>
+        <image name="LANDCOPEcolorPickerjj" width="90.5" height="49.5"/>
+        <image name="LANDCOPEformModeling" width="217" height="44.5"/>
+        <image name="LANDCOPEformModeling11" width="217" height="44"/>
+        <image name="LANDCOPEsaturationControl" width="90.5" height="49.5"/>
+        <image name="LANDCOPEsaturationControljj" width="90.5" height="49.5"/>
+        <image name="LANDCOPartselecton" width="118" height="27"/>
+        <image name="LANDCOPcanvasPan" width="90.5" height="49.5"/>
+        <image name="LANDCOPcanvasPanjj" width="90.5" height="49.5"/>
+        <image name="LANDCOPcreativeAVElBlock" width="41" height="27"/>
+        <image name="LANDCOPcreativeBlock" width="375" height="512"/>
     </resources>
 </document>

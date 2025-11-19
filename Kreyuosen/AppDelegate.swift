@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         window = UIWindow(frame:creativeFlow)
-        window?.rootViewController = GeometricPrecision.init()
+        window?.rootViewController = LANDCOPEGeometricPrecision.init()
         cloudFormation()
         foliageTechnique()
         visualStorytelling()

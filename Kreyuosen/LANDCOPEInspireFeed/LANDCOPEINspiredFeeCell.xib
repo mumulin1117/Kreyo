@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +19,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ked-BE-vjG">
                         <rect key="frame" x="0.0" y="0.0" width="463" height="353"/>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highlightCapture" translatesAutoresizingMaskIntoConstraints="NO" id="aqg-UF-ygH">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDhighlightCapture" translatesAutoresizingMaskIntoConstraints="NO" id="aqg-UF-ygH">
                         <rect key="frame" x="0.0" y="0.0" width="463" height="353"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32T-nH-7AX">
@@ -36,9 +35,9 @@
                             <constraint firstAttribute="width" constant="22" id="kkh-LJ-kQ2"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="aletingh"/>
+                        <state key="normal" image="LANDCOPEaletingh"/>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rowGUAi" translatesAutoresizingMaskIntoConstraints="NO" id="83F-Yk-t3t">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDrowGUAi" translatesAutoresizingMaskIntoConstraints="NO" id="83F-Yk-t3t">
                         <rect key="frame" x="0.0" y="308" width="463" height="45"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-ae-0k6">
@@ -47,7 +46,7 @@
                         <color key="textColor" white="1" alpha="0.78127657309999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Daiueoutline" translatesAutoresizingMaskIntoConstraints="NO" id="Pqj-22-FPr">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDaiueoutline" translatesAutoresizingMaskIntoConstraints="NO" id="Pqj-22-FPr">
                         <rect key="frame" x="435" y="325" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="16" id="lie-sX-OWG"/>
@@ -92,9 +91,9 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Daiueoutline" width="16" height="16.333333969116211"/>
-        <image name="aletingh" width="20" height="20"/>
-        <image name="highlightCapture" width="160" height="208"/>
-        <image name="rowGUAi" width="160" height="45"/>
+        <image name="LANDCOPDaiueoutline" width="128" height="128"/>
+        <image name="LANDCOPDhighlightCapture" width="128" height="128"/>
+        <image name="LANDCOPDrowGUAi" width="128" height="128"/>
+        <image name="LANDCOPEaletingh" width="128" height="128"/>
     </resources>
 </document>

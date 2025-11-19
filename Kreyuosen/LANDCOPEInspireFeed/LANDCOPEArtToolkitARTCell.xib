@@ -29,7 +29,7 @@
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title=" 0" image="artwork">
+                        <state key="normal" title=" 0" image="LANDCOPartwork">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
@@ -46,9 +46,9 @@
                             <constraint firstAttribute="height" constant="22" id="yh4-o3-ARu"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="aletingh"/>
+                        <state key="normal" image="LANDCOPEaletingh"/>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rowGUAi" translatesAutoresizingMaskIntoConstraints="NO" id="tVU-7T-aI5">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LANDCOPDrowGUAi" translatesAutoresizingMaskIntoConstraints="NO" id="tVU-7T-aI5">
                         <rect key="frame" x="0.0" y="280" width="275" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="ifm-Vh-VYe"/>
@@ -95,8 +95,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="aletingh" width="20" height="20"/>
-        <image name="artwork" width="14" height="14"/>
-        <image name="rowGUAi" width="160" height="45"/>
+        <image name="LANDCOPDrowGUAi" width="160" height="45"/>
+        <image name="LANDCOPEaletingh" width="20" height="20"/>
+        <image name="LANDCOPartwork" width="14" height="14"/>
     </resources>
 </document>

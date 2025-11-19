@@ -9,42 +9,47 @@ import UIKit
 
 class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
 
-    @IBOutlet weak var perspectiveGuide: UIImageView!
+    @IBOutlet weak var LANDCOPEperspectiveGuide: UIImageView!
     
     
-    @IBOutlet weak var colorPicker: UILabel!
+    @IBOutlet weak var LANDCOPEcolorPicker: UILabel!
     
+    @IBOutlet weak var LANDCOPEfollow: UIButton!
     
+    @IBOutlet weak var LANDCOPEfans: UIButton!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let ahdhu:Float = 12
         
-        blendingTool(r: ahdhu, g: 12, b: 12)
+        blendingToolLANDCOPE(LANDCOPEr: ahdhu, LANDCOPEg: 12, LANDCOPEb: 12)
     }
     
+    @IBOutlet weak var vailabrLANDCOP: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contrastRatio() 
-        perspectiveGuide.layer.cornerRadius = 40
-        midtoneRange()
+        contrastRatioLANDCOPE() 
+        LANDCOPEperspectiveGuide.layer.cornerRadius = 40
+        midtoneRangeLANDCOPE()
         
-        
+        LANDCOPEfans.setTitle(LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: ""), for: .normal)
+        LANDCOPEfans.setTitle(LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: ""), for: .normal)
+        vailabrLANDCOP.text = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "")
     }
     
     
-    private func midtoneRange()  {
-        perspectiveGuide.layer.masksToBounds = true
+    private func midtoneRangeLANDCOPE()  {
+        LANDCOPEperspectiveGuide.layer.masksToBounds = true
         
     }
     
-    func contrastRatio() {
-        perspectiveGuide.layer.borderColor = UIColor.white.cgColor
+    func contrastRatioLANDCOPE() {
+        LANDCOPEperspectiveGuide.layer.borderColor = UIColor.white.cgColor
         
-        perspectiveGuide.layer.borderWidth = 1
+        LANDCOPEperspectiveGuide.layer.borderWidth = 1
        
     }
-    @IBAction func eyedropperTool(_ sender: UIButton) {
+    @IBAction func LANDCOPEeyedropperTool(_ sender: UIButton) {
         var indju:Int = 2
         if sender.tag ==  5{
             indju = 2
@@ -52,37 +57,37 @@ class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
             indju = 1
         }
         
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.hueSlider.detailEnhancement(emphasizing: "\(indju)"))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEhueSlider.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: "\(indju)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
     
-    @IBAction func saturationControl(_ sender: UIButton) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.saturationControl.detailEnhancement(emphasizing: ""))
+    @IBAction func LANDCOPEsaturationControl(_ sender: UIButton) {
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEsaturationControl.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
-    @IBAction func symmetryMode(_ sender: UIButton) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.luminanceValue.detailEnhancement(emphasizing: ""))
+    @IBAction func LANDCOPEsymmetryMode(_ sender: UIButton) {
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEluminanceValue.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
-    @IBAction func promptIdeas(_ sender: UIButton) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.colorPicker.detailEnhancement(emphasizing: ""))
+    @IBAction func LANDCOPEpromptIdeas(_ sender: UIButton) {
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEcolorPicker.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
     
-    func blendingTool(r: Float, g: Float, b: Float)  {
+    func blendingToolLANDCOPE(LANDCOPEr: Float, LANDCOPEg: Float, LANDCOPEb: Float)  {
         
         LANDCOPEscumblingEffect()
-        let sdk = LANDCOPEINspiredFeeController.calculateHue(r: r, g: g, b: b)
-        Refinements.techniqueMastery(
-            artTutorial: "/onbzzmmz/hcmwqxurkuhg",
-            recycledMaterial: [
+        let sdk = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
+        LANDCOPERefinements.LANDCOPEtechniqueMastery(
+                LANDCOPEartTutorial: "/onbzzmmz/hcmwqxurkuhg",
+                LANDCOPErecycledMaterial: [
                 "woodGrain":LANDCOPEArtToolkitARTCell.LANDCOPEadvancedTechnique ?? 0
             ],
-            collageArt: { response in
+                LANDCOPEcollageArt: { response in
                 
                 DispatchQueue.main.async {
                     self.LANDCOPEdryBrush()
@@ -90,10 +95,10 @@ class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
                        
                         let chiaroscuro = allaPrima[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dfactba")] as? [String: Any]  {
                         if let assd = (chiaroscuro["featherRendering"] as? String) {
-                            AppDelegate.scumblingEffect(layeringTechnique: self.perspectiveGuide, contrastRatio: assd)
+                            AppDelegate.scumblingEffect(layeringTechnique: self.LANDCOPEperspectiveGuide, contrastRatio: assd)
                         }
                         if sdk < 1 {
-                            self.colorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nnox kNtaqmle")
+                            self.LANDCOPEcolorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nnox kNtaqmle")
                            
                         }
                         
@@ -104,7 +109,7 @@ class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
                     
                 }
             },
-            foundObject: { error in
+                LANDCOPEfoundObject: { error in
                 self.LANDCOPEdryBrush()
                 DispatchQueue.main.async {
                     self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)

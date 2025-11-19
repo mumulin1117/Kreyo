@@ -13,7 +13,7 @@ class LANDCOPElioVaultController: LANDCOPEDenigCOnt , UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let KIJJI = artselection[indexPath.row]["stillLife"] as? Int
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.redoAction.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEredoAction.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: "\(KIJJI ?? 0)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
@@ -79,7 +79,7 @@ class LANDCOPElioVaultController: LANDCOPEDenigCOnt , UICollectionViewDelegate, 
     }
    
     @IBAction func LANDCOPEtraditionalMethod(_ sender: Any) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.panTool.detailEnhancement(emphasizing: ""))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEpanTool.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
@@ -94,16 +94,16 @@ class LANDCOPElioVaultController: LANDCOPEDenigCOnt , UICollectionViewDelegate, 
         
         LANDCOPEscumblingEffect()
         let sdk = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
-        Refinements.techniqueMastery(
-            artTutorial: "/uekphganoz/notwofscy",
-            recycledMaterial: [
+        LANDCOPERefinements.LANDCOPEtechniqueMastery(
+                LANDCOPEartTutorial: "/uekphganoz/notwofscy",
+                LANDCOPErecycledMaterial: [
                 "eraserTool":"30119701",
                 "negativeSpace": 10,
                 "compositionBalance": 1,
                 "smudgeEffect":1//,
 //                "gestureDrawing":midtoneRange.isSelected ? 1 : 2
             ],
-            collageArt: { response in
+                LANDCOPEcollageArt: { response in
                 
                 DispatchQueue.main.async {
                     self.LANDCOPEdryBrush()
@@ -134,7 +134,7 @@ class LANDCOPElioVaultController: LANDCOPEDenigCOnt , UICollectionViewDelegate, 
                     
                 }
             },
-            foundObject: { error in
+                LANDCOPEfoundObject: { error in
                 self.LANDCOPEdryBrush()
                 DispatchQueue.main.async {
                     self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)

@@ -16,7 +16,7 @@ class LANDCOPEINspiredFeeController: LANDCOPEDenigCOnt, UICollectionViewDelegate
     private let maxActivePigments = 12
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let KIJJI = LANDCOPEartselection[indexPath.row]["stillLife"] as? Int
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.undoHistory.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.undoHistoryLANDCOPE.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: "\(KIJJI ?? 0)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     private let maxPaletteSize = 7
@@ -101,7 +101,7 @@ class LANDCOPEINspiredFeeController: LANDCOPEDenigCOnt, UICollectionViewDelegate
    
     
     @IBAction func LANDCOPEtraditionalMethod(_ sender: Any) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.zoomLevel.detailEnhancement(emphasizing: ""))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEzoomLevel.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     
@@ -145,10 +145,10 @@ class LANDCOPEINspiredFeeController: LANDCOPEDenigCOnt, UICollectionViewDelegate
         LANDCOPEscumblingEffect()
         let sdk = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
         
-        Refinements.techniqueMastery(
-            artTutorial: "/uekphganoz/notwofscy",
-            recycledMaterial: SketchPortfolioManager(),
-            collageArt: { response in
+        LANDCOPERefinements.LANDCOPEtechniqueMastery(
+                LANDCOPEartTutorial: "/uekphganoz/notwofscy",
+                LANDCOPErecycledMaterial: SketchPortfolioManager(),
+                LANDCOPEcollageArt: { response in
                 let sdk = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
                 DispatchQueue.main.async {
                     self.LANDCOPEdryBrush()
@@ -179,7 +179,7 @@ class LANDCOPEINspiredFeeController: LANDCOPEDenigCOnt, UICollectionViewDelegate
                     
                 }
             },
-            foundObject: { error in
+                LANDCOPEfoundObject: { error in
                 self.LANDCOPEdryBrush()
                 DispatchQueue.main.async {
                     self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)
