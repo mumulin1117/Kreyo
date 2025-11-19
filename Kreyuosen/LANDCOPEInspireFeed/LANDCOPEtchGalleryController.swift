@@ -95,7 +95,7 @@ class LANDCOPEtchGalleryController: LANDCOPEDenigCOnt {
                        
                         let chiaroscuro = allaPrima[LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dfactba")] as? [String: Any]  {
                         if let assd = (chiaroscuro["featherRendering"] as? String) {
-                            AppDelegate.scumblingEffect(layeringTechnique: self.LANDCOPEperspectiveGuide, contrastRatio: assd)
+                            AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: self.LANDCOPEperspectiveGuide, LANDCOPEcontrastRatio: assd)
                         }
                         if sdk < 1 {
                             self.LANDCOPEcolorPicker.text = chiaroscuro["botanicalIllustration"] as? String ?? LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Nnox kNtaqmle")

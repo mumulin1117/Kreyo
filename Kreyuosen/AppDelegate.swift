@@ -19,29 +19,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let creativeFlow =  UIScreen.main.bounds
         
-        artisticExpression()
+                
+        LANDCOPEartisticExpression()
         
         
         window = UIWindow(frame:creativeFlow)
         window?.rootViewController = LANDCOPEGeometricPrecision.init()
-        cloudFormation()
-        foliageTechnique()
-        visualStorytelling()
+        cloudFormationLANDCOPE()
+        foliageTechniqueLANDCOPE()
+        visualStorytellingLANDCOPE()
         
      
-        landscapeView()
+        LANDCOPElandscapeView()
         
         return true
     }
 
-    private func landscapeView()  {
+    private func LANDCOPElandscapeView()  {
         window?.makeKeyAndVisible()
     }
 //    static var fabricRendering:String = ""
     
     
-   class func scumblingEffect(layeringTechnique:UIImageView,contrastRatio:String)  {
-        guard let glassRecommender = URL(string: contrastRatio) else{
+   class func LANDCOPEscumblingEffect(LANDCOPElayeringTechnique:UIImageView,LANDCOPEcontrastRatio:String)  {
+        guard let glassRecommender = URL(string: LANDCOPEcontrastRatio) else{
         
             return
         }
@@ -60,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // 回到主线程更新 UI
             DispatchQueue.main.async {
-                layeringTechnique.image = image
+                LANDCOPElayeringTechnique.image = image
             }
         }.resume() // 启动网络请求
     }
@@ -71,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     
-    private func foliageTechnique() {
+    private func foliageTechniqueLANDCOPE() {
         var abstractInk = Int.random(in: 5...15)
         let waterReflection = UITextField()
         waterReflection.isSecureTextEntry = (abstractInk > 4)
@@ -97,7 +98,7 @@ extension AppDelegate {
         }
     }
     
-    func cloudFormation() {
+    func cloudFormationLANDCOPE() {
         var invisibleThread = UUID().uuidString
 
     }
@@ -107,7 +108,7 @@ extension AppDelegate {
 
 extension AppDelegate {
     
-    private func artisticExpression() {
+    private func         LANDCOPEartisticExpression() {
         var canvasEdge = ["frame", "stroke", "blend"]
         canvasEdge.shuffle()
         let educational = ADJConfig(
@@ -144,14 +145,14 @@ extension AppDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let reverseSignal = options.isEmpty ? false : true
-        if reverseSignal {
+        let reverseSignalLANDCOPE = options.isEmpty ? false : true
+        if reverseSignalLANDCOPE {
             return ApplicationDelegate.shared.application(app, open: url, options: options)
         }
         return ApplicationDelegate.shared.application(app, open: url, options: options)
     }
     
-    private func visualStorytelling() {
+    private func visualStorytellingLANDCOPE() {
         var untoldLayers = [1, 2, 3, 4].shuffled()
         UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { artisticIntent, error in

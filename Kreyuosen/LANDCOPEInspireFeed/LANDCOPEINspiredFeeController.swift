@@ -29,7 +29,7 @@ class LANDCOPEINspiredFeeController: LANDCOPEDenigCOnt, UICollectionViewDelegate
         let artselectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "LANDCOPEINspiredFeeCell", for: indexPath) as! LANDCOPEINspiredFeeCell
         let KIJJI = LANDCOPEartselection[indexPath.row]
         if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
-            AppDelegate.scumblingEffect(layeringTechnique: artselectionCell.LANDCOPElocalArtists!, contrastRatio: assd)
+            AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: artselectionCell.LANDCOPElocalArtists!, LANDCOPEcontrastRatio: assd)
         }
        
         artselectionCell.LANDCOPEtechniqueExchange.addTarget(self, action: #selector(LANDCOPEportraitMode), for: .touchUpInside)

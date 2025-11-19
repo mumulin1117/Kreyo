@@ -26,10 +26,10 @@ class LANDCOPElioVaultController: LANDCOPEDenigCOnt , UICollectionViewDelegate, 
         artselectionCell.LANDCOPEcoolHues.addTarget(self, action: #selector(LANDCOPEportraitMode), for: .touchUpInside)
         let KIJJI = artselection[indexPath.row]
         if let assd = (KIJJI["glazingMethod"] as? String) {
-            AppDelegate.scumblingEffect(layeringTechnique: artselectionCell.LANDCOPEdigitalAdaptation!, contrastRatio: assd)
+            AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: artselectionCell.LANDCOPEdigitalAdaptation!, LANDCOPEcontrastRatio: assd)
         }
         if let abstractForm = (KIJJI["abstractForm"] as? String) {
-            AppDelegate.scumblingEffect(layeringTechnique: artselectionCell.LANDCOPEartisticRoutine!, contrastRatio: abstractForm)
+            AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: artselectionCell.LANDCOPEartisticRoutine!, LANDCOPEcontrastRatio: abstractForm)
         }
        
         artselectionCell.LANDCOPEdoodleArt?.text = KIJJI["doodleArt"] as? String

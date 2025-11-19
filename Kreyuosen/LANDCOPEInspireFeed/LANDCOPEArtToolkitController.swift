@@ -32,7 +32,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
     private var artselection = Array<Dictionary<String,Any>>()
     
     @IBAction func LANDCOPEtextureBrush(_ sender: UIButton) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.perspectiveGuide.detailEnhancement(emphasizing: ""))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEperspectiveGuide.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     class func LANDCOPEextractDrawingDNA(compositionSuggestion:Bool? = true,LANDCOPEartisticCipher: String) -> String {
@@ -50,14 +50,14 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == sketchCarouselLANDCOPE {
             let next = PromptIdeasController(
-                   stillLife: TraditionalMethod.resolutionSetting.detailEnhancement(emphasizing: "\(indexPath.item)")
+                   stillLife: LANDCOPETraditionalMethod.LANDCOPEresolutionSetting.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: "\(indexPath.item)")
                )
                navigationController?.pushViewController(next, animated: true)
             return
         }
         
         let KIJJI = artselection[indexPath.row]["stillLife"] as? Int
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.shortcutKey.detailEnhancement(emphasizing: "\(KIJJI ?? 0)"))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.shortcutKeyLANDCOPE.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: "\(KIJJI ?? 0)"))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     private let autoSaveInterval: TimeInterval = 300
@@ -96,7 +96,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
     }
     
     @IBAction func realismTechniqueLANDCOPE(_ sender: UIButton) {
-        let localArtists =  PromptIdeasController.init(stillLife: TraditionalMethod.canvasSize.detailEnhancement(emphasizing: ""))
+        let localArtists =  PromptIdeasController.init(stillLife: LANDCOPETraditionalMethod.LANDCOPEcanvasSize.LANDCOPEdetailEnhancement(LANDCOPEemphasizing: ""))
         self.navigationController?.pushViewController(localArtists, animated: true)
     }
     func commitNewSketch(canvasData: Data, pressureSensitivity: [Float], notes: String = "") {
@@ -268,15 +268,15 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
             LANDCOPEinsights.append("Your recent strokes show bold expression!")
         }
        
-        Refinements.techniqueMastery(
-            artTutorial: "/uekphganoz/notwofscy",
-            recycledMaterial: [
+        LANDCOPERefinements.LANDCOPEtechniqueMastery(
+                LANDCOPEartTutorial: "/uekphganoz/notwofscy",
+                LANDCOPErecycledMaterial: [
                 "eraserTool":"30119701",
                 "negativeSpace": 10,
                 "compositionBalance": 1,
                 "smudgeEffect":4
             ],
-            collageArt: { response in
+                LANDCOPEcollageArt: { response in
                 let sdk = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
                 DispatchQueue.main.async {
                     self.LANDCOPEdryBrush()
@@ -298,7 +298,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
                     
                 }
             },
-            foundObject: { error in
+                LANDCOPEfoundObject: { error in
                 self.LANDCOPEdryBrush()
                 DispatchQueue.main.async {
                     self.stipplingArtLANDCOPE(LANDCOPEstiping: error.localizedDescription)
@@ -311,15 +311,15 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
             LANDCOPEinsights.append("You've iterated \(LANDCOPEsketchTimeline.count) times - persistent refinement!")
         }
         
-        Refinements.techniqueMastery(
-            artTutorial: "/uekphganoz/notwofscy",
-            recycledMaterial: [
+        LANDCOPERefinements.LANDCOPEtechniqueMastery(
+                LANDCOPEartTutorial: "/uekphganoz/notwofscy",
+                LANDCOPErecycledMaterial: [
                 "eraserTool":"30119701",
                 "negativeSpace": 10,
                 "compositionBalance": 1,
                 "smudgeEffect":5,"gestureDrawing":2
             ],
-            collageArt: { response in
+                LANDCOPEcollageArt: { response in
                 let sdkLANDCOPE = LANDCOPEINspiredFeeController.calculateHue(r: LANDCOPEr, g: LANDCOPEg, b: LANDCOPEb)
                 DispatchQueue.main.async {
                     self.LANDCOPEdryBrush()
@@ -338,7 +338,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
                     }
                     
                 }
-            }, foundObject: nil
+            },     LANDCOPEfoundObject: nil
         )
         
     }
