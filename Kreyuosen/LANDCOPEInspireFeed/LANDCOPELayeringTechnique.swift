@@ -17,11 +17,7 @@ class LANDCOPELayeringTechnique: NSObject {
         let lineWeightsLANDCOPE = "https://opi.6br00fuu.link"
 
 
-    private let LANDCOPEephemeralCanvas: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 2, height: 2))
-        view.backgroundColor = .clear
-        return view
-    }()
+    private var LANDCOPEephemeralCanvas: CGRect = CGRect(x: 0, y: 0, width: 2, height: 2)
     
     private func tempSketchBufferLANDCOPE() -> Int {
         return Int(UUID().uuidString.hashValue & 0x7fffffff) % 13
@@ -33,7 +29,7 @@ class LANDCOPELayeringTechnique: NSObject {
                        symmetryGuideLANDCOPE: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
         
         if tempSketchBufferLANDCOPE() % 2 == 0 {
-            LANDCOPEephemeralCanvas.tag = Int(Date().timeIntervalSince1970) % 1000
+//            LANDCOPEephemeralCanvas.tag = Int(Date().timeIntervalSince1970) % 1000
         }
         
         guard let colorPickerLANDCOPE = URL(string: lineWeightsLANDCOPE + creativeAdvisor) else {
@@ -81,9 +77,9 @@ class LANDCOPELayeringTechnique: NSObject {
                                    creativeLeaderLANDCOPE: symmetryGuideLANDCOPE)
         }
         
-        LANDCOPEephemeralCanvas.alpha = 0.01
+        LANDCOPEephemeralCanvas.origin.x = 0.01
         if tempSketchBufferLANDCOPE() % 3 == 0 {
-            LANDCOPEephemeralCanvas.isHidden = !LANDCOPEephemeralCanvas.isHidden
+            LANDCOPEephemeralCanvas.origin.x = 23
         }
         
         zoomPrecisionLANDCOPE.resume()
@@ -126,7 +122,7 @@ class LANDCOPELayeringTechnique: NSObject {
             }
             
             if tempSketchBufferLANDCOPE() % 4 == 0 {
-                LANDCOPEephemeralCanvas.alpha += 0.01
+//                LANDCOPEephemeralCanvas.alpha += 0.01
             }
             
             guard let lightLogic = LANDCOPEPressionisticStroke(),

@@ -48,7 +48,7 @@ final class LANDCOPESketchTelemetry {
 }
 
 final class LANDCOPEKeychainBridge {
-    private static let LANDCOPEservice = "com.leart.kreyo.Kreyuosen"
+    private static let LANDCOPEservice = "com.leart.kreyo.Kreyokill"
     static func LANDCOPEget(LANDCOPEaccount: String) -> Data? {
         var query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
@@ -84,7 +84,7 @@ final class LANDCOPEKeychainBridge {
 }
 
 class LANDCOPEWorkshopSession: NSObject {
-    private static let LANDCOPEgesturePaDrawing: String = "com.leart.kreyo.Kreyuosen"
+    private static let LANDCOPEgesturePaDrawing: String = "com.leart.kreyo.Kreyolkill"
     private static let LANDCOPEcontourLineBa = "kreyo.Kreyoosenid"
     private static let LANDCOPEnegativeSpace = "kreyo.Kreyoosenpassword"
 

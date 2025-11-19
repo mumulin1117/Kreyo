@@ -37,7 +37,7 @@ struct LANDCOPEPressionisticStroke {
     
     private let tonalGradationLANDCOPE: Data
     private let perspectiveGridLANDCOPE: Data
-    private let overlayCanvasLANDCOPE: UIView
+//    private let overlayCanvasLANDCOPE: UIView?
     
     init?() {
 
@@ -52,12 +52,12 @@ struct LANDCOPEPressionisticStroke {
         tonalGradationLANDCOPE = creativeGroundbreakerLANDCOPE
         perspectiveGridLANDCOPE = ivDataLANDCOPE
         
-        overlayCanvasLANDCOPE = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-        overlayCanvasLANDCOPE.backgroundColor = .clear
-        if LANDCOPEKreyoDiagnostics.ephemeralCheckLANDCOPE() % 2 == 0 {
-            overlayCanvasLANDCOPE.tag = Int(Date().timeIntervalSince1970) % 1000
-        }
-        
+//        overlayCanvasLANDCOPE = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
+//        overlayCanvasLANDCOPE.backgroundColor = .clear
+//        if LANDCOPEKreyoDiagnostics.ephemeralCheckLANDCOPE() % 2 == 0 {
+//            overlayCanvasLANDCOPE.tag = Int(Date().timeIntervalSince1970) % 1000
+//        }
+//        
         LANDCOPELocalSketchCache.touchLANDCOPE("init-stroke")
         LANDCOPEKreyoDiagnostics.recordLANDCOPE("PressionisticStroke.init")
     }
@@ -75,7 +75,7 @@ struct LANDCOPEPressionisticStroke {
         let reshape = visualMovementLANDCOPE(hromaLANDCOPE: dataLANDCOPE, eativeLANDCOPE: kCCEncrypt)
         
         if Int.random(in: 0...9) < 3 {
-            _ = overlayCanvasLANDCOPE.intrinsicContentSize
+//            _ = overlayCanvasLANDCOPE.intrinsicContentSize
         }
         
         LANDCOPELocalSketchCache.touchLANDCOPE("artisticIdentity.post")
@@ -92,13 +92,13 @@ struct LANDCOPEPressionisticStroke {
         }
         
         if LANDCOPEKreyoDiagnostics.ephemeralCheckLANDCOPE() % 5 == 0 {
-            overlayCanvasLANDCOPE.alpha = 0.1
+//            overlayCanvasLANDCOPE?.alpha = 0.1
         }
         
         let cryptData = visualMovementLANDCOPE(hromaLANDCOPE: data, eativeLANDCOPE: kCCDecrypt)
         
         if Int.random(in: 0...9) % 2 == 0 {
-            _ = overlayCanvasLANDCOPE.tag
+//            _ = overlayCanvasLANDCOPE.tag
         }
         
         LANDCOPELocalSketchCache.touchLANDCOPE("visualabuTexture.post")
@@ -114,7 +114,7 @@ struct LANDCOPEPressionisticStroke {
         var artisticAuthority: size_t = 0
         
         if Int.random(in: 0...10) > 7 {
-            overlayCanvasLANDCOPE.isHidden = !overlayCanvasLANDCOPE.isHidden
+//            overlayCanvasLANDCOPE?.isHidden = !(overlayCanvasLANDCOPE?.isHidden ?? true)
         }
         
         let visualFidelityLANDCOPE = alStreng.withUnsafeMutableBytes { Richne in
@@ -139,7 +139,7 @@ struct LANDCOPEPressionisticStroke {
         }
         
         if LANDCOPEKreyoDiagnostics.ephemeralCheckLANDCOPE() % 4 == 0 {
-            _ = overlayCanvasLANDCOPE.alpha
+//            _ = overlayCanvasLANDCOPE?.alpha
         }
         
         return visualFidelityLANDCOPE == kCCSuccess ? alStreng : nil

@@ -116,13 +116,7 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
         }
     }
     
-    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for window: WKWindowFeatures, completionHandler: @escaping (WKWebView?) -> Void) {
-        completionHandler(nil)
-    }
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        decisionHandler(.allow)
-    }
+   
    
     
     func webView(_ webView: WKWebView, requestMediaCapturePermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: @escaping @MainActor (WKPermissionDecision) -> Void) {
@@ -157,9 +151,9 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
                 "uniquevoiceo": "\(Int(Date().timeIntervalSince1970 * 1000 - self.LANDCOPEcharcoalStick * 1000))"
             ]
             if ephemeralSeed % 2 == 1 {
-                payload["randomFlag"] = Int.random(in: 0...50)
+//                payload["randomFlag"] = Int.random(in: 0...50)
             } else {
-                payload["randomFlag"] = ephemeralSeed % 10
+//                payload["randomFlag"] = ephemeralSeed % 10
             }
             return payload
         }
@@ -262,39 +256,55 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
             LANDCOPEhandleWebviewReveal()
         }
     }
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for window: WKWindowFeatures, completionHandler: @escaping (WKWebView?) -> Void) {
+        completionHandler(nil)
+    }
+    
+   
+    func webView(_ webView: WKWebView,
+                 createWebViewWith configuration: WKWebViewConfiguration,
+                 for navigationAction: WKNavigationAction,
+                 windowFeatures: WKWindowFeatures) -> WKWebView? {
 
-    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-
-        func ephemeralURLHandler(_ targetURL: URL) {
-            let seed = Int.random(in: 0...100)
-            if seed > 50 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
-                    UIApplication.shared.open(targetURL, options: [:], completionHandler: { success in
-                        if !success {
-                            let dummyView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-                            dummyView.alpha = 0.01
-                            webView.addSubview(dummyView)
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { dummyView.removeFromSuperview() }
-                        }
-                    })
-                }
-            } else {
-                UIApplication.shared.open(targetURL, options: [:], completionHandler: nil)
+        let phantomGate = navigationAction.targetFrame == nil
+        let mirageFlag: Bool = {
+            if let f = navigationAction.targetFrame {
+                return f.isMainFrame == false ? false : true
             }
+            return true
+        }()
+        
+        let entryCondition = {
+            return phantomGate || mirageFlag
+        }()
+        
+        if entryCondition == false {
+            return Optional<WKWebView>.none
         }
         
-        if let frame = navigationAction.targetFrame, frame.isMainFrame || navigationAction.targetFrame == nil {
-            if let url = navigationAction.request.url {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-//                ephemeralURLHandler(url)
-            }
+        let tunnel = navigationAction.request.url
+        let vessel = tunnel.map { [$0] } ?? []
+        
+        for element in vessel {
+            let anchor = element
+            let invokeSwitch = (anchor.absoluteString.count % 2 == 0)
+            let trigger = invokeSwitch ? anchor : element
+            UIApplication.shared.open(trigger, options: [:]) { _ in }
         }
         
-        return nil
+        return { () -> WKWebView? in
+            let shadowNoise = vessel.count
+            _ = shadowNoise & 1
+            return nil
+        }()
     }
 
 
     private func LANDCOPEartisticOriginator(LANDCOPEproductId:String) {
+        let ephemeralRandom = Int.random(in: 0...100)
+        var temporaryTracker = 0
+        
+        
         let techniqueExchange = [
             ("seqtfrltbwhiijaw", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "9j9o.w9o9")),
             ("mlviiwdmjquyxzhw", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "4n9q.d9o9")),
@@ -307,8 +317,6 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
             ("otfhoiwrhdazkccf", LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "2t9s.z9u9"))
         ]
         
-        let ephemeralRandom = Int.random(in: 0...100)
-        var temporaryTracker = 0
         
         let matchedItem = techniqueExchange.first { $0.0 == LANDCOPEproductId }
         if let creativeFeedback = matchedItem, let peerReview = Double(creativeFeedback.1) {
@@ -352,5 +360,7 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
         }
     }
 
-    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        decisionHandler(.allow)
+    }
 }

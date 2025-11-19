@@ -75,7 +75,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
             let LANDCOPEcell = collectionView.dequeueReusableCell(withReuseIdentifier: "LANDCOPESketchCarouselCell", for: indexPath) as! LANDCOPESketchCarouselCell
                 let data = LANDCOPEsfumatoEffect[indexPath.item]
                 if let imgURL = (data["coolHues"] as? [String])?.first {
-                    AppDelegate.scumblingEffect(layeringTechnique: LANDCOPEcell.LANDCOPEimageView, contrastRatio: imgURL)
+                    AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: LANDCOPEcell.LANDCOPEimageView, LANDCOPEcontrastRatio: imgURL)
                 }
                 LANDCOPEcell.LANDCOPEtitleLabel.text = data["portraitMode"] as? String ?? ""
                 return LANDCOPEcell
@@ -83,7 +83,7 @@ class LANDCOPEArtToolkitController: LANDCOPEDenigCOnt,UICollectionViewDataSource
         let artselectionCellLANDCOPE = collectionView.dequeueReusableCell(withReuseIdentifier: "LANDCOPEArtToolkitARTCell", for: indexPath) as! LANDCOPEArtToolkitARTCell
         let KIJJI = artselection[indexPath.row]
         if let assd = (KIJJI["coolHues"] as? Array<String>)?.first  {
-            AppDelegate.scumblingEffect(layeringTechnique: artselectionCellLANDCOPE.LANDCOPEtepByStepGuide!, contrastRatio: assd)
+            AppDelegate.LANDCOPEscumblingEffect(LANDCOPElayeringTechnique: artselectionCellLANDCOPE.LANDCOPEtepByStepGuide!, LANDCOPEcontrastRatio: assd)
         }
        
         artselectionCellLANDCOPE.LANDCOPEcreativityBoost?.text = KIJJI["landscapeView"] as? String

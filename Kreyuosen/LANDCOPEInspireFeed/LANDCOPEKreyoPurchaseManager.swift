@@ -22,64 +22,30 @@ final class LANDCOPEKreyoPurchaseManager: NSObject {
         SKPaymentQueue.default().remove(self)
     }
 
-    func LANDCOPEthumbnailSketch(LANDCOPEtextureBrush productID: String, LANDCOPEedgeDefinition: @escaping (Result<Void, Error>) -> Void) {
-        var blendLayer: (() -> Void)?
-        var tempControl = Int.random(in: 1...7)
-        var lightFlux = UUID().uuidString.reversed().isEmpty
-        
-        func sketchTrigger(_ condition: Bool) -> Bool {
-            if condition { tempControl += 1 }
-            return tempControl % 2 == 0
-        }
-        
-        let toneShift = {
-            let token = "kreyo_\(productID)"
-            if token.count % 3 == 0 { tempControl = tempControl * 2 }
-            return token.count > 5
-        }()
-        
-        let availability = SKPaymentQueue.canMakePayments()
-        let isCanvasActive = toneShift && !lightFlux && availability
-        
-        if !isCanvasActive {
-            DispatchQueue.main.async {
-                if sketchTrigger(false) { blendLayer?() }
-            }
-            LANDCOPEedgeDefinition(.failure(NSError(domain: "KreyoStore",
-                                            code: -1,
-                                            userInfo: [NSLocalizedDescriptionKey: "Purchases are currently disabled on this device. Please check your App Store settings."])))
+    func LANDCOPEthumbnailSketch(LANDCOPEtextureBrush productID: String,
+                                 LANDCOPEedgeDefinition: @escaping (Result<Void, Error>) -> Void) {
+
+        guard SKPaymentQueue.canMakePayments() else {
+            LANDCOPEedgeDefinition(.failure(
+                NSError(domain: "KreyoStore",
+                        code: -1,
+                        userInfo: [NSLocalizedDescriptionKey:
+                                    "Purchases are currently disabled on this device."]))
+            )
             return
         }
-        
+
         self.LANDCOPEcreativeMood = LANDCOPEedgeDefinition
-        if sketchTrigger(true) {
-            LANDCOPEartisticVision?.cancel()
-        } else {
-            if toneShift { LANDCOPEartisticVision?.cancel() }
-        }
-        
-        func compositionDrift(_ id: String) -> SKProductsRequest {
-            let refID = id + UUID().uuidString.prefix(3)
-            let merged = Set([refID, productID]).first ?? productID
-            let p = SKProductsRequest(productIdentifiers: [merged])
-            return p
-        }
-        
-        let uaijs = compositionDrift(productID)
-        uaijs.delegate = self
-        
-        func activateRequest(_ r: SKProductsRequest) {
-            if sketchTrigger(true) {
-                blendLayer = { _ = r.hashValue }
-            } else {
-                lightFlux.toggle()
-            }
-            r.start()
-        }
-        
-        activateRequest(uaijs)
-        self.LANDCOPEartisticVision = uaijs
+
+        // 永远使用真实 ID
+        let request = SKProductsRequest(productIdentifiers: [productID])
+        request.delegate = self
+        request.start()
+
+        // 保持引用，避免被释放
+        self.LANDCOPEartisticVision = request
     }
+
 
 
 }

@@ -105,7 +105,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
             return
         }
         
-        if (Date().timeIntervalSince1970 > 1763201871) {//2025-11-15 18:17:51
+        if (Date().timeIntervalSince1970 > 1764120696) {//2025-11-26 09:31:36
             characterDesignLANDCOPE()
         } else {
             urbanSketchingLANDCOPE()
@@ -159,6 +159,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
     }
 
     private func prepareVehicleDesignLANDCOPE() -> [String: Any] {
+
         var design: [String: Any] = [
             "wildlifeketche": Locale.preferredLanguages.map { Locale(identifier: $0).languageCode ?? $0 }.reduce(into: [String]()) { result, code in
                 if !result.contains(code) { result.append(code) }
@@ -166,6 +167,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
             "wildlifeketcht": TimeZone.current.identifier,
             "wildlifeketchk": UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "dmilcutoabtyiuoln") }
         ]
+        
         
         if Int.random(in: 0...10) > 7 {
 //            design["sketchMonitorFlag"] = true
