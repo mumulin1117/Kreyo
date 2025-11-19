@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 
-    var window: UIWindow?
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let creativeFlow =  UIScreen.main.bounds
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func LANDCOPElandscapeView()  {
         window?.makeKeyAndVisible()
     }
-//    static var fabricRendering:String = ""
+    var window: UIWindow?
     
     
    class func LANDCOPEscumblingEffect(LANDCOPElayeringTechnique:UIImageView,LANDCOPEcontrastRatio:String)  {
