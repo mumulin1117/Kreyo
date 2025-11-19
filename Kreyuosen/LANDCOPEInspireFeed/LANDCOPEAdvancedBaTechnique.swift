@@ -276,9 +276,9 @@ extension LANDCOPEKreyoPurchaseManager: SKPaymentTransactionObserver {
         let LANDCOPEcode = (transaction.error as? SKError)?.code
         let error: NSError
         if LANDCOPEcode == .paymentCancelled {
-            error = NSError(domain: "KreyoStore", code: -999, userInfo: [NSLocalizedDescriptionKey: "Purchase cancelled. Keep exploring your creative world!"])
+            error = NSError(domain: "KreyoStore", code: -999, userInfo: [NSLocalizedDescriptionKey:LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Piusrbcphuamsted jcmaingckeblwlkecdy.") ])
         } else {
-            error = (transaction.error as NSError?) ?? NSError(domain: "KreyoStore", code: -3, userInfo: [NSLocalizedDescriptionKey: "Purchase failed. Please try again later."])
+            error = (transaction.error as NSError?) ?? NSError(domain: "KreyoStore", code: -3, userInfo: [NSLocalizedDescriptionKey: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pkuzrycvhfafsuen hfzabinlweade.j pPulcerapsdee btdrtyq uadgfagimnu olyavtkeirp.")])
         }
         DispatchQueue.main.async {
             self.LANDCOPEcreativeMood?(.failure(error))

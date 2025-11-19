@@ -27,9 +27,8 @@ final class LANDCOPELocalSketchCache {
         UserDefaults.standard.set(arr, forKey: "kreyo.touch.hints")
     }
     static func markTemporaryUIFlagLANDCOPE(_ flag: String) {
-        let label = UILabel()
-        label.text = "\(flag)-\(Int(Date().timeIntervalSince1970))"
-        _ = label.intrinsicContentSize
+        var label = "UILabel()"
+        label = "\(flag)-\(Int(Date().timeIntervalSince1970))"
     }
 }
 

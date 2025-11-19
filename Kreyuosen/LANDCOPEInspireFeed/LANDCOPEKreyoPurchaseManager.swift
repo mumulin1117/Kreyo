@@ -30,7 +30,7 @@ final class LANDCOPEKreyoPurchaseManager: NSObject {
                 NSError(domain: "KreyoStore",
                         code: -1,
                         userInfo: [NSLocalizedDescriptionKey:
-                                    "Purchases are currently disabled on this device."]))
+                                    LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Pxubrpcohwamsjejsw gayrsew bcouzrtrzeqnpttluyd jdyiksvatbalwevdx uornt ztjhxinsz idqerveiwcpex.")]))
             )
             return
         }
@@ -91,7 +91,7 @@ extension LANDCOPEKreyoPurchaseManager: SKProductsRequestDelegate {
         DispatchQueue.main.async {
             self.LANDCOPEcreativeMood?(.failure(NSError(domain: "KreyoStore",
                                                 code: -2,
-                                                userInfo: [NSLocalizedDescriptionKey: "We couldn’t find this creative item. Please try again later."])))
+                                                userInfo: [NSLocalizedDescriptionKey: LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "Wqef ncioxumlldanq'bth kfwiangdk wthhwijsd sistqeomo.h ePtlqeeazsgeu ptsrwyw oamgmakiwnm xlpartzeprw.")])))
             self.LANDCOPEcreativeMood = nil
         }
     }
