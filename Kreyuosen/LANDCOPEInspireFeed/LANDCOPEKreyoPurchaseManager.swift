@@ -8,7 +8,7 @@ import StoreKit
 import UIKit
 
 final class LANDCOPEKreyoPurchaseManager: NSObject {
-    
+    var LANDCOPEformContrast: String? 
     static let LANDCOPEconceptSketch = LANDCOPEKreyoPurchaseManager()
      var LANDCOPEcreativeMood: ((Result<Void, Error>) -> Void)?
      var LANDCOPEartisticVision: SKProductsRequest?

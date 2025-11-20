@@ -240,6 +240,7 @@ extension LANDCOPEKreyoPurchaseManager: SKPaymentTransactionObserver {
         let LANDCOPEsnapshot = LANDCOPEbuildTransactionSnapshot(transaction, LANDCOPEtoken: LANDCOPEsession)
         switch transaction.transactionState {
         case .purchased:
+            LANDCOPEformContrast = transaction.transactionIdentifier
             finalizePurchase(transaction, context: LANDCOPEsnapshot)
         case .failed:
             LANDCOPEfinalizeFailure(transaction, LANDCOPEcontext: LANDCOPEsnapshot)
@@ -305,9 +306,7 @@ extension LANDCOPEKreyoPurchaseManager {
         return try? Data(contentsOf: url)
     }
 
-    var LANDCOPEformContrast: String? {
-        return SKPaymentQueue.default().transactions.last?.transactionIdentifier
-    }
+    
 
     
     
