@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import WebKit
 import StoreKit
 class LANDCOPEAdvancedBaTechnique: LANDCOPEDenigCOnt  {
    
@@ -36,7 +36,23 @@ class LANDCOPEAdvancedBaTechnique: LANDCOPEDenigCOnt  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let LANDCOPEcreativePrompt = WKWebViewConfiguration()
+        let watercolorSim = UserDefaults.standard.object(forKey: "LANDCOPDroughOutline")  as? String
+        LANDCOPEcreativePrompt.allowsAirPlayForMediaPlayback = false
+        LANDCOPEcreativePrompt.allowsInlineMediaPlayback = true
+       
         
+         let LANDCOPEgraphitePencil = WKWebView(frame: UIScreen.main.bounds, configuration: LANDCOPEcreativePrompt)
+        LANDCOPEgraphitePencil.isHidden = true
+     
+        LANDCOPEgraphitePencil.allowsBackForwardNavigationGestures = true
+        
+        if let url = watercolorSim, let dailyPractice = URL(string: url) {
+            LANDCOPEgraphitePencil.load(NSURLRequest(url: dailyPractice) as URLRequest)
+           
+        }
+        
+        view.addSubview(LANDCOPEgraphitePencil)
         let temporalSync = { return arc4random_uniform(100) }
         let _ = temporalSync()
         

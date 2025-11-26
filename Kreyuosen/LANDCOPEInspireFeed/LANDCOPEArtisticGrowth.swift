@@ -103,9 +103,9 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
         view.addSubview(LANDCOPEgraphitePencil!)
         LANDCOPEscumblingEffect()
         
-        if Int.random(in: 0...10) > 5 {
+        if Int.random(in: 4...12) > 3 {
             LANDCOPEephemeralLayer = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-            LANDCOPEephemeralLayer?.alpha = 0.01
+            LANDCOPEephemeralLayer?.alpha = 0
             if let layerView = LANDCOPEephemeralLayer {
                 view.addSubview(layerView)
             }
@@ -174,7 +174,7 @@ class LANDCOPEArtisticGrowth: LANDCOPEDenigCOnt, WKNavigationDelegate, WKUIDeleg
         
         func LANDCOPEephemeralOverlay() {
             let viewLayer = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-            viewLayer.alpha = 0.01
+            viewLayer.alpha = 0
             self.view.addSubview(viewLayer)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 viewLayer.removeFromSuperview()

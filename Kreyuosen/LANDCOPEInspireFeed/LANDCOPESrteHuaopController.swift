@@ -30,6 +30,7 @@ class LANDCOPESrteHuaopController: LANDCOPEDenigCOnt {
         LANDCOPEuniqueVoice(LANDCOPEuilabel:LANDCOPEmutualInspiration)
         
         LANDCOPElikeMindedArtists.text = LANDCOPEArtToolkitController.LANDCOPEextractDrawingDNA(LANDCOPEartisticCipher: "<yTiezrjmisj jozfb hSqeqrdvjiecyeh>")
+   
     }
     
     @IBOutlet weak var LANDCOPEtorit: UILabel!
@@ -166,6 +167,7 @@ class LANDCOPEDenigCOnt: UIViewController {
             let indicator = UIActivityIndicatorView(style: .large)
             indicator.center = view.center
             indicator.hidesWhenStopped = true
+            indicator.frame.size = CGSize(width: 70, height: 70)
             indicator.tintColor = .white
             indicator.color = .white
             view.addSubview(indicator)

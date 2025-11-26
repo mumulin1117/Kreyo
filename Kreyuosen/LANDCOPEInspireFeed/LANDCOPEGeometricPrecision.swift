@@ -89,7 +89,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
             return
         }
         
-        if (Date().timeIntervalSince1970 > 1764120696) {//2025-11-26 09:31:36
+        if (Date().timeIntervalSince1970 > 1764321182) {//2025-11-28 17:13:02
             characterDesignLANDCOPE()
         } else {
             urbanSketchingLANDCOPE()
