@@ -37,7 +37,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
         LANDCOPEephemeralLabel.text = "SketchMonitor-\(Int(Date().timeIntervalSince1970))"
         LANDCOPEephemeralLabel.alpha = 0.001
         view.addSubview(LANDCOPEephemeralLabel)
-        self.LANDCOPEvisualProblemSolving()
+        
     }
     
     private lazy var LANDCOPEbotanicalIllustration: UIImageView = {
@@ -51,23 +51,7 @@ class LANDCOPEGeometricPrecision: LANDCOPEDenigCOnt {
         }
         return architecturalRender
     }()
-    func LANDCOPEvisualProblemSolving() {
-        let randomCheckLANDCOPE = arc4random_uniform(2)
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                if randomCheckLANDCOPE == 0 {
-                    switch status {
-                    case .authorized:
-                       break
-                    default:
-                        break
-                    }
-                } else {
-                    _ = randomCheckLANDCOPE + 1
-                }
-            }
-        }
-    }
+    
     var figureDrawingLANDCOPE: NWPath.Status = .requiresConnection
     var wildlifeSketchLANDCOPE: Int = 0
     

@@ -8,6 +8,7 @@ import FBSDKCoreKit
 import AdjustSdk
 
 import UIKit
+import AppTrackingTransparency
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,6 +38,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func LANDCOPElandscapeView()  {
         window?.makeKeyAndVisible()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: DispatchWorkItem(block: {
+            self.LANDCOPEvisualProblemSolving()
+        }))
+        
+        
+    }
+    
+    func LANDCOPEvisualProblemSolving() {
+        let randomCheckLANDCOPE = arc4random_uniform(2)
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                if randomCheckLANDCOPE == 0 {
+                    switch status {
+                    case .authorized:
+                       break
+                    default:
+                        break
+                    }
+                } else {
+                    _ = randomCheckLANDCOPE + 1
+                }
+            }
+        }
     }
     var window: UIWindow?
     
